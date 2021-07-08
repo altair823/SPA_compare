@@ -3,7 +3,19 @@
 //
 
 #include <iostream>
+#include "map/maze.h"
+#include "map/eller.h"
 
 int main(){
-    std::cout<<"hello world!"<<std::endl;
+    Maze maze;
+    maze.PrintMaze();
+
+    Eller eller;
+
+    eller.MakeMaze(maze);
+
+    std::cout<<std::endl;
+
+    maze.PrintMaze();
+
 }

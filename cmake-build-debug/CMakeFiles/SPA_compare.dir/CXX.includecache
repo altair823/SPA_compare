@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../declaration.h
+iostream
+-
+
+/Users/altair823/Desktop/SPA_compare/map/eller.cpp
+eller.h
+/Users/altair823/Desktop/SPA_compare/map/eller.h
+
+/Users/altair823/Desktop/SPA_compare/map/eller.h
+set
+-
+maze.h
+/Users/altair823/Desktop/SPA_compare/map/maze.h
+random
+-
+
+/Users/altair823/Desktop/SPA_compare/map/location.h
+bitset
+-
+declaration.h
+/Users/altair823/Desktop/SPA_compare/map/declaration.h
+
+/Users/altair823/Desktop/SPA_compare/map/maze.h
+declaration.h
+/Users/altair823/Desktop/SPA_compare/map/declaration.h
+location.h
+/Users/altair823/Desktop/SPA_compare/map/location.h
+iostream
+-
+cstdarg
+-
+

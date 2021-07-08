@@ -3,18 +3,42 @@
 //
 #include "location.h"
 
-void Location::SetXCoord(int x) {
+Location::Location() {
+    openDirection.reset();
+    xCoord = 0;
+    yCoord = 0;
+}
+
+void Location::setXCoord(int x) {
     xCoord = x;
 }
 
-int Location::GetXCoord() const {
+int Location::getXCoord() const {
     return xCoord;
 }
 
-void Location::SetYCoord(int y) {
+void Location::setYCoord(int y) {
     yCoord = y;
 }
 
-int Location::GetYCoord() const {
+int Location::getYCoord() const {
     return yCoord;
 }
+
+void Location::setOpenDirection(int openDirCount, ...) {
+    va_list ap;
+    va_start(ap, openDirCount);
+    for (int i = 0; i < openDirCount; i++){
+        openDirection.set(va_arg(ap, int));
+    }
+}
+
+std::bitset<4> Location::getOpenFlag() const {
+    return openDirection;
+}
+
+void Location::setOpenFlag(std::bitset<4> openFlag) {
+    openDirection = openFlag;
+}
+
+
