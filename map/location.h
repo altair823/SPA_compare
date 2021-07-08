@@ -31,7 +31,7 @@ public:
      * The number of direction wanted to change is given by first.
      * After that, the certain direction values to set 'open' are given.
      */
-    void setOpenDirection(int openDirCount, ...);
+    void setOpenDirection(int direction);
     std::bitset<4> getOpenFlag() const;
 };
 

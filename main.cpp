@@ -10,9 +10,9 @@ int main(){
     Maze maze;
     maze.PrintMaze();
 
-    Eller eller;
+    Eller eller(maze);
 
-    eller.MakeMaze(maze);
+    eller.MakeMaze();
 
     std::cout<<std::endl;
 

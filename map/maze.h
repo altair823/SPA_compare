@@ -20,19 +20,27 @@ private:
 
 public:
     Maze();
+
     /*
      * Return particular location object based on Cartesian coordinate.
      */
-    Location getLocation(int x, int y) const;
+    Location getLocation(int raw, int column) const;
+
     /*
      * Operator overload for getting the location object.
      */
     Location * operator[] (int idx);
     const Location * operator[] (int idx) const;
+
     /*
      * Print all maze cell's direction flags.
      */
     void PrintMaze() const;
+
+    /*
+     * Open the wall.
+     */
+    void OpenWall(int raw, int column, int direction);
 
 };
 

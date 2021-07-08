@@ -25,12 +25,8 @@ int Location::getYCoord() const {
     return yCoord;
 }
 
-void Location::setOpenDirection(int openDirCount, ...) {
-    va_list ap;
-    va_start(ap, openDirCount);
-    for (int i = 0; i < openDirCount; i++){
-        openDirection.set(va_arg(ap, int));
-    }
+void Location::setOpenDirection(int direction) {
+    openDirection.set(direction);
 }
 
 std::bitset<4> Location::getOpenFlag() const {

@@ -15,15 +15,24 @@
 
 class Eller{
 private:
+    Maze* tempMaze;
+
     // Set that contains all cells. The integer number indicate the kind of set.
     // This is because, in the maximal situation, every cell is in a different set.
-    int locationSet[MAX_COLUMN][MAX_RAW] = {0, };
+    // 0 means that cell is not in the set.
+    int locationSet[MAX_RAW] = {0, };
+
+    // The set act like temp buffer for next raw.
+    // When setting of certain raw is over and vertical merging ended,
+    // values in this set are copied to locationSet and going to initialize with 0.
+    int nextLocationSet[MAX_RAW] = {0, };
 
 public:
+    explicit Eller(Maze &maze);
     /*
      * The function that creates complete maze based on Eller's algorithm.
      */
-    void MakeMaze(Maze &maze);
+    void MakeMaze();
 
     /*
      * Returns a value for choosing whether to MergeWithRight or not.
@@ -31,10 +40,15 @@ public:
     bool ChoiceRandomly();
 
     /*
-     * The function that MergeWithRight different sets.
-     * The action merging two adjacent cells
+     * The functions that merging with different sets.
      */
-    void MergeWithRight(int x);
+    void MergeWithRight(int raw, int column);
+    void MergeWithDown(int raw, int column);
+
+    /*
+     * For debug.
+     */
+    void printCurrentLocationSet();
 };
 
 #endif //SPA_COMPARE_ELLER_H
