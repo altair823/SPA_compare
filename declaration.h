@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-#define MAX_ROW 10
-#define MAX_COLUMN 10
+#define MAX_ROW 50
+#define MAX_COLUMN 50
 
 #endif //SPA_COMPARE_DECLARATION_H

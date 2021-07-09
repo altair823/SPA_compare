@@ -142,32 +142,32 @@ SPA_compare/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/build
 .PHONY : SPA_compare/fast
 
-dijkstra/dijkstra.o: dijkstra/dijkstra.cpp.o
+SPA/Dik.o: SPA/Dik.cpp.o
 
-.PHONY : dijkstra/dijkstra.o
+.PHONY : SPA/Dik.o
 
 # target to build an object file
-dijkstra/dijkstra.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o
-.PHONY : dijkstra/dijkstra.cpp.o
+SPA/Dik.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o
+.PHONY : SPA/Dik.cpp.o
 
-dijkstra/dijkstra.i: dijkstra/dijkstra.cpp.i
+SPA/Dik.i: SPA/Dik.cpp.i
 
-.PHONY : dijkstra/dijkstra.i
+.PHONY : SPA/Dik.i
 
 # target to preprocess a source file
-dijkstra/dijkstra.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.i
-.PHONY : dijkstra/dijkstra.cpp.i
+SPA/Dik.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.i
+.PHONY : SPA/Dik.cpp.i
 
-dijkstra/dijkstra.s: dijkstra/dijkstra.cpp.s
+SPA/Dik.s: SPA/Dik.cpp.s
 
-.PHONY : dijkstra/dijkstra.s
+.PHONY : SPA/Dik.s
 
 # target to generate assembly for a file
-dijkstra/dijkstra.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.s
-.PHONY : dijkstra/dijkstra.cpp.s
+SPA/Dik.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.s
+.PHONY : SPA/Dik.cpp.s
 
 main.o: main.cpp.o
 
@@ -196,86 +196,86 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-map/eller.o: map/eller.cpp.o
+map/Eller.o: map/Eller.cpp.o
 
-.PHONY : map/eller.o
-
-# target to build an object file
-map/eller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/eller.cpp.o
-.PHONY : map/eller.cpp.o
-
-map/eller.i: map/eller.cpp.i
-
-.PHONY : map/eller.i
-
-# target to preprocess a source file
-map/eller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/eller.cpp.i
-.PHONY : map/eller.cpp.i
-
-map/eller.s: map/eller.cpp.s
-
-.PHONY : map/eller.s
-
-# target to generate assembly for a file
-map/eller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/eller.cpp.s
-.PHONY : map/eller.cpp.s
-
-map/location.o: map/location.cpp.o
-
-.PHONY : map/location.o
+.PHONY : map/Eller.o
 
 # target to build an object file
-map/location.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/location.cpp.o
-.PHONY : map/location.cpp.o
+map/Eller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Eller.cpp.o
+.PHONY : map/Eller.cpp.o
 
-map/location.i: map/location.cpp.i
+map/Eller.i: map/Eller.cpp.i
 
-.PHONY : map/location.i
+.PHONY : map/Eller.i
 
 # target to preprocess a source file
-map/location.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/location.cpp.i
-.PHONY : map/location.cpp.i
+map/Eller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Eller.cpp.i
+.PHONY : map/Eller.cpp.i
 
-map/location.s: map/location.cpp.s
+map/Eller.s: map/Eller.cpp.s
 
-.PHONY : map/location.s
+.PHONY : map/Eller.s
 
 # target to generate assembly for a file
-map/location.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/location.cpp.s
-.PHONY : map/location.cpp.s
+map/Eller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Eller.cpp.s
+.PHONY : map/Eller.cpp.s
 
-map/maze.o: map/maze.cpp.o
+map/Location.o: map/Location.cpp.o
 
-.PHONY : map/maze.o
+.PHONY : map/Location.o
 
 # target to build an object file
-map/maze.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/maze.cpp.o
-.PHONY : map/maze.cpp.o
+map/Location.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Location.cpp.o
+.PHONY : map/Location.cpp.o
 
-map/maze.i: map/maze.cpp.i
+map/Location.i: map/Location.cpp.i
 
-.PHONY : map/maze.i
+.PHONY : map/Location.i
 
 # target to preprocess a source file
-map/maze.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/maze.cpp.i
-.PHONY : map/maze.cpp.i
+map/Location.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Location.cpp.i
+.PHONY : map/Location.cpp.i
 
-map/maze.s: map/maze.cpp.s
+map/Location.s: map/Location.cpp.s
 
-.PHONY : map/maze.s
+.PHONY : map/Location.s
 
 # target to generate assembly for a file
-map/maze.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/maze.cpp.s
-.PHONY : map/maze.cpp.s
+map/Location.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Location.cpp.s
+.PHONY : map/Location.cpp.s
+
+map/Maze.o: map/Maze.cpp.o
+
+.PHONY : map/Maze.o
+
+# target to build an object file
+map/Maze.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Maze.cpp.o
+.PHONY : map/Maze.cpp.o
+
+map/Maze.i: map/Maze.cpp.i
+
+.PHONY : map/Maze.i
+
+# target to preprocess a source file
+map/Maze.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Maze.cpp.i
+.PHONY : map/Maze.cpp.i
+
+map/Maze.s: map/Maze.cpp.s
+
+.PHONY : map/Maze.s
+
+# target to generate assembly for a file
+map/Maze.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Maze.cpp.s
+.PHONY : map/Maze.cpp.s
 
 # Help Target
 help:
@@ -286,21 +286,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SPA_compare"
-	@echo "... dijkstra/dijkstra.o"
-	@echo "... dijkstra/dijkstra.i"
-	@echo "... dijkstra/dijkstra.s"
+	@echo "... SPA/Dik.o"
+	@echo "... SPA/Dik.i"
+	@echo "... SPA/Dik.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... map/eller.o"
-	@echo "... map/eller.i"
-	@echo "... map/eller.s"
-	@echo "... map/location.o"
-	@echo "... map/location.i"
-	@echo "... map/location.s"
-	@echo "... map/maze.o"
-	@echo "... map/maze.i"
-	@echo "... map/maze.s"
+	@echo "... map/Eller.o"
+	@echo "... map/Eller.i"
+	@echo "... map/Eller.s"
+	@echo "... map/Location.o"
+	@echo "... map/Location.i"
+	@echo "... map/Location.s"
+	@echo "... map/Maze.o"
+	@echo "... map/Maze.i"
+	@echo "... map/Maze.s"
 .PHONY : help
 
 

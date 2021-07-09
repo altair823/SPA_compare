@@ -2,29 +2,33 @@
 // Created by 김태현 on 2021/07/07.
 //
 
-#include "maze.h"
+#include "Maze.h"
 
 
 Maze::Maze() {
+    mazeNumber = 0;
     for (int column = 0; column < MAX_COLUMN; column++){
         for (int row = 0; row < MAX_ROW; ++row) {
             location[column][row].setXCoord(row);
             location[column][row].setYCoord(column);
-            // Set all flags indicating directions open.
-            /*
-            location[column][row].setOpenDirection(UP);
-            location[column][row].setOpenDirection(DOWN);
-            location[column][row].setOpenDirection(LEFT);
-            location[column][row].setOpenDirection(RIGHT);
-             */
         }
     }
 }
 
-
-Location Maze::getLocation(int row, int column) const{
-    return location[column][row];
+void Maze::InitializeMaze(){
+    for (int column = 0; column < MAX_COLUMN; column++){
+        for (int row = 0; row < MAX_ROW; ++row) {
+            location[column][row].setXCoord(row);
+            location[column][row].setYCoord(column);
+            location[column][row].setOpenFlag(0000);
+        }
+    }
 }
+
+void Maze::IncreaseMazeNumber(){
+    mazeNumber++;
+}
+
 
 void Maze::PrintMaze() const{
     for (const auto & column : location) {
@@ -93,6 +97,40 @@ void Maze::OpenWall(int row, int column, int direction) {
     }
 }
 
+void Maze::SaveMazeFile() {
+    std::ofstream mazeFile;
+    std::string filename = "maze" + std::to_string(mazeNumber);
+    filename += ".txt";
+    mazeFile.open(filename);
+    for (int column = 0; column < MAX_COLUMN; ++column) {
+        for (int row = 0; row < MAX_ROW; ++row) {
+            std::bitset<4> currentOpenDirection = location[column][row].getOpenFlag();
+            if (currentOpenDirection.test(UP)){
+                mazeFile<<"U";
+            } else{
+                mazeFile<<"*";
+            }
+            if (currentOpenDirection.test(DOWN)){
+                mazeFile<<"D";
+            } else{
+                mazeFile<<"*";
+            }
+            if (currentOpenDirection.test(LEFT)){
+                mazeFile<<"L";
+            } else{
+                mazeFile<<"*";
+            }
+            if (currentOpenDirection.test(RIGHT)){
+                mazeFile<<"R";
+            } else{
+                mazeFile<<"*";
+            }
+            mazeFile<<" ";
+        }
+        mazeFile<<"\n";
+    }
+    mazeFile.close();
+}
 
 
 

@@ -6,9 +6,10 @@
 #define SPA_COMPARE_MAZE_H
 
 #include "declaration.h"
-#include "location.h"
+#include "Location.h"
 #include <iostream>
 #include <cstdarg>
+#include <fstream>
 
 /*
  * Maze that need to found the SP by SPA.
@@ -18,13 +19,19 @@ class Maze{
 private:
     Location location[MAX_COLUMN][MAX_ROW]{};
 
+    /*
+     * The number of previously created maze.
+     */
+    int mazeNumber;
+
+
 public:
     Maze();
+    Maze(const Maze&) = delete;
 
-    /*
-     * Return particular location object based on Cartesian coordinate.
-     */
-    Location getLocation(int row, int column) const;
+    void InitializeMaze();
+
+    void IncreaseMazeNumber();
 
     /*
      * Operator overload for getting the location object.
@@ -42,6 +49,10 @@ public:
      */
     void OpenWall(int row, int column, int direction);
 
+    /*
+     * Save all maze data in file for logging.
+     */
+    void SaveMazeFile();
 };
 
 #endif //SPA_COMPARE_MAZE_H

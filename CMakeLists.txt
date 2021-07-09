@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(SPA_compare
-        dijkstra/dijkstra.cpp dijkstra/dijkstra.h main.cpp map/maze.cpp map/maze.h map/location.cpp map/location.h declaration.h map/eller.cpp map/eller.h)
+        SPA/Dik.cpp SPA/Dik.h main.cpp map/Maze.cpp map/Maze.h map/Location.cpp map/Location.h declaration.h map/Eller.cpp map/Eller.h SPA/spa_interface.h)

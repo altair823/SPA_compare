@@ -76,18 +76,18 @@ include CMakeFiles/SPA_compare.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SPA_compare.dir/flags.make
 
-CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
-CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o: ../dijkstra/dijkstra.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o -c /Users/altair823/Desktop/SPA_compare/dijkstra/dijkstra.cpp
+CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
+CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../SPA/Dik.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o -c /Users/altair823/Desktop/SPA_compare/SPA/Dik.cpp
 
-CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/dijkstra/dijkstra.cpp > CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.i
+CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/SPA/Dik.cpp > CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.i
 
-CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/dijkstra/dijkstra.cpp -o CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.s
+CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/SPA/Dik.cpp -o CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.s
 
 CMakeFiles/SPA_compare.dir/main.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../main.cpp
@@ -102,61 +102,61 @@ CMakeFiles/SPA_compare.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/main.cpp -o CMakeFiles/SPA_compare.dir/main.cpp.s
 
-CMakeFiles/SPA_compare.dir/map/maze.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
-CMakeFiles/SPA_compare.dir/map/maze.cpp.o: ../map/maze.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SPA_compare.dir/map/maze.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/map/maze.cpp.o -c /Users/altair823/Desktop/SPA_compare/map/maze.cpp
+CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
+CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../map/Maze.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SPA_compare.dir/map/Maze.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/map/Maze.cpp.o -c /Users/altair823/Desktop/SPA_compare/map/Maze.cpp
 
-CMakeFiles/SPA_compare.dir/map/maze.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/map/maze.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/map/maze.cpp > CMakeFiles/SPA_compare.dir/map/maze.cpp.i
+CMakeFiles/SPA_compare.dir/map/Maze.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/map/Maze.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/map/Maze.cpp > CMakeFiles/SPA_compare.dir/map/Maze.cpp.i
 
-CMakeFiles/SPA_compare.dir/map/maze.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/map/maze.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/map/maze.cpp -o CMakeFiles/SPA_compare.dir/map/maze.cpp.s
+CMakeFiles/SPA_compare.dir/map/Maze.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/map/Maze.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/map/Maze.cpp -o CMakeFiles/SPA_compare.dir/map/Maze.cpp.s
 
-CMakeFiles/SPA_compare.dir/map/location.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
-CMakeFiles/SPA_compare.dir/map/location.cpp.o: ../map/location.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SPA_compare.dir/map/location.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/map/location.cpp.o -c /Users/altair823/Desktop/SPA_compare/map/location.cpp
+CMakeFiles/SPA_compare.dir/map/Location.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
+CMakeFiles/SPA_compare.dir/map/Location.cpp.o: ../map/Location.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SPA_compare.dir/map/Location.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/map/Location.cpp.o -c /Users/altair823/Desktop/SPA_compare/map/Location.cpp
 
-CMakeFiles/SPA_compare.dir/map/location.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/map/location.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/map/location.cpp > CMakeFiles/SPA_compare.dir/map/location.cpp.i
+CMakeFiles/SPA_compare.dir/map/Location.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/map/Location.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/map/Location.cpp > CMakeFiles/SPA_compare.dir/map/Location.cpp.i
 
-CMakeFiles/SPA_compare.dir/map/location.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/map/location.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/map/location.cpp -o CMakeFiles/SPA_compare.dir/map/location.cpp.s
+CMakeFiles/SPA_compare.dir/map/Location.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/map/Location.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/map/Location.cpp -o CMakeFiles/SPA_compare.dir/map/Location.cpp.s
 
-CMakeFiles/SPA_compare.dir/map/eller.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
-CMakeFiles/SPA_compare.dir/map/eller.cpp.o: ../map/eller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SPA_compare.dir/map/eller.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/map/eller.cpp.o -c /Users/altair823/Desktop/SPA_compare/map/eller.cpp
+CMakeFiles/SPA_compare.dir/map/Eller.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
+CMakeFiles/SPA_compare.dir/map/Eller.cpp.o: ../map/Eller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SPA_compare.dir/map/Eller.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/map/Eller.cpp.o -c /Users/altair823/Desktop/SPA_compare/map/Eller.cpp
 
-CMakeFiles/SPA_compare.dir/map/eller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/map/eller.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/map/eller.cpp > CMakeFiles/SPA_compare.dir/map/eller.cpp.i
+CMakeFiles/SPA_compare.dir/map/Eller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/map/Eller.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/map/Eller.cpp > CMakeFiles/SPA_compare.dir/map/Eller.cpp.i
 
-CMakeFiles/SPA_compare.dir/map/eller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/map/eller.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/map/eller.cpp -o CMakeFiles/SPA_compare.dir/map/eller.cpp.s
+CMakeFiles/SPA_compare.dir/map/Eller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/map/Eller.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/map/Eller.cpp -o CMakeFiles/SPA_compare.dir/map/Eller.cpp.s
 
 # Object files for target SPA_compare
 SPA_compare_OBJECTS = \
-"CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o" \
+"CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o" \
 "CMakeFiles/SPA_compare.dir/main.cpp.o" \
-"CMakeFiles/SPA_compare.dir/map/maze.cpp.o" \
-"CMakeFiles/SPA_compare.dir/map/location.cpp.o" \
-"CMakeFiles/SPA_compare.dir/map/eller.cpp.o"
+"CMakeFiles/SPA_compare.dir/map/Maze.cpp.o" \
+"CMakeFiles/SPA_compare.dir/map/Location.cpp.o" \
+"CMakeFiles/SPA_compare.dir/map/Eller.cpp.o"
 
 # External object files for target SPA_compare
 SPA_compare_EXTERNAL_OBJECTS =
 
-SPA_compare: CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o
+SPA_compare: CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/main.cpp.o
-SPA_compare: CMakeFiles/SPA_compare.dir/map/maze.cpp.o
-SPA_compare: CMakeFiles/SPA_compare.dir/map/location.cpp.o
-SPA_compare: CMakeFiles/SPA_compare.dir/map/eller.cpp.o
+SPA_compare: CMakeFiles/SPA_compare.dir/map/Maze.cpp.o
+SPA_compare: CMakeFiles/SPA_compare.dir/map/Location.cpp.o
+SPA_compare: CMakeFiles/SPA_compare.dir/map/Eller.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/build.make
 SPA_compare: CMakeFiles/SPA_compare.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable SPA_compare"

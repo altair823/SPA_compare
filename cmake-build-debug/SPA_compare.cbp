@@ -82,34 +82,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/Dik.cpp">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/Dik.h">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/spa_interface.h">
+			<Option target="SPA_compare"/>
+		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/declaration.h">
-			<Option target="SPA_compare"/>
-		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/dijkstra/dijkstra.cpp">
-			<Option target="SPA_compare"/>
-		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/dijkstra/dijkstra.h">
 			<Option target="SPA_compare"/>
 		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/main.cpp">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/eller.cpp">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Eller.cpp">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/eller.h">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Eller.h">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/location.cpp">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Location.cpp">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/location.h">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Location.h">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/maze.cpp">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Maze.cpp">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/maze.h">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Maze.h">
 			<Option target="SPA_compare"/>
 		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/CMakeLists.txt">

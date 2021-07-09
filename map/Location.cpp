@@ -1,7 +1,7 @@
 //
 // Created by 김태현 on 2021/07/07.
 //
-#include "location.h"
+#include "Location.h"
 
 Location::Location() {
     openDirection.reset();

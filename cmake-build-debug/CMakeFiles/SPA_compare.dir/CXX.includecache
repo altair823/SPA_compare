@@ -13,44 +13,38 @@ iostream
 /Users/altair823/Desktop/SPA_compare/main.cpp
 iostream
 -
-map/maze.h
-/Users/altair823/Desktop/SPA_compare/map/maze.h
-map/eller.h
-/Users/altair823/Desktop/SPA_compare/map/eller.h
+map/Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
+map/Eller.h
+/Users/altair823/Desktop/SPA_compare/map/Eller.h
 
-/Users/altair823/Desktop/SPA_compare/map/eller.cpp
-eller.h
-/Users/altair823/Desktop/SPA_compare/map/eller.h
+/Users/altair823/Desktop/SPA_compare/map/Eller.cpp
+Eller.h
+/Users/altair823/Desktop/SPA_compare/map/Eller.h
 
-/Users/altair823/Desktop/SPA_compare/map/eller.h
+/Users/altair823/Desktop/SPA_compare/map/Eller.h
 set
 -
-maze.h
-/Users/altair823/Desktop/SPA_compare/map/maze.h
+Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
 random
 -
 
-/Users/altair823/Desktop/SPA_compare/map/location.cpp
-location.h
-/Users/altair823/Desktop/SPA_compare/map/location.h
-
-/Users/altair823/Desktop/SPA_compare/map/location.h
+/Users/altair823/Desktop/SPA_compare/map/Location.h
 bitset
 -
 declaration.h
 /Users/altair823/Desktop/SPA_compare/map/declaration.h
 
-/Users/altair823/Desktop/SPA_compare/map/maze.cpp
-maze.h
-/Users/altair823/Desktop/SPA_compare/map/maze.h
-
-/Users/altair823/Desktop/SPA_compare/map/maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
 declaration.h
 /Users/altair823/Desktop/SPA_compare/map/declaration.h
-location.h
-/Users/altair823/Desktop/SPA_compare/map/location.h
+Location.h
+/Users/altair823/Desktop/SPA_compare/map/Location.h
 iostream
 -
 cstdarg
+-
+fstream
 -
 

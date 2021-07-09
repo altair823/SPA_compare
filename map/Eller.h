@@ -10,12 +10,12 @@
 #define SPA_COMPARE_ELLER_H
 
 #include <set>
-#include "maze.h"
+#include "Maze.h"
 #include <random>
 
 class Eller{
 private:
-    Maze* tempMaze;
+    Maze tempMaze;
 
     std::set<int> existingSet;
 
@@ -37,13 +37,6 @@ private:
      * Indicate previous set number that assigned to a cell in a single cycle.
      */
     int previouslyAssignedSetNumber;
-
-public:
-    explicit Eller(Maze &maze);
-    /*
-     * The function that creates complete maze based on Eller's algorithm.
-     */
-    void MakeMaze();
 
     /*
      * Merge adjacent cells randomly.
@@ -76,6 +69,14 @@ public:
     void MergeWithRight(int row, int column);
     void MergeWithDown(int row, int column);
     void MergeWithDifferentSet(int column);
+
+public:
+    explicit Eller(const Maze &maze);
+    /*
+     * The function that creates complete maze based on Eller's algorithm.
+     */
+    void MakeMaze();
+
 
     /*
      * For debug. Print current location set values.

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SPA_compare.dir/dijkstra/dijkstra.cpp.o"
+  "CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o"
   "CMakeFiles/SPA_compare.dir/main.cpp.o"
-  "CMakeFiles/SPA_compare.dir/map/eller.cpp.o"
-  "CMakeFiles/SPA_compare.dir/map/location.cpp.o"
-  "CMakeFiles/SPA_compare.dir/map/maze.cpp.o"
+  "CMakeFiles/SPA_compare.dir/map/Eller.cpp.o"
+  "CMakeFiles/SPA_compare.dir/map/Location.cpp.o"
+  "CMakeFiles/SPA_compare.dir/map/Maze.cpp.o"
   "SPA_compare"
   "SPA_compare.pdb"
 )

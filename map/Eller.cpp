@@ -3,7 +3,7 @@
 //
 
 
-#include "eller.h"
+#include "Eller.h"
 
 void Eller::printCurrentLocationSet() {
     for (int i : locationSet) {
@@ -12,11 +12,15 @@ void Eller::printCurrentLocationSet() {
     std::cout<<std::endl;
 }
 
-Eller::Eller(Maze &maze) {
-    tempMaze = &maze;
+Eller::Eller(const Maze &maze) {
+    tempMaze = maze;
 }
 
 void Eller::MakeMaze() {
+    // Set maze number for logging.
+    tempMaze.IncreaseMazeNumber();
+    tempMaze.InitializeMaze();
+
     // Initial inserting. All cells in first row are inserted in different sets.
     for (int i = 0; i < MAX_ROW; ++i) {
         locationSet[i] = i + 1;
@@ -24,16 +28,14 @@ void Eller::MakeMaze() {
 
     for (int column = 0; column < MAX_COLUMN; ++column) {
         MergeRandomly(column);
-        printCurrentLocationSet();
         ExpandSetsVertical(column);
-        printCurrentLocationSet();
         AssignCellsInRow();
-        printCurrentLocationSet();
         // Last row, merge all cells that has different set value.
         if (column == MAX_COLUMN - 1){
             MergeWithDifferentSet(column);
         }
     }
+    tempMaze.SaveMazeFile();
 }
 
 void Eller::MergeRandomly(int column) {
@@ -153,14 +155,14 @@ void Eller::MergeWithRight(int row, int column) {
 
     // Open right side wall at the current cell.
     // This is accompanied by opening the left wall in the right cell.
-    tempMaze->OpenWall(row, column, RIGHT);
+    tempMaze.OpenWall(row, column, RIGHT);
 }
 
 void Eller::MergeWithDown(int row, int column) {
     if (column + 1 >= MAX_COLUMN){
         return;
     }
-    tempMaze->OpenWall(row, column, DOWN);
+    tempMaze.OpenWall(row, column, DOWN);
 }
 
 void Eller::MergeWithDifferentSet(int column) {
