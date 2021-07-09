@@ -6,6 +6,8 @@
 
 다음을 바탕으로 합니다. 
 
+[The Buckblog, Maze Generation: Eller's Algorithm](http://weblog.jamisbuck.org/2010/12/29/maze-generation-eller-s-algorithm)
+
 [Finding shortest paths on real road networks: the case for A*
 / by Zeng, W.; Church, R. L.](https://zenodo.org/record/979689#.YOS3kRMza3I)
 
