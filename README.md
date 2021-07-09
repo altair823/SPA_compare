@@ -11,7 +11,6 @@
 
 [SHORTEST PATHS ALGORITHMS: THEORY AND EXPERIMENTAL EVALUATION](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.54.8746&rep=rep1&type=pdf)
 
-공정한 평가를 위해 언어에서 제공하는 기능들을 되도록 사용하지 않도록 C++로 작성하였습니다.  
 
 ## 구현한 알고리즘 목록
 
