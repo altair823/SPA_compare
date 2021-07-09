@@ -30,11 +30,19 @@ maze.h
 random
 -
 
+/Users/altair823/Desktop/SPA_compare/map/location.cpp
+location.h
+/Users/altair823/Desktop/SPA_compare/map/location.h
+
 /Users/altair823/Desktop/SPA_compare/map/location.h
 bitset
 -
 declaration.h
 /Users/altair823/Desktop/SPA_compare/map/declaration.h
+
+/Users/altair823/Desktop/SPA_compare/map/maze.cpp
+maze.h
+/Users/altair823/Desktop/SPA_compare/map/maze.h
 
 /Users/altair823/Desktop/SPA_compare/map/maze.h
 declaration.h

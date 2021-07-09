@@ -22,11 +22,15 @@ private:
 
 public:
     Location();
+    /*
+     * Setters and getters.
+     */
     void setXCoord(int);
     int getXCoord() const;
     void setYCoord(int);
     int getYCoord() const;
     void setOpenFlag(std::bitset<4> openFlag);
+
     /*
      * The number of direction wanted to change is given by first.
      * After that, the certain direction values to set 'open' are given.

@@ -12,11 +12,11 @@
 
 /*
  * Maze that need to found the SP by SPA.
- * There could be multiple SP or none.
+ * There could be multiple SP, but cannot be absent.
  */
 class Maze{
 private:
-    Location location[MAX_COLUMN][MAX_RAW]{};
+    Location location[MAX_COLUMN][MAX_ROW]{};
 
 public:
     Maze();
@@ -24,7 +24,7 @@ public:
     /*
      * Return particular location object based on Cartesian coordinate.
      */
-    Location getLocation(int raw, int column) const;
+    Location getLocation(int row, int column) const;
 
     /*
      * Operator overload for getting the location object.
@@ -40,7 +40,7 @@ public:
     /*
      * Open the wall.
      */
-    void OpenWall(int raw, int column, int direction);
+    void OpenWall(int row, int column, int direction);
 
 };
 
