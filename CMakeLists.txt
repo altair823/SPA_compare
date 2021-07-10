@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(SPA_compare
-        SPA/Dik.cpp SPA/Dik.h main.cpp map/Maze.cpp map/Maze.h map/Location.cpp map/Location.h declaration.h map/Eller.cpp map/Eller.h SPA/spa_interface.h)
+        SPA/Dik.cpp SPA/Dik.h main.cpp map/Maze.cpp map/Maze.h map/Location.cpp map/Location.h declaration.h map/Eller.cpp map/Eller.h SPA/spa_interface.h structure/PathTree.cpp structure/PathTree.h)

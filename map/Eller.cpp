@@ -12,14 +12,15 @@ void Eller::printCurrentLocationSet() {
     std::cout<<std::endl;
 }
 
-Eller::Eller(const Maze &maze) {
-    tempMaze = maze;
+Eller::Eller(Maze &maze) {
+    previouslyAssignedSetNumber = 0;
+    tempMaze = &maze;
 }
 
 void Eller::MakeMaze() {
     // Set maze number for logging.
-    tempMaze.IncreaseMazeNumber();
-    tempMaze.InitializeMaze();
+    tempMaze->IncreaseMazeNumber();
+    tempMaze->InitializeMaze();
 
     // Initial inserting. All cells in first row are inserted in different sets.
     for (int i = 0; i < MAX_ROW; ++i) {
@@ -35,7 +36,7 @@ void Eller::MakeMaze() {
             MergeWithDifferentSet(column);
         }
     }
-    tempMaze.SaveMazeFile();
+    tempMaze->SaveMazeFile();
 }
 
 void Eller::MergeRandomly(int column) {
@@ -56,6 +57,13 @@ bool Eller::ChoiceRandomly() {
     } else{
         return true;
     }
+}
+
+int Eller::GenerateWeightND(){
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::normal_distribution<double> weight_int(WEIGHT_MEAN, WEIGHT_STD_DIV);
+    return std::round(weight_int(gen));
 }
 
 void Eller::ExpandSetsVertical(int column) {
@@ -155,14 +163,14 @@ void Eller::MergeWithRight(int row, int column) {
 
     // Open right side wall at the current cell.
     // This is accompanied by opening the left wall in the right cell.
-    tempMaze.OpenWall(row, column, RIGHT);
+    tempMaze->OpenWall(row, column, RIGHT, GenerateWeightND());
 }
 
 void Eller::MergeWithDown(int row, int column) {
     if (column + 1 >= MAX_COLUMN){
         return;
     }
-    tempMaze.OpenWall(row, column, DOWN);
+    tempMaze->OpenWall(row, column, DOWN, GenerateWeightND());
 }
 
 void Eller::MergeWithDifferentSet(int column) {

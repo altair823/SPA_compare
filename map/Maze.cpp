@@ -20,7 +20,6 @@ void Maze::InitializeMaze(){
         for (int row = 0; row < MAX_ROW; ++row) {
             location[column][row].setXCoord(row);
             location[column][row].setYCoord(column);
-            location[column][row].setOpenFlag(0000);
         }
     }
 }
@@ -33,16 +32,16 @@ void Maze::IncreaseMazeNumber(){
 void Maze::PrintMaze() const{
     for (const auto & column : location) {
         for (const auto row : column) {
-            if (row.getOpenFlag().test(UP)){
+            if (row.getOpenFlag(UP) != INF){
                 std::cout<<"U";
             } else {std::cout<<"*";}
-            if (row.getOpenFlag().test(DOWN)){
+            if (row.getOpenFlag(DOWN) != INF){
                 std::cout<<"D";
             }else {std::cout<<"*";}
-            if (row.getOpenFlag().test(LEFT)){
+            if (row.getOpenFlag(LEFT) != INF){
                 std::cout<<"L";
             }else {std::cout<<"*";}
-            if (row.getOpenFlag().test(RIGHT)){
+            if (row.getOpenFlag(RIGHT) != INF){
                 std::cout<<"R";
             }else {std::cout<<"*";}
             std::cout << " ";
@@ -67,7 +66,7 @@ const Location * Maze::operator[] (int index) const{
     return location[index];
 }
 
-void Maze::OpenWall(int row, int column, int direction) {
+void Maze::OpenWall(int row, int column, int direction, int weight) {
     if ((row == 0 && direction == LEFT) ||
         (row == MAX_ROW - 1 && direction == RIGHT) ||
         (column == 0 && direction == UP) ||
@@ -75,21 +74,21 @@ void Maze::OpenWall(int row, int column, int direction) {
         return;
     }
     // Open the wall in current cell location.
-    location[column][row].setOpenDirection(direction);
+    location[column][row].setOpenDirection(direction, weight);
 
     // Open the wall in corresponding cell location.
     switch (direction) {
         case UP:
-            location[column-1][row].setOpenDirection(DOWN);
+            location[column-1][row].setOpenDirection(DOWN, weight);
             break;
         case DOWN:
-            location[column+1][row].setOpenDirection(UP);
+            location[column+1][row].setOpenDirection(UP, weight);
             break;
         case LEFT:
-            location[column][row - 1].setOpenDirection(RIGHT);
+            location[column][row - 1].setOpenDirection(RIGHT, weight);
             break;
         case RIGHT:
-            location[column][row + 1].setOpenDirection(LEFT);
+            location[column][row + 1].setOpenDirection(LEFT, weight);
             break;
         default:
             std::cout<<"There is no adjacent cell in "<< direction <<" direction!"<<std::endl;
@@ -104,23 +103,22 @@ void Maze::SaveMazeFile() {
     mazeFile.open(filename);
     for (int column = 0; column < MAX_COLUMN; ++column) {
         for (int row = 0; row < MAX_ROW; ++row) {
-            std::bitset<4> currentOpenDirection = location[column][row].getOpenFlag();
-            if (currentOpenDirection.test(UP)){
+            if (location[column][row].getOpenFlag(UP) != INF){
                 mazeFile<<"U";
             } else{
                 mazeFile<<"*";
             }
-            if (currentOpenDirection.test(DOWN)){
+            if (location[column][row].getOpenFlag(DOWN) != INF){
                 mazeFile<<"D";
             } else{
                 mazeFile<<"*";
             }
-            if (currentOpenDirection.test(LEFT)){
+            if (location[column][row].getOpenFlag(LEFT) != INF){
                 mazeFile<<"L";
             } else{
                 mazeFile<<"*";
             }
-            if (currentOpenDirection.test(RIGHT)){
+            if (location[column][row].getOpenFlag(RIGHT) != INF){
                 mazeFile<<"R";
             } else{
                 mazeFile<<"*";

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SPA_compare.dir/map/Eller.cpp.o"
   "CMakeFiles/SPA_compare.dir/map/Location.cpp.o"
   "CMakeFiles/SPA_compare.dir/map/Maze.cpp.o"
+  "CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.o"
   "SPA_compare"
   "SPA_compare.pdb"
 )

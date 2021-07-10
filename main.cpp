@@ -12,10 +12,7 @@ int main(){
     Eller eller(maze);
 
     eller.MakeMaze();
-    eller.MakeMaze();
-    eller.MakeMaze();
-    eller.MakeMaze();
-    eller.MakeMaze();
-    eller.MakeMaze();
+
+    maze.PrintMaze();
 
 }

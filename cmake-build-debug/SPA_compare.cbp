@@ -115,6 +115,12 @@
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Maze.h">
 			<Option target="SPA_compare"/>
 		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/PathTree.cpp">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/PathTree.h">
+			<Option target="SPA_compare"/>
+		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -47,7 +47,7 @@ public:
     /*
      * Open the wall.
      */
-    void OpenWall(int row, int column, int direction);
+    void OpenWall(int row, int column, int direction, int weight);
 
     /*
      * Save all maze data in file for logging.

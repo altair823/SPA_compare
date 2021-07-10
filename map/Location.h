@@ -18,10 +18,11 @@ class Location{
 private:
     int xCoord;
     int yCoord;
-    std::bitset<4> openDirection;  // 0 is open, while 0 is close.
+    int openDirection[4];  // Edges to 4 adjacent cells.
 
 public:
     Location();
+    Location(int row, int column);
     /*
      * Setters and getters.
      */
@@ -29,14 +30,15 @@ public:
     int getXCoord() const;
     void setYCoord(int);
     int getYCoord() const;
-    void setOpenFlag(std::bitset<4> openFlag);
 
     /*
      * The number of direction wanted to change is given by first.
      * After that, the certain direction values to set 'open' are given.
      */
-    void setOpenDirection(int direction);
-    std::bitset<4> getOpenFlag() const;
+    void setOpenDirection(int direction, int weight);
+    int getOpenFlag(int direction) const;
+
+    bool operator==(Location& otherLocation) const;
 };
 
 #endif //SPA_COMPARE_LOCATION_H

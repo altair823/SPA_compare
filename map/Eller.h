@@ -15,7 +15,7 @@
 
 class Eller{
 private:
-    Maze tempMaze;
+    Maze *tempMaze;
 
     std::set<int> existingSet;
 
@@ -49,6 +49,11 @@ private:
     bool ChoiceRandomly();
 
     /*
+     * Generates a single integer with a normal distribution.
+     */
+    int GenerateWeightND();
+
+    /*
      * Each sets must merge more then one vertical cell.
      */
     void ExpandSetsVertical(int column);
@@ -71,7 +76,7 @@ private:
     void MergeWithDifferentSet(int column);
 
 public:
-    explicit Eller(const Maze &maze);
+    explicit Eller(Maze &maze);
     /*
      * The function that creates complete maze based on Eller's algorithm.
      */
