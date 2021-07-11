@@ -4,11 +4,16 @@
 CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../declaration.h
 CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../map/Location.h
 CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../map/Maze.h
+CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../structure/PathTree.h
 CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../SPA/Dik.cpp
 CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../SPA/Dik.h
 CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o: ../SPA/spa_interface.h
 
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../declaration.h
+CMakeFiles/SPA_compare.dir/main.cpp.o: ../map/Location.h
+CMakeFiles/SPA_compare.dir/main.cpp.o: ../structure/PathTree.h
+CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/Dik.h
+CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/spa_interface.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../main.cpp
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../map/Eller.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../map/Location.h
@@ -28,4 +33,9 @@ CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../declaration.h
 CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../map/Location.h
 CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../map/Maze.cpp
 CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../map/Maze.h
+
+CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.o: ../declaration.h
+CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.o: ../map/Location.h
+CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.o: ../structure/PathTree.cpp
+CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.o: ../structure/PathTree.h
 

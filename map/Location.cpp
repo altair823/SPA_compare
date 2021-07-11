@@ -6,19 +6,27 @@
 Location::Location() {
     xCoord = 0;
     yCoord = 0;
-    openDirection[0] = INF;
-    openDirection[1] = INF;
-    openDirection[2] = INF;
-    openDirection[3] = INF;
+    weight[0] = INF;
+    weight[1] = INF;
+    weight[2] = INF;
+    weight[3] = INF;
+    adjacentLocations[0] = nullptr;
+    adjacentLocations[1] = nullptr;
+    adjacentLocations[2] = nullptr;
+    adjacentLocations[3] = nullptr;
 }
 
 Location::Location(int row, int column) {
     xCoord = row;
     yCoord = column;
-    openDirection[0] = INF;
-    openDirection[1] = INF;
-    openDirection[2] = INF;
-    openDirection[3] = INF;
+    weight[0] = INF;
+    weight[1] = INF;
+    weight[2] = INF;
+    weight[3] = INF;
+    adjacentLocations[0] = nullptr;
+    adjacentLocations[1] = nullptr;
+    adjacentLocations[2] = nullptr;
+    adjacentLocations[3] = nullptr;
 }
 
 void Location::setXCoord(int x) {
@@ -37,21 +45,48 @@ int Location::getYCoord() const {
     return yCoord;
 }
 
-void Location::setOpenDirection(int direction, int weight) {
-    openDirection[direction] = weight;
+void Location::setWeight(int direction, int weightValue) {
+    weight[direction] = weightValue;
 }
 
-int Location::getOpenFlag(int direction) const {
-    return openDirection[direction];
+int Location::getWeight(int direction) const {
+    return weight[direction];
 }
 
+void Location::setAdjacent(int direction, Location *adjacent) {
+    adjacentLocations[direction] = adjacent;
+}
 
-bool Location::operator==(Location &otherLocation) const {
-    if (xCoord == otherLocation.xCoord && yCoord == otherLocation.yCoord){
+Location *Location::getAdjacent(int direction) {
+    return adjacentLocations[direction];
+}
+
+bool Location::operator==(const Location &otherLocation) const {
+    if (this->xCoord == otherLocation.xCoord and this->yCoord == otherLocation.yCoord){
         return true;
     } else{
         return false;
     }
+}
+
+bool Location::operator!=(const Location &otherLocation) const {
+    if (this->xCoord == otherLocation.xCoord && this->yCoord == otherLocation.yCoord){
+        return false;
+    } else{
+        return true;
+    }
+}
+
+Location &Location::operator=(const Location &location) {
+    xCoord = location.xCoord;
+    yCoord = location.yCoord;
+    for (int i = 0; i < MAX_EDGE_COUNT; i++) {
+        weight[i] = location.weight[i];
+        if (location.adjacentLocations[i] != nullptr) {
+            this->adjacentLocations[i] = location.adjacentLocations[i];
+        }
+    }
+    return *this;
 }
 
 

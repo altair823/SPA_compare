@@ -8,7 +8,6 @@
 #include "declaration.h"
 #include "Location.h"
 #include <iostream>
-#include <cstdarg>
 #include <fstream>
 
 /*
@@ -17,7 +16,7 @@
  */
 class Maze{
 private:
-    Location location[MAX_COLUMN][MAX_ROW]{};
+    Location location[MAX_COLUMN][MAX_ROW];
 
     /*
      * The number of previously created maze.
@@ -30,6 +29,8 @@ public:
     Maze(const Maze&) = delete;
 
     void InitializeMaze();
+
+    void ConnectAdjacentLoc(int row, int column);
 
     void IncreaseMazeNumber();
 

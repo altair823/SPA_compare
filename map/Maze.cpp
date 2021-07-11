@@ -11,6 +11,7 @@ Maze::Maze() {
         for (int row = 0; row < MAX_ROW; ++row) {
             location[column][row].setXCoord(row);
             location[column][row].setYCoord(column);
+            ConnectAdjacentLoc(row, column);
         }
     }
 }
@@ -24,6 +25,29 @@ void Maze::InitializeMaze(){
     }
 }
 
+void Maze::ConnectAdjacentLoc(int row, int column) {
+    if (column == 0) {
+        location[column][row].setAdjacent(UP, nullptr);
+    } else{
+        location[column][row].setAdjacent(UP, &location[column - 1][row]);
+    }
+    if (column == MAX_COLUMN - 1){
+        location[column][row].setAdjacent(DOWN, nullptr);
+    } else{
+        location[column][row].setAdjacent(DOWN, &location[column + 1][row]);
+    }
+    if (row == 0){
+        location[column][row].setAdjacent(LEFT, nullptr);
+    } else{
+        location[column][row].setAdjacent(LEFT, &location[column][row - 1]);
+    }
+    if (row == MAX_ROW - 1){
+        location[column][row].setAdjacent(RIGHT, nullptr);
+    } else{
+        location[column][row].setAdjacent(RIGHT, &location[column][row + 1]);
+    }
+}
+
 void Maze::IncreaseMazeNumber(){
     mazeNumber++;
 }
@@ -32,16 +56,16 @@ void Maze::IncreaseMazeNumber(){
 void Maze::PrintMaze() const{
     for (const auto & column : location) {
         for (const auto row : column) {
-            if (row.getOpenFlag(UP) != INF){
+            if (row.getWeight(UP) != INF){
                 std::cout<<"U";
             } else {std::cout<<"*";}
-            if (row.getOpenFlag(DOWN) != INF){
+            if (row.getWeight(DOWN) != INF){
                 std::cout<<"D";
             }else {std::cout<<"*";}
-            if (row.getOpenFlag(LEFT) != INF){
+            if (row.getWeight(LEFT) != INF){
                 std::cout<<"L";
             }else {std::cout<<"*";}
-            if (row.getOpenFlag(RIGHT) != INF){
+            if (row.getWeight(RIGHT) != INF){
                 std::cout<<"R";
             }else {std::cout<<"*";}
             std::cout << " ";
@@ -74,21 +98,21 @@ void Maze::OpenWall(int row, int column, int direction, int weight) {
         return;
     }
     // Open the wall in current cell location.
-    location[column][row].setOpenDirection(direction, weight);
+    location[column][row].setWeight(direction, weight);
 
     // Open the wall in corresponding cell location.
     switch (direction) {
         case UP:
-            location[column-1][row].setOpenDirection(DOWN, weight);
+            location[column - 1][row].setWeight(DOWN, weight);
             break;
         case DOWN:
-            location[column+1][row].setOpenDirection(UP, weight);
+            location[column + 1][row].setWeight(UP, weight);
             break;
         case LEFT:
-            location[column][row - 1].setOpenDirection(RIGHT, weight);
+            location[column][row - 1].setWeight(RIGHT, weight);
             break;
         case RIGHT:
-            location[column][row + 1].setOpenDirection(LEFT, weight);
+            location[column][row + 1].setWeight(LEFT, weight);
             break;
         default:
             std::cout<<"There is no adjacent cell in "<< direction <<" direction!"<<std::endl;
@@ -103,22 +127,22 @@ void Maze::SaveMazeFile() {
     mazeFile.open(filename);
     for (int column = 0; column < MAX_COLUMN; ++column) {
         for (int row = 0; row < MAX_ROW; ++row) {
-            if (location[column][row].getOpenFlag(UP) != INF){
+            if (location[column][row].getWeight(UP) != INF){
                 mazeFile<<"U";
             } else{
                 mazeFile<<"*";
             }
-            if (location[column][row].getOpenFlag(DOWN) != INF){
+            if (location[column][row].getWeight(DOWN) != INF){
                 mazeFile<<"D";
             } else{
                 mazeFile<<"*";
             }
-            if (location[column][row].getOpenFlag(LEFT) != INF){
+            if (location[column][row].getWeight(LEFT) != INF){
                 mazeFile<<"L";
             } else{
                 mazeFile<<"*";
             }
-            if (location[column][row].getOpenFlag(RIGHT) != INF){
+            if (location[column][row].getWeight(RIGHT) != INF){
                 mazeFile<<"R";
             } else{
                 mazeFile<<"*";

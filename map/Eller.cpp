@@ -63,7 +63,11 @@ int Eller::GenerateWeightND(){
     std::random_device rd;
     std::mt19937 gen(rd());
     std::normal_distribution<double> weight_int(WEIGHT_MEAN, WEIGHT_STD_DIV);
-    return std::round(weight_int(gen));
+    int weight = -1;
+    while (weight < 0) {
+        weight = std::round(weight_int(gen));
+    }
+    return weight;
 }
 
 void Eller::ExpandSetsVertical(int column) {

@@ -8,12 +8,12 @@
 #include <iostream>
 #include <limits>
 
-#define MAX_ROW 500
+#define MAX_ROW 50
 #define MAX_COLUMN 50
 
-#define INF std::numeric_limits<int>::max()  // Maximum weight of edges.
-#define WEIGHT_MEAN 50  // Mean of weight.
-#define WEIGHT_STD_DIV 10  // Standard deviation of weight.
+#define INF 10000000  // Maximum weight of edges.
+#define WEIGHT_MEAN 100  // Mean of weight.
+#define WEIGHT_STD_DIV 50  // Standard deviation of weight.
 
 #define MAX_EDGE_COUNT 4
 

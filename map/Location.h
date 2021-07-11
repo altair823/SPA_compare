@@ -18,7 +18,8 @@ class Location{
 private:
     int xCoord;
     int yCoord;
-    int openDirection[4];  // Edges to 4 adjacent cells.
+    int weight[4];  // Edges to 4 adjacent cells.
+    Location *adjacentLocations[4];
 
 public:
     Location();
@@ -30,15 +31,14 @@ public:
     int getXCoord() const;
     void setYCoord(int);
     int getYCoord() const;
+    void setWeight(int direction, int weightValue);
+    int getWeight(int direction) const;
+    void setAdjacent(int direction, Location *adjacent);
+    Location *getAdjacent(int direction);
 
-    /*
-     * The number of direction wanted to change is given by first.
-     * After that, the certain direction values to set 'open' are given.
-     */
-    void setOpenDirection(int direction, int weight);
-    int getOpenFlag(int direction) const;
-
-    bool operator==(Location& otherLocation) const;
+    bool operator==(const Location& otherLocation) const;
+    bool operator!=(const Location& otherLocation) const;
+    Location& operator=(const Location& location);
 };
 
 #endif //SPA_COMPARE_LOCATION_H

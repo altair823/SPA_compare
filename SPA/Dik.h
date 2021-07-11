@@ -6,6 +6,7 @@
 #define SPA_COMPARE_DIK_H
 
 #include <set>
+#include <algorithm>
 #include "map/Maze.h"
 #include "spa_interface.h"
 #include "structure/PathTree.h"
@@ -28,18 +29,22 @@ private:
     /*
      *
      */
-    int spendedTime;
 
+    int locationDistSet[MAX_COLUMN][MAX_ROW];
 
-    std::vector<Location*> foundLocationSet;
+    std::vector<Location> foundLocationSet;
 
     /*
      * Tree that stores paths for all visited vertices.
      */
     PathTree pathTree;
+    // Vector of adjacent locations to found set.
+    std::vector<Location> adjacentSet;
 
 
-    bool isLocationInSet(Location *location);
+    bool isLocationInSet(std::vector<Location*> locationSet, Location *location);
+
+    void UpdateDist();
 
 public:
     DIK();
@@ -49,6 +54,8 @@ public:
     void FindSP() override;
     int getSPDist()  override;
     int getSpendedTime() override;
+
+    void printLocationDistSet();
 };
 
 #endif //SPA_COMPARE_DIK_H
