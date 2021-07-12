@@ -75,6 +75,12 @@ private:
     void MergeWithDown(int row, int column);
     void MergeWithDifferentSet(int column);
 
+    /*
+     * Update Sets that contains all cells in current row.
+     * Change the cell's set value if it is targetSet to destSet.
+     */
+    void UpdateSet(int targetSet, int destSet);
+
 public:
     explicit Eller(Maze &maze);
     /*

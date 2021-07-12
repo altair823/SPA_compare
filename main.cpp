@@ -16,11 +16,12 @@ int main(){
 
     maze.PrintMaze();
 
+    /*
     DIK dik;
     dik.setMaze(maze);
     dik.setStart(0, 0);
     dik.setDestination(49, 49);
     dik.FindSP();
     dik.printLocationDistSet();
-
+*/
 }
