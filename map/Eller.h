@@ -77,7 +77,7 @@ private:
 
     /*
      * Update Sets that contains all cells in current row.
-     * Change the cell's set value if it is targetSet to destSet.
+     * Change the cell's set value to destSetRow's value if it is targetSetRow's value.
      */
     void UpdateSet(int targetSetRow, int destSetRow);
 
