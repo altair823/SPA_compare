@@ -159,11 +159,7 @@ void Eller::MergeWithRight(int row, int column) {
         return;
     }
     // Groups two cells into the same set.
-    if (locationSet[row] == 0 && locationSet[row + 1] != 0){
-        UpdateSet(locationSet[row], locationSet[row + 1]);
-    } else{
-        UpdateSet(locationSet[row + 1], locationSet[row]);
-    }
+    UpdateSet(row + 1, row);
 
     // Open right side wall at the current cell.
     // This is accompanied by opening the left wall in the right cell.
@@ -185,10 +181,12 @@ void Eller::MergeWithDifferentSet(int column) {
     }
 }
 
-void Eller::UpdateSet(int targetSet, int destSet) {
-    for (int row = 0; row < MAX_ROW; row++){
-        if (locationSet[row] == targetSet){
-            locationSet[row] = destSet;
+void Eller::UpdateSet(int targetSetRow, int destSetRow) {
+    int targetSetValue = locationSet[targetSetRow];
+    int destSetValue = locationSet[destSetRow];
+    for (int row = targetSetRow-1; row < MAX_ROW; row++){
+        if (locationSet[row] == targetSetValue){
+            locationSet[row] = destSetValue;
         }
     }
 }

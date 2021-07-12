@@ -79,7 +79,7 @@ private:
      * Update Sets that contains all cells in current row.
      * Change the cell's set value if it is targetSet to destSet.
      */
-    void UpdateSet(int targetSet, int destSet);
+    void UpdateSet(int targetSetRow, int destSetRow);
 
 public:
     explicit Eller(Maze &maze);
