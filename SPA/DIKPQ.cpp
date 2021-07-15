@@ -1,10 +1,10 @@
 //
-// Created by 김태현 on 2021/07/07.
+// Created by 김태현 on 2021/07/15.
 //
 
-#include "Dik.h"
+#include "DIKPQ.h"
 
-DIK::DIK() {
+DIKPQ::DIKPQ() {
     for (auto & column : locationDistSet) {
         for (int & row : column) {
             row = INF;
@@ -12,12 +12,11 @@ DIK::DIK() {
     }
 }
 
-void DIK::setMaze(const Maze &mazeInput) {
+void DIKPQ::setMaze(const Maze &mazeInput) {
     maze = mazeInput;
-    SPDist = 0;
 }
 
-void DIK::setStart(int row, int column) {
+void DIKPQ::setStart(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN){
         std::cout<<"Wrong Starting Point!"<<std::endl;
         exit(2);
@@ -25,7 +24,7 @@ void DIK::setStart(int row, int column) {
     start = maze[column][row];
 }
 
-void DIK::setDestination(int row, int column) {
+void DIKPQ::setDestination(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN){
         std::cout<<"Wrong Ending Point!"<<std::endl;
         exit(2);
@@ -33,12 +32,9 @@ void DIK::setDestination(int row, int column) {
     end = maze[column][row];
 }
 
-void DIK::FindSP() {
+void DIKPQ::FindSP() {
     // Insert starting point to found set.
     foundLocationSet.push_back(start);
-
-    // Insert starting point to path tree.
-    pathTree.InsertLocation(nullptr, &start, 0);
 
     locationDistSet[start.getYCoord()][start.getXCoord()] = 0;
 
@@ -67,7 +63,7 @@ void DIK::FindSP() {
     }
 }
 
-void DIK::UpdateDist() {
+void DIKPQ::UpdateDist() {
     // There are ways to improve performance at this point.
     // Such as data structure of adjacent vertices set.
     for (auto foundLoc : foundLocationSet){
@@ -92,29 +88,10 @@ void DIK::UpdateDist() {
     }
 }
 
-int DIK::getSPDist() {
-    return SPDist;
-}
-
-int DIK::getSpendedTime() {
-    return 0;
-}
-
-bool DIK::isLocationInSet(std::vector<Location*> locationSet, Location *location) {
-    for (auto & i : locationSet) {
-        if (location == i){
-            return true;
-        }
-    }
-    return false;
-}
-
-void DIK::printLocationDistSet() {
-    for (auto & column : locationDistSet) {
-        for (auto & row : column) {
-            std::cout<<row<<" ";
-        }
-        std::cout<<std::endl;
+bool DIKPQ::cmp(Location loc1, Location loc2) {
+    if (locationDistSet[loc1.getYCoord()][loc1.getXCoord()] > locationDistSet[loc2.getYCoord()][loc2.getXCoord()]){
+        return true;
+    } else{
+        return false;
     }
 }
-

@@ -142,32 +142,59 @@ SPA_compare/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/build
 .PHONY : SPA_compare/fast
 
-SPA/Dik.o: SPA/Dik.cpp.o
+SPA/DIK.o: SPA/DIK.cpp.o
 
-.PHONY : SPA/Dik.o
+.PHONY : SPA/DIK.o
 
 # target to build an object file
-SPA/Dik.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.o
-.PHONY : SPA/Dik.cpp.o
+SPA/DIK.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.o
+.PHONY : SPA/DIK.cpp.o
 
-SPA/Dik.i: SPA/Dik.cpp.i
+SPA/DIK.i: SPA/DIK.cpp.i
 
-.PHONY : SPA/Dik.i
+.PHONY : SPA/DIK.i
 
 # target to preprocess a source file
-SPA/Dik.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.i
-.PHONY : SPA/Dik.cpp.i
+SPA/DIK.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.i
+.PHONY : SPA/DIK.cpp.i
 
-SPA/Dik.s: SPA/Dik.cpp.s
+SPA/DIK.s: SPA/DIK.cpp.s
 
-.PHONY : SPA/Dik.s
+.PHONY : SPA/DIK.s
 
 # target to generate assembly for a file
-SPA/Dik.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/Dik.cpp.s
-.PHONY : SPA/Dik.cpp.s
+SPA/DIK.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.s
+.PHONY : SPA/DIK.cpp.s
+
+SPA/DIKPQ.o: SPA/DIKPQ.cpp.o
+
+.PHONY : SPA/DIKPQ.o
+
+# target to build an object file
+SPA/DIKPQ.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o
+.PHONY : SPA/DIKPQ.cpp.o
+
+SPA/DIKPQ.i: SPA/DIKPQ.cpp.i
+
+.PHONY : SPA/DIKPQ.i
+
+# target to preprocess a source file
+SPA/DIKPQ.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.i
+.PHONY : SPA/DIKPQ.cpp.i
+
+SPA/DIKPQ.s: SPA/DIKPQ.cpp.s
+
+.PHONY : SPA/DIKPQ.s
+
+# target to generate assembly for a file
+SPA/DIKPQ.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.s
+.PHONY : SPA/DIKPQ.cpp.s
 
 main.o: main.cpp.o
 
@@ -277,32 +304,59 @@ map/Maze.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Maze.cpp.s
 .PHONY : map/Maze.cpp.s
 
-structure/PathTree.o: structure/PathTree.cpp.o
+structure/HeapTree.o: structure/HeapTree.cpp.o
 
-.PHONY : structure/PathTree.o
+.PHONY : structure/HeapTree.o
 
 # target to build an object file
-structure/PathTree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.o
-.PHONY : structure/PathTree.cpp.o
+structure/HeapTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.o
+.PHONY : structure/HeapTree.cpp.o
 
-structure/PathTree.i: structure/PathTree.cpp.i
+structure/HeapTree.i: structure/HeapTree.cpp.i
 
-.PHONY : structure/PathTree.i
+.PHONY : structure/HeapTree.i
 
 # target to preprocess a source file
-structure/PathTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.i
-.PHONY : structure/PathTree.cpp.i
+structure/HeapTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.i
+.PHONY : structure/HeapTree.cpp.i
 
-structure/PathTree.s: structure/PathTree.cpp.s
+structure/HeapTree.s: structure/HeapTree.cpp.s
 
-.PHONY : structure/PathTree.s
+.PHONY : structure/HeapTree.s
 
 # target to generate assembly for a file
-structure/PathTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PathTree.cpp.s
-.PHONY : structure/PathTree.cpp.s
+structure/HeapTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.s
+.PHONY : structure/HeapTree.cpp.s
+
+structure/PriorityQueue.o: structure/PriorityQueue.cpp.o
+
+.PHONY : structure/PriorityQueue.o
+
+# target to build an object file
+structure/PriorityQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.o
+.PHONY : structure/PriorityQueue.cpp.o
+
+structure/PriorityQueue.i: structure/PriorityQueue.cpp.i
+
+.PHONY : structure/PriorityQueue.i
+
+# target to preprocess a source file
+structure/PriorityQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.i
+.PHONY : structure/PriorityQueue.cpp.i
+
+structure/PriorityQueue.s: structure/PriorityQueue.cpp.s
+
+.PHONY : structure/PriorityQueue.s
+
+# target to generate assembly for a file
+structure/PriorityQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.s
+.PHONY : structure/PriorityQueue.cpp.s
 
 # Help Target
 help:
@@ -313,9 +367,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SPA_compare"
-	@echo "... SPA/Dik.o"
-	@echo "... SPA/Dik.i"
-	@echo "... SPA/Dik.s"
+	@echo "... SPA/DIK.o"
+	@echo "... SPA/DIK.i"
+	@echo "... SPA/DIK.s"
+	@echo "... SPA/DIKPQ.o"
+	@echo "... SPA/DIKPQ.i"
+	@echo "... SPA/DIKPQ.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -328,9 +385,12 @@ help:
 	@echo "... map/Maze.o"
 	@echo "... map/Maze.i"
 	@echo "... map/Maze.s"
-	@echo "... structure/PathTree.o"
-	@echo "... structure/PathTree.i"
-	@echo "... structure/PathTree.s"
+	@echo "... structure/HeapTree.o"
+	@echo "... structure/HeapTree.i"
+	@echo "... structure/HeapTree.s"
+	@echo "... structure/PriorityQueue.o"
+	@echo "... structure/PriorityQueue.i"
+	@echo "... structure/PriorityQueue.s"
 .PHONY : help
 
 

@@ -5,7 +5,7 @@
 #ifndef SPA_COMPARE_MAZE_H
 #define SPA_COMPARE_MAZE_H
 
-#include "declaration.h"
+#include "../declaration.h"
 #include "Location.h"
 #include <iostream>
 #include <fstream>

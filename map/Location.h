@@ -6,7 +6,7 @@
 #define SPA_COMPARE_LOCATION_H
 
 #include <bitset>
-#include "declaration.h"
+#include "../declaration.h"
 
 const int UP = 3;
 const int DOWN = 2;

@@ -82,10 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/Dik.cpp">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/DIK.cpp">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/Dik.h">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/DIK.h">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.cpp">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h">
 			<Option target="SPA_compare"/>
 		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/spa_interface.h">
@@ -115,10 +121,16 @@
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Maze.h">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/PathTree.cpp">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/HeapTree.cpp">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/PathTree.h">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/HeapTree.h">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.cpp">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.h">
 			<Option target="SPA_compare"/>
 		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/CMakeLists.txt">

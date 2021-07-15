@@ -5,7 +5,7 @@
 #include <iostream>
 #include "map/Maze.h"
 #include "map/Eller.h"
-#include "SPA/Dik.h"
+#include "SPA/DIK.h"
 
 int main(){
     Maze maze;
