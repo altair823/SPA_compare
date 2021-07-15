@@ -94,6 +94,7 @@ void HeapTree<T>::EnqueueData(T *data) {
         return;
     }
 
+
     Node<T> *currentNode = head;
 
     if (CompareFunc(currentNode, newNode) == 1){
