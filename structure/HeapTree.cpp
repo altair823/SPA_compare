@@ -97,6 +97,7 @@ void HeapTree<T>::EnqueueData(T *data) {
 
     Node<T> *currentNode = head;
 
+    // If current sub root has more priority then new node,
     if (CompareFunc(currentNode, newNode) == 1){
         if (currentNode == head){
             newNode->setLChild(currentNode->getLChild());
