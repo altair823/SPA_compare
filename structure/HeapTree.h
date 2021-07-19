@@ -5,8 +5,6 @@
 #ifndef SPA_COMPARE_HEAPTREE_H
 #define SPA_COMPARE_HEAPTREE_H
 
-#define LEFT -1
-#define RIGHT 1
 
 #include <vector>
 #include "../map/Location.h"
