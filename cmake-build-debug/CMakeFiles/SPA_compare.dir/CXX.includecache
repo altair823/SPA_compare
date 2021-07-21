@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/Users/altair823/Desktop/SPA_compare/SPA/DIK.cpp
+DIK.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIK.h
+
+/Users/altair823/Desktop/SPA_compare/SPA/DIK.h
+set
+-
+algorithm
+-
+vector
+-
+queue
+-
+../map/Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
+spa_interface.h
+/Users/altair823/Desktop/SPA_compare/SPA/spa_interface.h
+
 /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.cpp
 DIKPQ.h
 /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
@@ -26,17 +44,57 @@ spa_interface.h
 
 /Users/altair823/Desktop/SPA_compare/SPA/spa_interface.h
 
+/Users/altair823/Desktop/SPA_compare/analyze/TimeMeasure.h
+chrono
+-
+iostream
+-
+
 /Users/altair823/Desktop/SPA_compare/declaration.h
 iostream
 -
 limits
 -
 
+/Users/altair823/Desktop/SPA_compare/main.cpp
+iostream
+-
+analyze/TimeMeasure.h
+/Users/altair823/Desktop/SPA_compare/analyze/TimeMeasure.h
+map/Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
+map/Eller.h
+/Users/altair823/Desktop/SPA_compare/map/Eller.h
+SPA/DIK.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIK.h
+SPA/DIKPQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
+
+/Users/altair823/Desktop/SPA_compare/map/Eller.cpp
+Eller.h
+/Users/altair823/Desktop/SPA_compare/map/Eller.h
+
+/Users/altair823/Desktop/SPA_compare/map/Eller.h
+set
+-
+Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
+random
+-
+
+/Users/altair823/Desktop/SPA_compare/map/Location.cpp
+Location.h
+/Users/altair823/Desktop/SPA_compare/map/Location.h
+
 /Users/altair823/Desktop/SPA_compare/map/Location.h
 bitset
 -
 ../declaration.h
 /Users/altair823/Desktop/SPA_compare/declaration.h
+
+/Users/altair823/Desktop/SPA_compare/map/Maze.cpp
+Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
 
 /Users/altair823/Desktop/SPA_compare/map/Maze.h
 ../declaration.h

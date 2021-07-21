@@ -3,11 +3,16 @@
 //
 
 #include <iostream>
+#include "analyze/TimeMeasure.h"
 #include "map/Maze.h"
 #include "map/Eller.h"
 #include "SPA/DIK.h"
+#include "SPA/DIKPQ.h"
 
 int main(){
+    TimeMeasure timer;
+
+    timer.SetStart();
     Maze maze;
 
     Eller eller(maze);
@@ -15,7 +20,25 @@ int main(){
     eller.MakeMaze();
 
     maze.PrintMaze();
+    timer.SetEnd();
+    timer.PrintTimeMs();
+    std::cout<<std::endl;
 
+    timer.SetStart();
+
+    DIKPQ dikpq;
+    dikpq.setMaze(maze);
+    dikpq.setStart(0, MAX_COLUMN-1);
+    dikpq.setDestination(MAX_ROW-1, 0);
+    dikpq.FindSP();
+    dikpq.printLocationDistSet();
+
+    timer.SetEnd();
+    timer.PrintTimeMs();
+
+    std::cout<<std::endl;
+
+    timer.SetStart();
 
     DIK dik;
     dik.setMaze(maze);
@@ -24,4 +47,6 @@ int main(){
     dik.FindSP();
     dik.printLocationDistSet();
 
+    timer.SetEnd();
+    timer.PrintTimeMs();
 }

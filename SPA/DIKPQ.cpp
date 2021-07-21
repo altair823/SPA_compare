@@ -34,64 +34,48 @@ void DIKPQ::setDestination(int row, int column) {
 
 void DIKPQ::FindSP() {
     // Insert starting point to found set.
-    foundLocationSet.push_back(start);
+    foundLocationSet.push_back(&start);
 
     locationDistSet[start.getYCoord()][start.getXCoord()] = 0;
 
-    Location closestLocation = start;
-    int closestIndex = 0;
+    // Initially push the starting point to PQ.
+    priorityQueue.push({0, &start});
 
-    while (closestLocation != end){
-        // 1. Update the distance to all vertices adjacent to the found location set.
-        UpdateDist();
+    Location *closestLocation = &start;
 
-        // 2. Find the vertex which has minimum distance.
-        int minDist = INF;
-        for (int i = 0; i < adjacentSet.size(); ++i) {
-            if (locationDistSet[adjacentSet[i].getYCoord()][adjacentSet[i].getXCoord()] < minDist){
-                minDist = locationDistSet[adjacentSet[i].getYCoord()][adjacentSet[i].getXCoord()];
-                closestLocation = adjacentSet[i];
-                closestIndex = i;
-            }
+    while (closestLocation->getXCoord() != end.getXCoord() || closestLocation->getYCoord() != end.getYCoord()){
+
+        int dist = -priorityQueue.top().first;
+        closestLocation = priorityQueue.top().second;
+        priorityQueue.pop();
+
+        if (locationDistSet[closestLocation->getYCoord()][closestLocation->getXCoord()] < dist){
+            continue;
         }
 
-        // 3. Insert that minimum vertex to the found location set.
-        foundLocationSet.push_back(closestLocation);
+        for (int dir = 0; dir < 4; ++dir) {
+            if (closestLocation->getAdjacent(dir) != nullptr && // If there is adjacent location exists,
+            locationDistSet[closestLocation->getAdjacent(dir)->getYCoord()][closestLocation->getAdjacent(dir)->getXCoord()] >
+            closestLocation->getWeight(dir) + locationDistSet[closestLocation->getYCoord()][closestLocation->getXCoord()]){ // and its new distance is shorter then
+                //the distance in table, update it.
 
-        // 4. Delete that minimum vertex from the adjacent location set.
-        adjacentSet.erase(adjacentSet.begin() + closestIndex);
-    }
-}
+                locationDistSet[closestLocation->getAdjacent(dir)->getYCoord()][closestLocation->getAdjacent(dir)->getXCoord()] =
+                        closestLocation->getWeight(dir) + locationDistSet[closestLocation->getYCoord()][closestLocation->getXCoord()];
 
-void DIKPQ::UpdateDist() {
-    // There are ways to improve performance at this point.
-    // Such as data structure of adjacent vertices set.
-    for (auto foundLoc : foundLocationSet){
-        for (int dir = 0; dir < 4; dir++){
-            // For the adjacent foundLoc from all found locations,
-            // if the adjacent foundLoc is not in the found foundLoc set,
-            // calculate minimum distance and update if it is needed.
-            // The edge vertices of maze are have nullptr for limits of maze size.
-            // nullptr checking has to be the first.
-            if ((foundLoc.getAdjacent(dir) != nullptr) &&
-            std::find(foundLocationSet.begin(), foundLocationSet.end(), *foundLoc.getAdjacent(dir)) == foundLocationSet.end()){
-                if (std::find(adjacentSet.begin(), adjacentSet.end(), *foundLoc.getAdjacent(dir)) == adjacentSet.end()) {
-                    adjacentSet.push_back(*foundLoc.getAdjacent(dir));
-                }
-                if (locationDistSet[foundLoc.getAdjacent(dir)->getYCoord()][foundLoc.getAdjacent(dir)->getXCoord()] >
-                    locationDistSet[foundLoc.getYCoord()][foundLoc.getXCoord()] + foundLoc.getWeight(dir)){
-                    locationDistSet[foundLoc.getAdjacent(dir)->getYCoord()][foundLoc.getAdjacent(dir)->getXCoord()] =
-                            locationDistSet[foundLoc.getYCoord()][foundLoc.getXCoord()] + foundLoc.getWeight(dir);
-                }
+                priorityQueue.push({-locationDistSet[closestLocation->getAdjacent(dir)->getYCoord()][closestLocation->getAdjacent(dir)->getXCoord()], closestLocation->getAdjacent(dir)});
+
             }
         }
     }
 }
 
-bool DIKPQ::cmp(Location loc1, Location loc2) {
-    if (locationDistSet[loc1.getYCoord()][loc1.getXCoord()] > locationDistSet[loc2.getYCoord()][loc2.getXCoord()]){
-        return true;
-    } else{
-        return false;
+
+void DIKPQ::printLocationDistSet() {
+    for (auto & column : locationDistSet) {
+        for (auto & row : column) {
+            std::cout<<row<<" ";
+        }
+        std::cout<<std::endl;
     }
 }
+

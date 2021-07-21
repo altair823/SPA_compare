@@ -15,9 +15,14 @@ CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o
  /Users/altair823/Desktop/SPA_compare/declaration.h
  /Users/altair823/Desktop/SPA_compare/map/Location.h
  /Users/altair823/Desktop/SPA_compare/map/Maze.h
+CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o
+ /Users/altair823/Desktop/SPA_compare/analyze/TimeMeasure.cpp
+ /Users/altair823/Desktop/SPA_compare/analyze/TimeMeasure.h
 CMakeFiles/SPA_compare.dir/main.cpp.o
  /Users/altair823/Desktop/SPA_compare/SPA/DIK.h
+ /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
  /Users/altair823/Desktop/SPA_compare/SPA/spa_interface.h
+ /Users/altair823/Desktop/SPA_compare/analyze/TimeMeasure.h
  /Users/altair823/Desktop/SPA_compare/declaration.h
  /Users/altair823/Desktop/SPA_compare/main.cpp
  /Users/altair823/Desktop/SPA_compare/map/Eller.h

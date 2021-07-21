@@ -15,8 +15,13 @@ CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o: ../declaration.h
 CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o: ../map/Location.h
 CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o: ../map/Maze.h
 
+CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o: ../analyze/TimeMeasure.cpp
+CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o: ../analyze/TimeMeasure.h
+
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/DIK.h
+CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/DIKPQ.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/spa_interface.h
+CMakeFiles/SPA_compare.dir/main.cpp.o: ../analyze/TimeMeasure.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../declaration.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../main.cpp
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../map/Eller.h

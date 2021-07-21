@@ -26,17 +26,11 @@ private:
 
     int locationDistSet[MAX_COLUMN][MAX_ROW];
 
-    std::vector<Location> foundLocationSet;
+    std::vector<Location*> foundLocationSet;
 
-    // Vector of adjacent locations to found set.
-    std::vector<Location> adjacentSet;
+    // Priority Queue of adjacent locations to found set.
+    std::priority_queue<std::pair<int,Location*>> priorityQueue;
 
-    bool cmp(Location loc1, Location loc2);
-
-
-
-
-    void UpdateDist();
 
 public:
     DIKPQ();
@@ -44,6 +38,7 @@ public:
     void setStart(int row, int column) override;
     void setDestination(int row, int column) override;
     void FindSP() override;
+    void printLocationDistSet();
 };
 
 #endif //SPA_COMPARE_DIKPQ_H

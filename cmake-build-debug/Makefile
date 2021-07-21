@@ -196,6 +196,33 @@ SPA/DIKPQ.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.s
 .PHONY : SPA/DIKPQ.cpp.s
 
+analyze/TimeMeasure.o: analyze/TimeMeasure.cpp.o
+
+.PHONY : analyze/TimeMeasure.o
+
+# target to build an object file
+analyze/TimeMeasure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o
+.PHONY : analyze/TimeMeasure.cpp.o
+
+analyze/TimeMeasure.i: analyze/TimeMeasure.cpp.i
+
+.PHONY : analyze/TimeMeasure.i
+
+# target to preprocess a source file
+analyze/TimeMeasure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.i
+.PHONY : analyze/TimeMeasure.cpp.i
+
+analyze/TimeMeasure.s: analyze/TimeMeasure.cpp.s
+
+.PHONY : analyze/TimeMeasure.s
+
+# target to generate assembly for a file
+analyze/TimeMeasure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.s
+.PHONY : analyze/TimeMeasure.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -373,6 +400,9 @@ help:
 	@echo "... SPA/DIKPQ.o"
 	@echo "... SPA/DIKPQ.i"
 	@echo "... SPA/DIKPQ.s"
+	@echo "... analyze/TimeMeasure.o"
+	@echo "... analyze/TimeMeasure.i"
+	@echo "... analyze/TimeMeasure.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
