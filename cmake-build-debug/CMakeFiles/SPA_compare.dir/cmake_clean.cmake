@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.o"
   "CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.o"
   "CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o"
   "CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.o"

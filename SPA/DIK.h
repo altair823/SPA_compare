@@ -18,7 +18,7 @@ private:
     //The starting point and destination of route.
     Location start, end;
 
-    int DistTable[MAX_COLUMN][MAX_ROW];
+    std::pair<int, Location*> DistTable[MAX_COLUMN][MAX_ROW];
 
     std::vector<Location> foundLocationSet;
 
@@ -37,6 +37,7 @@ public:
     int getShortestPathLength() override;
     std::string getTypeName() override;
     void printLocationDistSet();
+    void printShortestPath();
 };
 
 #endif //SPA_COMPARE_DIK_H

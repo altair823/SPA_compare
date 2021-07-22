@@ -30,8 +30,8 @@ int main(){
     timer.SetStart();
     DIK dik;
     dik.setMaze(maze);
-    dik.setStart(0, 49);
-    dik.setDestination(49, 0);
+    dik.setStart(0, MAX_COLUMN-1);
+    dik.setDestination(MAX_ROW-1, 0);
     dik.FindSP();
     dik.printLocationDistSet();
     result.insertSP(dik);
@@ -55,6 +55,9 @@ int main(){
     result.insertSP(dikpq);
     timer.SetEnd();
     timer.PrintTimeMs();
+
+    //dik.printShortestPath();
+    dikpq.printShortestPath();
 
 #endif
 

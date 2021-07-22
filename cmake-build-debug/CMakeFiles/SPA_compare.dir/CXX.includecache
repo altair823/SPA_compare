@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../map/Maze.h
-../declaration.h
-../declaration.h
-Location.h
-../map/Location.h
-iostream
--
-fstream
--
-
-/Users/altair823/Desktop/SPA_compare/SPA/DIK.cpp
-DIK.h
-/Users/altair823/Desktop/SPA_compare/SPA/DIK.h
-
 /Users/altair823/Desktop/SPA_compare/SPA/DIK.h
 algorithm
 -

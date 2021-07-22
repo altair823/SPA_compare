@@ -16,8 +16,8 @@ const int RIGHT = 0;
 
 class Location{
 private:
-    int xCoord;
-    int yCoord;
+    int row;
+    int column;
     int weight[4];  // Edges to 4 adjacent cells.
     Location *adjacentLocations[4];
 
@@ -27,9 +27,9 @@ public:
     /*
      * Setters and getters.
      */
-    void setXCoord(int);
+    void setRow(int);
     int getRow() const;
-    void setYCoord(int);
+    void setColumn(int);
     int getColumn() const;
     void setWeight(int direction, int weightValue);
     int getWeight(int direction) const;
@@ -39,6 +39,7 @@ public:
     bool operator==(const Location& otherLocation) const;
     bool operator!=(const Location& otherLocation) const;
     Location& operator=(const Location& location);
+    friend std::ostream& operator<<(std::ostream& outputStream, const Location& location);
 };
 
 #endif //SPA_COMPARE_LOCATION_H

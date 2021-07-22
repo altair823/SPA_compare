@@ -4,8 +4,8 @@
 #include "Location.h"
 
 Location::Location() {
-    xCoord = 0;
-    yCoord = 0;
+    row = 0;
+    column = 0;
     weight[0] = INF;
     weight[1] = INF;
     weight[2] = INF;
@@ -17,8 +17,8 @@ Location::Location() {
 }
 
 Location::Location(int row, int column) {
-    xCoord = row;
-    yCoord = column;
+    row = row;
+    column = column;
     weight[0] = INF;
     weight[1] = INF;
     weight[2] = INF;
@@ -29,20 +29,20 @@ Location::Location(int row, int column) {
     adjacentLocations[3] = nullptr;
 }
 
-void Location::setXCoord(int x) {
-    xCoord = x;
+void Location::setRow(int x) {
+    row = x;
 }
 
 int Location::getRow() const {
-    return xCoord;
+    return row;
 }
 
-void Location::setYCoord(int y) {
-    yCoord = y;
+void Location::setColumn(int y) {
+    column = y;
 }
 
 int Location::getColumn() const {
-    return yCoord;
+    return column;
 }
 
 void Location::setWeight(int direction, int weightValue) {
@@ -62,7 +62,7 @@ Location *Location::getAdjacent(int direction) {
 }
 
 bool Location::operator==(const Location &otherLocation) const {
-    if (this->xCoord == otherLocation.xCoord and this->yCoord == otherLocation.yCoord){
+    if (this->row == otherLocation.row and this->column == otherLocation.column){
         return true;
     } else{
         return false;
@@ -70,7 +70,7 @@ bool Location::operator==(const Location &otherLocation) const {
 }
 
 bool Location::operator!=(const Location &otherLocation) const {
-    if (this->xCoord == otherLocation.xCoord && this->yCoord == otherLocation.yCoord){
+    if (this->row == otherLocation.row && this->column == otherLocation.column){
         return false;
     } else{
         return true;
@@ -78,8 +78,8 @@ bool Location::operator!=(const Location &otherLocation) const {
 }
 
 Location &Location::operator=(const Location &location) {
-    xCoord = location.xCoord;
-    yCoord = location.yCoord;
+    row = location.row;
+    column = location.column;
     for (int i = 0; i < MAX_EDGE_COUNT; i++) {
         weight[i] = location.weight[i];
         if (location.adjacentLocations[i] != nullptr) {
@@ -87,6 +87,11 @@ Location &Location::operator=(const Location &location) {
         }
     }
     return *this;
+}
+
+std::ostream &operator<<(std::ostream &outputStream, const Location &location) {
+    outputStream<<"r:"<<location.getRow()<<",c:"<<location.getColumn();
+    return outputStream;
 }
 
 

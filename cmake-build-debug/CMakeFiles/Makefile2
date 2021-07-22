@@ -93,12 +93,12 @@ clean: CMakeFiles/SPA_compare.dir/clean
 CMakeFiles/SPA_compare.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target SPA_compare"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target SPA_compare"
 .PHONY : CMakeFiles/SPA_compare.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SPA_compare.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SPA_compare.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/SPA_compare.dir/rule

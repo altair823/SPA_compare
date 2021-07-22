@@ -8,8 +8,8 @@
 #include <iostream>
 #include <limits>
 
-#define MAX_ROW 50
-#define MAX_COLUMN 50
+#define MAX_ROW 10
+#define MAX_COLUMN 10
 
 #define INF 10000000  // Maximum weight of edges.
 #define WEIGHT_MEAN 100  // Mean of weight.

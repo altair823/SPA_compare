@@ -19,7 +19,7 @@ private:
     Location start, end;
 
     // Distance table that stores shortest distance of all locations(vertices).
-    int DistTable[MAX_COLUMN][MAX_ROW];
+    std::pair<int, Location*> DistTable[MAX_COLUMN][MAX_ROW];
 
     // Priority Queue of adjacent locations to found set.
     std::priority_queue<std::pair<int,Location*>> adjacentLocQueue;
@@ -36,6 +36,7 @@ public:
     int getShortestPathLength() override;
     std::string getTypeName() override;
     void printLocationDistSet();
+    void printShortestPath();
 };
 
 #endif //SPA_COMPARE_DIKPQ_H

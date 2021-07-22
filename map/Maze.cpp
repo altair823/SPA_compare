@@ -9,8 +9,8 @@ Maze::Maze() {
     mazeNumber = 0;
     for (int column = 0; column < MAX_COLUMN; column++){
         for (int row = 0; row < MAX_ROW; ++row) {
-            location[column][row].setXCoord(row);
-            location[column][row].setYCoord(column);
+            location[column][row].setRow(row);
+            location[column][row].setColumn(column);
             ConnectAdjacentLoc(row, column);
         }
     }
@@ -19,8 +19,8 @@ Maze::Maze() {
 void Maze::InitializeMaze(){
     for (int column = 0; column < MAX_COLUMN; column++){
         for (int row = 0; row < MAX_ROW; ++row) {
-            location[column][row].setXCoord(row);
-            location[column][row].setYCoord(column);
+            location[column][row].setRow(row);
+            location[column][row].setColumn(column);
         }
     }
 }

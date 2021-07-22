@@ -142,6 +142,33 @@ SPA_compare/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/build
 .PHONY : SPA_compare/fast
 
+SPA/AStar.o: SPA/AStar.cpp.o
+
+.PHONY : SPA/AStar.o
+
+# target to build an object file
+SPA/AStar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.o
+.PHONY : SPA/AStar.cpp.o
+
+SPA/AStar.i: SPA/AStar.cpp.i
+
+.PHONY : SPA/AStar.i
+
+# target to preprocess a source file
+SPA/AStar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.i
+.PHONY : SPA/AStar.cpp.i
+
+SPA/AStar.s: SPA/AStar.cpp.s
+
+.PHONY : SPA/AStar.s
+
+# target to generate assembly for a file
+SPA/AStar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.s
+.PHONY : SPA/AStar.cpp.s
+
 SPA/DIK.o: SPA/DIK.cpp.o
 
 .PHONY : SPA/DIK.o
@@ -421,6 +448,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SPA_compare"
+	@echo "... SPA/AStar.o"
+	@echo "... SPA/AStar.i"
+	@echo "... SPA/AStar.s"
 	@echo "... SPA/DIK.o"
 	@echo "... SPA/DIK.i"
 	@echo "... SPA/DIK.s"

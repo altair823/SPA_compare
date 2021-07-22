@@ -6,8 +6,9 @@
 
 DIKPQ::DIKPQ() {
     for (auto & column : DistTable) {
-        for (int & row : column) {
-            row = INF;
+        for (auto & row : column) {
+            row.first = INF;
+            row.second = nullptr;
         }
     }
 }
@@ -18,7 +19,7 @@ void DIKPQ::setMaze(const Maze &mazeInput) {
 
 void DIKPQ::setStart(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN){
-        std::cout<<"Wrong Starting Point!"<<std::endl;
+        std::cout << "Wrong Starting Point input in "<< getTypeName() << std::endl;
         exit(2);
     }
     start = maze[column][row];
@@ -26,7 +27,7 @@ void DIKPQ::setStart(int row, int column) {
 
 void DIKPQ::setDestination(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN){
-        std::cout<<"Wrong Ending Point!"<<std::endl;
+        std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);
     }
     end = maze[column][row];
@@ -34,7 +35,9 @@ void DIKPQ::setDestination(int row, int column) {
 
 void DIKPQ::FindSP() {
 
-    DistTable[start.getColumn()][start.getRow()] = 0;
+    DistTable[start.getColumn()][start.getRow()].first = 0;
+    DistTable[start.getColumn()][start.getRow()].second = &start;
+
 
     // Initially push the starting point to PQ.
     adjacentLocQueue.push({0, &start});
@@ -50,7 +53,7 @@ void DIKPQ::FindSP() {
         adjacentLocQueue.pop();
 
         // If that location is already founded, move to next adjacent location.
-        if (DistTable[currentLoc->getColumn()][currentLoc->getRow()] < currentDist){
+        if (DistTable[currentLoc->getColumn()][currentLoc->getRow()].first < currentDist){
             continue;
         }
         UpdateDist(currentLoc);
@@ -62,15 +65,18 @@ void DIKPQ::UpdateDist(Location *currentLoc) {
         // If there is adjacent location exists,
         // and its new distance is shorter then distance in the table, update it.
         if (currentLoc->getAdjacent(dir) != nullptr &&
-            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()] >
-            currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()]) {
+            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first >
+            currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()].first) {
 
-            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()] =
-                    currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()];
+            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first =
+                    currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()].first;
+
+            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].second =
+                    currentLoc;
 
             // Enqueue the new adjacent location which is updated just before.
             adjacentLocQueue.push(
-                    {-DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()],
+                    {-DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first,
                      currentLoc->getAdjacent(dir)});
         }
     }
@@ -79,17 +85,32 @@ void DIKPQ::UpdateDist(Location *currentLoc) {
 void DIKPQ::printLocationDistSet() {
     for (auto & column : DistTable) {
         for (auto & row : column) {
-            std::cout<<row<<" ";
+            std::cout<<row.first<<" ";
         }
         std::cout<<std::endl;
     }
 }
 
 int DIKPQ::getShortestPathLength() {
-    return DistTable[end.getColumn()][end.getRow()];
+    return DistTable[end.getColumn()][end.getRow()].first;
 }
 
 std::string DIKPQ::getTypeName() {
     return std::string("DIKPQ");
+}
+
+void DIKPQ::printShortestPath() {
+    std::vector<Location*> SPList;
+    Location *current = &end;
+    while (current->getRow() != start.getRow() || current->getColumn() != start.getColumn()){
+        SPList.insert(SPList.begin(), current);
+        current = DistTable[current->getColumn()][current->getRow()].second;
+    }
+    SPList.insert(SPList.begin(), current);
+
+    for (auto &loc : SPList) {
+        std::cout<<*loc<<" | ";
+    }
+    std::cout<<std::endl;
 }
 
