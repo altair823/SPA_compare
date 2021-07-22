@@ -5,32 +5,27 @@
 #ifndef SPA_COMPARE_DIKPQ_H
 #define SPA_COMPARE_DIKPQ_H
 
-#include <set>
-#include <algorithm>
-#include <vector>
 #include <queue>
 #include "../map/Maze.h"
-#include "spa_interface.h"
+#include "SPAInterface.h"
 
 
-class DIKPQ : public SpaInterface{
+class DIKPQ : public SPAInterface{
 private:
 
     Maze maze;
 
-    /*
-     * The starting point and destination of route.
-     */
+    // The starting point and destination of route.
     Location start, end;
 
-
-    int locationDistSet[MAX_COLUMN][MAX_ROW];
-
-    std::vector<Location*> foundLocationSet;
+    // Distance table that stores shortest distance of all locations(vertices).
+    int DistTable[MAX_COLUMN][MAX_ROW];
 
     // Priority Queue of adjacent locations to found set.
-    std::priority_queue<std::pair<int,Location*>> priorityQueue;
+    std::priority_queue<std::pair<int,Location*>> adjacentLocQueue;
 
+    // Update distance of new adjacent location only.
+    void UpdateDist( Location *currentLoc);
 
 public:
     DIKPQ();
@@ -38,6 +33,8 @@ public:
     void setStart(int row, int column) override;
     void setDestination(int row, int column) override;
     void FindSP() override;
+    int getShortestPathLength() override;
+    std::string getTypeName() override;
     void printLocationDistSet();
 };
 

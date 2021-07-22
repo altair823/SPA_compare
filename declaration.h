@@ -17,4 +17,7 @@
 
 #define MAX_EDGE_COUNT 4
 
+#define _DIK 1
+#define _DIKPQ 1
+
 #endif //SPA_COMPARE_DECLARATION_H

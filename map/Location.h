@@ -28,9 +28,9 @@ public:
      * Setters and getters.
      */
     void setXCoord(int);
-    int getXCoord() const;
+    int getRow() const;
     void setYCoord(int);
-    int getYCoord() const;
+    int getColumn() const;
     void setWeight(int direction, int weightValue);
     int getWeight(int direction) const;
     void setAdjacent(int direction, Location *adjacent);

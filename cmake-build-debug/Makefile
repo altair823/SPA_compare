@@ -196,6 +196,33 @@ SPA/DIKPQ.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.s
 .PHONY : SPA/DIKPQ.cpp.s
 
+analyze/CompareSP.o: analyze/CompareSP.cpp.o
+
+.PHONY : analyze/CompareSP.o
+
+# target to build an object file
+analyze/CompareSP.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.o
+.PHONY : analyze/CompareSP.cpp.o
+
+analyze/CompareSP.i: analyze/CompareSP.cpp.i
+
+.PHONY : analyze/CompareSP.i
+
+# target to preprocess a source file
+analyze/CompareSP.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.i
+.PHONY : analyze/CompareSP.cpp.i
+
+analyze/CompareSP.s: analyze/CompareSP.cpp.s
+
+.PHONY : analyze/CompareSP.s
+
+# target to generate assembly for a file
+analyze/CompareSP.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.s
+.PHONY : analyze/CompareSP.cpp.s
+
 analyze/TimeMeasure.o: analyze/TimeMeasure.cpp.o
 
 .PHONY : analyze/TimeMeasure.o
@@ -400,6 +427,9 @@ help:
 	@echo "... SPA/DIKPQ.o"
 	@echo "... SPA/DIKPQ.i"
 	@echo "... SPA/DIKPQ.s"
+	@echo "... analyze/CompareSP.o"
+	@echo "... analyze/CompareSP.i"
+	@echo "... analyze/CompareSP.s"
 	@echo "... analyze/TimeMeasure.o"
 	@echo "... analyze/TimeMeasure.i"
 	@echo "... analyze/TimeMeasure.s"

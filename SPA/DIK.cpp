@@ -5,7 +5,7 @@
 #include "DIK.h"
 
 DIK::DIK() {
-    for (auto & column : locationDistSet) {
+    for (auto & column : DistTable) {
         for (int & row : column) {
             row = INF;
         }
@@ -14,7 +14,6 @@ DIK::DIK() {
 
 void DIK::setMaze(const Maze &mazeInput) {
     maze = mazeInput;
-    SPDist = 0;
 }
 
 void DIK::setStart(int row, int column) {
@@ -37,7 +36,7 @@ void DIK::FindSP() {
     // Insert starting point to found set.
     foundLocationSet.push_back(start);
 
-    locationDistSet[start.getYCoord()][start.getXCoord()] = 0;
+    DistTable[start.getColumn()][start.getRow()] = 0;
 
     Location closestLocation = start;
     int closestIndex = 0;
@@ -49,8 +48,8 @@ void DIK::FindSP() {
         // 2. Find the vertex which has minimum distance.
         int minDist = INF;
         for (int i = 0; i < adjacentSet.size(); ++i) {
-            if (locationDistSet[adjacentSet[i].getYCoord()][adjacentSet[i].getXCoord()] < minDist){
-                minDist = locationDistSet[adjacentSet[i].getYCoord()][adjacentSet[i].getXCoord()];
+            if (DistTable[adjacentSet[i].getColumn()][adjacentSet[i].getRow()] < minDist){
+                minDist = DistTable[adjacentSet[i].getColumn()][adjacentSet[i].getRow()];
                 closestLocation = adjacentSet[i];
                 closestIndex = i;
             }
@@ -79,10 +78,10 @@ void DIK::UpdateDist() {
                 if (std::find(adjacentSet.begin(), adjacentSet.end(), *foundLoc.getAdjacent(dir)) == adjacentSet.end()) {
                     adjacentSet.push_back(*foundLoc.getAdjacent(dir));
                 }
-                if (locationDistSet[foundLoc.getAdjacent(dir)->getYCoord()][foundLoc.getAdjacent(dir)->getXCoord()] >
-                    locationDistSet[foundLoc.getYCoord()][foundLoc.getXCoord()] + foundLoc.getWeight(dir)){
-                    locationDistSet[foundLoc.getAdjacent(dir)->getYCoord()][foundLoc.getAdjacent(dir)->getXCoord()] =
-                            locationDistSet[foundLoc.getYCoord()][foundLoc.getXCoord()] + foundLoc.getWeight(dir);
+                if (DistTable[foundLoc.getAdjacent(dir)->getColumn()][foundLoc.getAdjacent(dir)->getRow()] >
+                    DistTable[foundLoc.getColumn()][foundLoc.getRow()] + foundLoc.getWeight(dir)){
+                    DistTable[foundLoc.getAdjacent(dir)->getColumn()][foundLoc.getAdjacent(dir)->getRow()] =
+                            DistTable[foundLoc.getColumn()][foundLoc.getRow()] + foundLoc.getWeight(dir);
                 }
             }
         }
@@ -91,11 +90,19 @@ void DIK::UpdateDist() {
 
 
 void DIK::printLocationDistSet() {
-    for (auto & column : locationDistSet) {
+    for (auto & column : DistTable) {
         for (auto & row : column) {
             std::cout<<row<<" ";
         }
         std::cout<<std::endl;
     }
+}
+
+int DIK::getShortestPathLength() {
+    return DistTable[end.getColumn()][end.getRow()];
+}
+
+std::string DIK::getTypeName() {
+    return std::string("DIK");
 }
 

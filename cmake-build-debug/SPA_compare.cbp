@@ -94,7 +94,13 @@
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/spa_interface.h">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/analyze/CompareSP.cpp">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/analyze/CompareSP.h">
 			<Option target="SPA_compare"/>
 		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/analyze/TimeMeasure.cpp">

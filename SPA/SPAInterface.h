@@ -5,11 +5,16 @@
 #ifndef SPA_COMPARE_SPAINTERFACE_H
 #define SPA_COMPARE_SPAINTERFACE_H
 
-class SpaInterface{
+#include <map/Maze.h>
+
+class SPAInterface{
+public:
     virtual void setMaze(const Maze &maze) = 0;
     virtual void setStart(int row, int column) = 0;
     virtual void setDestination(int row, int column) = 0;
     virtual void FindSP() = 0;
+    virtual int getShortestPathLength() = 0;
+    virtual std::string getTypeName() = 0;
 };
 
 #endif //SPA_COMPARE_SPAINTERFACE_H

@@ -33,7 +33,7 @@ void Location::setXCoord(int x) {
     xCoord = x;
 }
 
-int Location::getXCoord() const {
+int Location::getRow() const {
     return xCoord;
 }
 
@@ -41,7 +41,7 @@ void Location::setYCoord(int y) {
     yCoord = y;
 }
 
-int Location::getYCoord() const {
+int Location::getColumn() const {
     return yCoord;
 }
 

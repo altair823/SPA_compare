@@ -5,40 +5,26 @@
 #ifndef SPA_COMPARE_DIK_H
 #define SPA_COMPARE_DIK_H
 
-#include <set>
-#include <algorithm>
 #include <vector>
-#include <queue>
 #include "../map/Maze.h"
-#include "spa_interface.h"
+#include "SPAInterface.h"
 
-class DIK : public SpaInterface{
+class DIK : public SPAInterface{
 private:
 
     Maze maze;
 
-    /*
-     * The starting point and destination of route.
-     */
+    //The starting point and destination of route.
     Location start, end;
 
-    /*
-     * Distance of the found SP.
-     */
-    int SPDist;
-
-    /*
-     *
-     */
-
-    int locationDistSet[MAX_COLUMN][MAX_ROW];
+    int DistTable[MAX_COLUMN][MAX_ROW];
 
     std::vector<Location> foundLocationSet;
 
     // Vector of adjacent locations to found set.
     std::vector<Location> adjacentSet;
 
-
+    // Update distance of all existing adjacent.
     void UpdateDist();
 
 public:
@@ -47,11 +33,9 @@ public:
     void setStart(int row, int column) override;
     void setDestination(int row, int column) override;
     void FindSP() override;
+    int getShortestPathLength() override;
+    std::string getTypeName() override;
     void printLocationDistSet();
-
-
 };
-
-
 
 #endif //SPA_COMPARE_DIK_H
