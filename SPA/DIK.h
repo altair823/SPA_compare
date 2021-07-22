@@ -5,6 +5,7 @@
 #ifndef SPA_COMPARE_DIK_H
 #define SPA_COMPARE_DIK_H
 
+#include <algorithm>
 #include <vector>
 #include "../map/Maze.h"
 #include "SPAInterface.h"
