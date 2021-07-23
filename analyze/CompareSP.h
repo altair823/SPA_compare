@@ -8,15 +8,17 @@
 #include <vector>
 #include <typeinfo>
 #include <iostream>
+#include <tuple>
 #include "../SPA/SPAInterface.h"
 
 class CompareSP{
 private:
-    std::vector<std::pair<int, std::string>> shortestPathList;
+    std::vector<SPAInterface*> SPAList;
 
 public:
-    void insertSP(SPAInterface &algorithm);
-    void printAllSPAResult();
+    void InsertSP(SPAInterface *algorithm);
+    void PrintAllSPAResult();
+    void CompareAllSPList();
 };
 
 #endif //SPA_COMPARE_COMPARESP_H

@@ -5,6 +5,7 @@
 #ifndef SPA_COMPARE_LOCATION_H
 #define SPA_COMPARE_LOCATION_H
 
+#include <iostream>
 #include <bitset>
 #include "../declaration.h"
 

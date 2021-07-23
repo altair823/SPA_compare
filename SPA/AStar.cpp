@@ -16,7 +16,7 @@ void AStar::setStart(int row, int column) {
     start = maze[column][row];
 }
 
-void AStar::setDestination(int row, int column) {
+void AStar::setEnd(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN){
         std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);

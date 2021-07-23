@@ -31,10 +31,10 @@ int main(){
     DIK dik;
     dik.setMaze(maze);
     dik.setStart(0, MAX_COLUMN-1);
-    dik.setDestination(MAX_ROW-1, 0);
+    dik.setEnd(MAX_ROW - 1, 0);
     dik.FindSP();
     dik.printLocationDistSet();
-    result.insertSP(dik);
+    result.InsertSP(&dik);
     timer.SetEnd();
     timer.PrintTimeMs();
 
@@ -49,18 +49,21 @@ int main(){
     DIKPQ dikpq;
     dikpq.setMaze(maze);
     dikpq.setStart(0, MAX_COLUMN-1);
-    dikpq.setDestination(MAX_ROW-1, 0);
+    dikpq.setEnd(MAX_ROW - 1, 0);
     dikpq.FindSP();
     dikpq.printLocationDistSet();
-    result.insertSP(dikpq);
+    result.InsertSP(&dikpq);
     timer.SetEnd();
     timer.PrintTimeMs();
 
-    //dik.printShortestPath();
+    dik.printShortestPath();
     dikpq.printShortestPath();
 
 #endif
 
     // Print all result.
-    result.printAllSPAResult();
+    result.PrintAllSPAResult();
+    result.CompareAllSPList();
+
+    return 0;
 }

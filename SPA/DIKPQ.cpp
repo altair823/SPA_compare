@@ -25,7 +25,7 @@ void DIKPQ::setStart(int row, int column) {
     start = maze[column][row];
 }
 
-void DIKPQ::setDestination(int row, int column) {
+void DIKPQ::setEnd(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN){
         std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);
@@ -58,6 +58,14 @@ void DIKPQ::FindSP() {
         }
         UpdateDist(currentLoc);
     }
+
+    // Store the shortest path locations to the list.
+    Location *current = &end;
+    while (current->getRow() != start.getRow() || current->getColumn() != start.getColumn()){
+        SPList.insert(SPList.begin(), current);
+        current = DistTable[current->getColumn()][current->getRow()].second;
+    }
+    SPList.insert(SPList.begin(), current);
 }
 
 void DIKPQ::UpdateDist(Location *currentLoc) {
@@ -82,7 +90,7 @@ void DIKPQ::UpdateDist(Location *currentLoc) {
     }
 }
 
-void DIKPQ::printLocationDistSet() {
+void DIKPQ::printLocationDistSet() const {
     for (auto & column : DistTable) {
         for (auto & row : column) {
             std::cout<<row.first<<" ";
@@ -91,26 +99,23 @@ void DIKPQ::printLocationDistSet() {
     }
 }
 
-int DIKPQ::getShortestPathLength() {
+int DIKPQ::getShortestPathLength() const {
     return DistTable[end.getColumn()][end.getRow()].first;
 }
 
-std::string DIKPQ::getTypeName() {
-    return std::string("DIKPQ");
+std::string DIKPQ::getTypeName() const {
+    return std::string("DIKPQ ");
 }
 
-void DIKPQ::printShortestPath() {
-    std::vector<Location*> SPList;
-    Location *current = &end;
-    while (current->getRow() != start.getRow() || current->getColumn() != start.getColumn()){
-        SPList.insert(SPList.begin(), current);
-        current = DistTable[current->getColumn()][current->getRow()].second;
-    }
-    SPList.insert(SPList.begin(), current);
+void DIKPQ::printShortestPath() const {
 
     for (auto &loc : SPList) {
         std::cout<<*loc<<" | ";
     }
     std::cout<<std::endl;
+}
+
+std::vector<Location *> DIKPQ::getSPList() const {
+    return SPList;
 }
 

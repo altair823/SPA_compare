@@ -24,6 +24,9 @@ private:
     // Priority Queue of adjacent locations to found set.
     std::priority_queue<std::pair<int,Location*>> adjacentLocQueue;
 
+    // A list of locations in shortest path.
+    std::vector<Location*> SPList;
+
     // Update distance of new adjacent location only.
     void UpdateDist( Location *currentLoc);
 
@@ -31,12 +34,13 @@ public:
     DIKPQ();
     void setMaze(const Maze &mazeInput) override;
     void setStart(int row, int column) override;
-    void setDestination(int row, int column) override;
+    void setEnd(int row, int column) override;
     void FindSP() override;
-    int getShortestPathLength() override;
-    std::string getTypeName() override;
-    void printLocationDistSet();
-    void printShortestPath();
+    int getShortestPathLength() const override;
+    std::vector<Location*> getSPList() const override;
+    std::string getTypeName() const override;
+    void printLocationDistSet() const override;
+    void printShortestPath() const override;
 };
 
 #endif //SPA_COMPARE_DIKPQ_H

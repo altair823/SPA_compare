@@ -5,7 +5,6 @@
 #ifndef SPA_COMPARE_DECLARATION_H
 #define SPA_COMPARE_DECLARATION_H
 
-#include <iostream>
 #include <limits>
 
 #define MAX_ROW 10

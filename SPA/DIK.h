@@ -20,10 +20,13 @@ private:
 
     std::pair<int, Location*> DistTable[MAX_COLUMN][MAX_ROW];
 
-    std::vector<Location> foundLocationSet;
+    std::vector<Location*> foundLocationSet;
 
     // Vector of adjacent locations to found set.
-    std::vector<Location> adjacentSet;
+    std::vector<Location*> adjacentSet;
+
+    // A list of locations that in shortest path.
+    std::vector<Location*> SPList;
 
     // Update distance of all existing adjacent.
     void UpdateDist();
@@ -32,12 +35,13 @@ public:
     DIK();
     void setMaze(const Maze &mazeInput) override;
     void setStart(int row, int column) override;
-    void setDestination(int row, int column) override;
+    void setEnd(int row, int column) override;
     void FindSP() override;
-    int getShortestPathLength() override;
-    std::string getTypeName() override;
-    void printLocationDistSet();
-    void printShortestPath();
+    int getShortestPathLength() const override;
+    std::vector<Location*> getSPList() const override;
+    std::string getTypeName() const override;
+    void printLocationDistSet() const override;
+    void printShortestPath() const override;
 };
 
 #endif //SPA_COMPARE_DIK_H
