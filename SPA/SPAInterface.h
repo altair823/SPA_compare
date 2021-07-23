@@ -6,6 +6,7 @@
 #define SPA_COMPARE_SPAINTERFACE_H
 
 #include <map/Maze.h>
+#include <vector>
 
 class SPAInterface{
 public:
