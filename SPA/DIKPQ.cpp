@@ -48,17 +48,44 @@ void DIKPQ::FindSP() {
     while (currentLoc->getRow() != end->getRow() || currentLoc->getColumn() != end->getColumn()){
 
         // Dequeue the closest location.
-        int currentDist = -adjacentLocQueue.top().first;
+        // The distance of location from the starting point is used for only sorting.
+        int currentDist = adjacentLocQueue.top().first;
         currentLoc = adjacentLocQueue.top().second;
         adjacentLocQueue.pop();
-
-        // If that location is already founded, move to next adjacent location.
-        if (DistTable[currentLoc->getColumn()][currentLoc->getRow()].first < currentDist){
+    if (DistTable[currentLoc->getColumn()][currentLoc->getRow()].first < currentDist){
             continue;
         }
+        // Update distance table for adjacent locations.
         UpdateDist(currentLoc);
     }
 
+    makeSPList();
+}
+
+void DIKPQ::UpdateDist(Location *currentLoc) {
+    for (int dir = 0; dir < 4; ++dir) {
+        Location* adjacent = currentLoc->getAdjacent(dir);
+        // If there is adjacent location exists,
+        // and its new distance is shorter then distance in the table, update it.
+        if (adjacent != nullptr &&
+            DistTable[adjacent->getColumn()][adjacent->getRow()].first >
+            currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()].first) {
+
+            DistTable[adjacent->getColumn()][adjacent->getRow()].first =
+                    currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()].first;
+
+            DistTable[adjacent->getColumn()][adjacent->getRow()].second =
+                    currentLoc;
+
+            // Enqueue the new adjacent location which is updated just before.
+            adjacentLocQueue.push(
+                    {-DistTable[adjacent->getColumn()][adjacent->getRow()].first,
+                     adjacent});
+        }
+    }
+}
+
+void DIKPQ::makeSPList() {
     // Store the shortest path locations to the list.
     Location *current = end;
     while (current->getRow() != start->getRow() || current->getColumn() != start->getColumn()){
@@ -68,32 +95,14 @@ void DIKPQ::FindSP() {
     SPList.insert(SPList.begin(), current);
 }
 
-void DIKPQ::UpdateDist(Location *currentLoc) {
-    for (int dir = 0; dir < 4; ++dir) {
-        // If there is adjacent location exists,
-        // and its new distance is shorter then distance in the table, update it.
-        if (currentLoc->getAdjacent(dir) != nullptr &&
-            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first >
-            currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()].first) {
-
-            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first =
-                    currentLoc->getWeight(dir) + DistTable[currentLoc->getColumn()][currentLoc->getRow()].first;
-
-            DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].second =
-                    currentLoc;
-
-            // Enqueue the new adjacent location which is updated just before.
-            adjacentLocQueue.push(
-                    {-DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first,
-                     currentLoc->getAdjacent(dir)});
-        }
-    }
-}
-
 void DIKPQ::printLocationDistSet() const {
     for (auto & column : DistTable) {
         for (auto & row : column) {
-            std::cout<<row.first<<" ";
+            if (row.first != INF) {
+                std::cout <<  "0 ";
+            } else{
+                std::cout <<  "- ";
+            }
         }
         std::cout<<std::endl;
     }
@@ -118,4 +127,5 @@ void DIKPQ::printShortestPath() const {
 std::vector<Location *> DIKPQ::getSPList() const {
     return SPList;
 }
+
 

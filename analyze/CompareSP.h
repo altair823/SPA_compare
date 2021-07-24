@@ -13,10 +13,10 @@
 
 class CompareSP{
 private:
-    std::vector<SPAInterface*> SPAList;
+    std::vector<std::pair<SPAInterface*, std::chrono::duration<double>>> SPAList;
 
 public:
-    void InsertSP(SPAInterface *algorithm);
+    void InsertSP(SPAInterface *algorithm, std::chrono::duration<double> timeSpandMs);
     void PrintAllSPAResult();
     void CompareAllSPList();
 };

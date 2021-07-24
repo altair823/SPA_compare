@@ -35,6 +35,7 @@ CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.o: ../analyze/CompareSP.h
 CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o: ../analyze/TimeMeasure.cpp
 CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o: ../analyze/TimeMeasure.h
 
+CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/AStar.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/DIK.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/DIKPQ.h
 CMakeFiles/SPA_compare.dir/main.cpp.o: ../SPA/SPAInterface.h

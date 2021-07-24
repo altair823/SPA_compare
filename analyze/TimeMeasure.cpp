@@ -12,6 +12,10 @@ void TimeMeasure::SetEnd() {
     this->duration = std::chrono::system_clock::now() - start;
 }
 
-void TimeMeasure::PrintTimeMs() {
-    std::cout<<"Execution times are as follows: "<< this->duration.count()<<" second"<<std::endl;
+void TimeMeasure::PrintTimeMs(std::string SPAType) {
+    std::cout<<"Execution times of "<<SPAType<<" are as follows: "<< this->duration.count()<<" second"<<std::endl;
+}
+
+std::chrono::duration<double> TimeMeasure::getTimeMs() {
+    return this->duration;
 }

@@ -88,11 +88,12 @@ public:
      */
     void MakeMaze();
 
-
     /*
      * For debug. Print current location set values.
      */
     void printCurrentLocationSet();
+
+    std::string getTypeString();
 };
 
 #endif //SPA_COMPARE_ELLER_H

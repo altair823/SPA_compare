@@ -12,13 +12,13 @@ class TimeMeasure{
 
 private:
     std::chrono::system_clock::time_point start;
-    std::chrono::duration<double> duration;
+    std::chrono::duration<double> duration{};
 
 public:
     void SetStart();
     void SetEnd();
-    void PrintTimeMs();
-
+    void PrintTimeMs(std::string SPAType);
+    std::chrono::duration<double> getTimeMs();
 };
 
 #endif //SPA_COMPARE_TIMEMEASURE_H

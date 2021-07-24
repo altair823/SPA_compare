@@ -24,6 +24,7 @@ private:
 
     // Update distance of new adjacent location only.
     void UpdateDist( Location *currentLoc);
+    void makeSPList();
 
 public:
     DIKPQ();
@@ -34,8 +35,8 @@ public:
     int getShortestPathLength() const override;
     std::vector<Location*> getSPList() const override;
     std::string getTypeName() const override;
-    void printLocationDistSet() const override;
-    void printShortestPath() const override;
+    void printLocationDistSet() const;
+    void printShortestPath() const;
 };
 
 #endif //SPA_COMPARE_DIKPQ_H

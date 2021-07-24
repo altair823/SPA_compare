@@ -42,11 +42,6 @@ public:
     // Get the class name of SPA object which indicate the algorithm type.
     virtual std::string getTypeName() const = 0;
 
-
-
-    // For common debug.
-    virtual void printLocationDistSet() const = 0;
-    virtual void printShortestPath() const = 0;
 };
 
 #endif //SPA_COMPARE_SPAINTERFACE_H

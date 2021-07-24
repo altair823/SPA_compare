@@ -51,8 +51,8 @@ void Eller::MergeRandomly(int column) {
 bool Eller::ChoiceRandomly() {
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<> choice_int(0, 1);
-    if (choice_int(gen) == 0){
+    std::uniform_int_distribution<> choice_int(0, 10);
+    if (choice_int(gen) <= 2){
         return false;
     } else{
         return true;
@@ -202,6 +202,10 @@ int Eller::getUnusedSetNumber() {
     }
     std::cout<<"Set number assigning error!"<<std::endl;
     exit(1);
+}
+
+std::string Eller::getTypeString() {
+    return std::string("MazeMaking");
 }
 
 
