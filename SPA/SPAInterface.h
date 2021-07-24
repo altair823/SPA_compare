@@ -9,6 +9,17 @@
 #include <vector>
 
 class SPAInterface{
+protected:
+
+    Maze maze;
+
+    //The starting point and destination of route.
+    Location* end;
+    Location* start;
+
+    // A list of locations that in shortest path.
+    std::vector<Location*> SPList;
+
 public:
     // Copy the given maze.
     virtual void setMaze(const Maze &maze) = 0;

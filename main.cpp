@@ -56,8 +56,7 @@ int main(){
     timer.SetEnd();
     timer.PrintTimeMs();
 
-    dik.printShortestPath();
-    dikpq.printShortestPath();
+    std::cout<<std::endl;
 
 #endif
 

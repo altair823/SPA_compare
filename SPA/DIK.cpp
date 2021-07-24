@@ -22,7 +22,7 @@ void DIK::setStart(int row, int column) {
         std::cout << "Wrong Starting Point input in "<< getTypeName() << std::endl;
         exit(2);
     }
-    start = maze[column][row];
+    start = &maze[column][row];
 }
 
 void DIK::setEnd(int row, int column) {
@@ -30,21 +30,21 @@ void DIK::setEnd(int row, int column) {
         std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);
     }
-    end = maze[column][row];
+    end = &maze[column][row];
 }
 
 void DIK::FindSP() {
     // Insert starting point to found set.
-    foundLocationSet.push_back(&start);
+    foundLocationSet.push_back(start);
 
-    DistTable[start.getColumn()][start.getRow()].first = 0;
+    DistTable[start->getColumn()][start->getRow()].first = 0;
+    DistTable[start->getColumn()][start->getRow()].second = nullptr;
 
-    Location *currentLoc = &start;
-    Location *before = &start;
+    Location *currentLoc = start;
     int closestIndex = 0;
 
     // Finding shortest path.
-    while (currentLoc->getRow() != end.getRow() || currentLoc->getColumn() != end.getColumn()){
+    while (currentLoc->getRow() != end->getRow() || currentLoc->getColumn() != end->getColumn()){
         // 1. Update the distance to all vertices adjacent to the found location set.
         UpdateDist();
 
@@ -58,8 +58,6 @@ void DIK::FindSP() {
             }
         }
 
-        before = currentLoc;
-
         // 3. Insert that minimum vertex to the found location set.
         foundLocationSet.push_back(currentLoc);
 
@@ -68,8 +66,8 @@ void DIK::FindSP() {
     }
 
     // Store the shortest path locations to the list.
-    Location *current = &end;
-    while (current->getRow() != start.getRow() || current->getColumn() != start.getColumn()){
+    Location *current = end;
+    while (current->getRow() != start->getRow() || current->getColumn() != start->getColumn()){
         SPList.insert(SPList.begin(), current);
         current = DistTable[current->getColumn()][current->getRow()].second;
     }
@@ -113,7 +111,7 @@ void DIK::printLocationDistSet() const {
 }
 
 int DIK::getShortestPathLength() const {
-    return DistTable[end.getColumn()][end.getRow()].first;
+    return DistTable[end->getColumn()][end->getRow()].first;
 }
 
 std::string DIK::getTypeName() const {

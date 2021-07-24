@@ -22,7 +22,7 @@ void DIKPQ::setStart(int row, int column) {
         std::cout << "Wrong Starting Point input in "<< getTypeName() << std::endl;
         exit(2);
     }
-    start = maze[column][row];
+    start = &maze[column][row];
 }
 
 void DIKPQ::setEnd(int row, int column) {
@@ -30,22 +30,22 @@ void DIKPQ::setEnd(int row, int column) {
         std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);
     }
-    end = maze[column][row];
+    end = &maze[column][row];
 }
 
 void DIKPQ::FindSP() {
 
-    DistTable[start.getColumn()][start.getRow()].first = 0;
-    DistTable[start.getColumn()][start.getRow()].second = &start;
+    DistTable[start->getColumn()][start->getRow()].first = 0;
+    DistTable[start->getColumn()][start->getRow()].second = nullptr;
 
 
     // Initially push the starting point to PQ.
-    adjacentLocQueue.push({0, &start});
+    adjacentLocQueue.push({0, start});
 
-    Location *currentLoc = &start;
+    Location *currentLoc = start;
 
     // Loop until reached the ending point.
-    while (currentLoc->getRow() != end.getRow() || currentLoc->getColumn() != end.getColumn()){
+    while (currentLoc->getRow() != end->getRow() || currentLoc->getColumn() != end->getColumn()){
 
         // Dequeue the closest location.
         int currentDist = -adjacentLocQueue.top().first;
@@ -60,8 +60,8 @@ void DIKPQ::FindSP() {
     }
 
     // Store the shortest path locations to the list.
-    Location *current = &end;
-    while (current->getRow() != start.getRow() || current->getColumn() != start.getColumn()){
+    Location *current = end;
+    while (current->getRow() != start->getRow() || current->getColumn() != start->getColumn()){
         SPList.insert(SPList.begin(), current);
         current = DistTable[current->getColumn()][current->getRow()].second;
     }
@@ -100,7 +100,7 @@ void DIKPQ::printLocationDistSet() const {
 }
 
 int DIKPQ::getShortestPathLength() const {
-    return DistTable[end.getColumn()][end.getRow()].first;
+    return DistTable[end->getColumn()][end->getRow()].first;
 }
 
 std::string DIKPQ::getTypeName() const {

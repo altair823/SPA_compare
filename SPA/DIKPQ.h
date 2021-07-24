@@ -13,12 +13,7 @@
 class DIKPQ : public SPAInterface{
 private:
 
-    Maze maze;
-
-    // The starting point and destination of route.
-    Location start, end;
-
-    // Distance table that stores shortest distance of all locations(vertices).
+    // Distance table that stores shortest distance of all locations and their previous location.
     std::pair<int, Location*> DistTable[MAX_COLUMN][MAX_ROW];
 
     // Priority Queue of adjacent locations to found set.

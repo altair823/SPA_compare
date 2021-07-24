@@ -13,20 +13,16 @@
 class DIK : public SPAInterface{
 private:
 
-    Maze maze;
-
-    //The starting point and destination of route.
-    Location start, end;
-
+    // Distance table that stores shortest distance of all locations and their previous location.
     std::pair<int, Location*> DistTable[MAX_COLUMN][MAX_ROW];
 
+    // Set of locations that are found.
     std::vector<Location*> foundLocationSet;
 
     // Vector of adjacent locations to found set.
     std::vector<Location*> adjacentSet;
 
-    // A list of locations that in shortest path.
-    std::vector<Location*> SPList;
+
 
     // Update distance of all existing adjacent.
     void UpdateDist();
