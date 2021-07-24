@@ -9,6 +9,7 @@
 #include <typeinfo>
 #include <iostream>
 #include <tuple>
+#include <chrono>
 #include "../SPA/SPAInterface.h"
 
 class CompareSP{
