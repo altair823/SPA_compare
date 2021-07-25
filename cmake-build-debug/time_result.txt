@@ -1,7 +1,0 @@
-Initiating Shortest Path Searching Algorithms.
-
-[Round: 1]
-DIK   's SP length : 1120 - Execution time is : 0.092506
-DIKPQ 's SP length : 1120 - Execution time is : 0.001016
-Astar 's SP length : 1120 - Execution time is : 0.001083
-

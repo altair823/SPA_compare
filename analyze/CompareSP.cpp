@@ -59,7 +59,7 @@ void CompareSP::SaveDataFiles() {
 
 void CompareSP::InitializeResultFile() {
     std::ofstream timeResultFile;
-    timeResultFile.open(RESULT_FILE_NAME);
+    timeResultFile.open(RESULT_FILE_NAME, std::ios::out);
     timeResultFile << "Initiating Shortest Path Searching Algorithms." << std::endl << std::endl;
     timeResultFile.close();
 }
