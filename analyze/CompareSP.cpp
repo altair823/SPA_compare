@@ -58,12 +58,12 @@ void CompareSP::SaveDataFiles() {
 }
 
 void CompareSP::InitializeResultFile() {
-    std::__fs::filesystem::path resultFile(RESULT_FILE_NAME);
-    if (std::__fs::filesystem::exists(resultFile)){
-        if (std::__fs::filesystem::is_regular_file(resultFile)){
-            std::__fs::filesystem::remove(resultFile);
+    std::filesystem::path resultFile(RESULT_FILE_NAME);
+    if (std::filesystem::exists(resultFile)){
+        if (std::filesystem::is_regular_file(resultFile)){
+            std::filesystem::remove(resultFile);
         } else{
-            std::__fs::filesystem::remove_all(resultFile);
+            std::filesystem::remove_all(resultFile);
         }
     }
 }
