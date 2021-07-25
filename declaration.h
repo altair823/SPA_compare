@@ -28,6 +28,6 @@
 #define _DIKPQ 1
 #define _ASTAR 1
 
-#define RESULT_FILE_NAME "../time_result.txt"
+#define RESULT_FILE_NAME "time_result.txt"
 
 #endif //SPA_COMPARE_DECLARATION_H
