@@ -132,7 +132,7 @@ void AStar::makeDistTable() {
         for (int j = 0; j < MAX_ROW; j++) {
             //distanceTable[i][j] = int (sqrt(pow(double (end->getRow()*ASTAR_DIST_WEIGHT - j*ASTAR_DIST_WEIGHT), 2) +
             //        pow(double (end->getColumn()*ASTAR_DIST_WEIGHT - i*ASTAR_DIST_WEIGHT), 2)));
-            distanceTable[i][j] = std::abs(end->getRow() - j)*ASTAR_DIST_WEIGHT + std::abs(end->getColumn() - i)*ASTAR_DIST_WEIGHT;
+            distanceTable[i][j] = ((std::abs(end->getRow() - j))*ASTAR_DIST_WEIGHT) + ((std::abs(end->getColumn() - i))*ASTAR_DIST_WEIGHT);
         }
     }
 }

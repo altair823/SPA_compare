@@ -46,7 +46,7 @@ void DIK::FindSP() {
     // Finding shortest path.
     while (currentLoc->getRow() != end->getRow() || currentLoc->getColumn() != end->getColumn()){
         // 1. Update the distance to all vertices adjacent to the found location set.
-        UpdateDist();
+        UpdateDist(currentLoc);
 
         // 2. Find the vertex which has minimum distance.
         int minDist = INF;
@@ -74,30 +74,30 @@ void DIK::FindSP() {
     SPList.insert(SPList.begin(), current);
 }
 
-void DIK::UpdateDist() {
+void DIK::UpdateDist(Location *currentLoc) {
     // There are ways to improve performance at this point.
     // Such as data structure of adjacent vertices set.
-    for (auto &foundLoc : foundLocationSet){
-        for (int dir = 0; dir < 4; dir++){
-            // For the adjacent foundLoc from all found locations,
-            // if the adjacent foundLoc is not in the found foundLoc set,
-            // calculate minimum distance and update if it is needed.
-            // The edge vertices of maze are have nullptr for limits of maze size.
-            if ((foundLoc->getAdjacent(dir) != nullptr) &&
-            std::find(foundLocationSet.begin(), foundLocationSet.end(), foundLoc->getAdjacent(dir)) == foundLocationSet.end()){
-                if (std::find(adjacentSet.begin(), adjacentSet.end(), foundLoc->getAdjacent(dir)) == adjacentSet.end()) {
-                    adjacentSet.push_back(foundLoc->getAdjacent(dir));
-                }
-                if (DistTable[foundLoc->getAdjacent(dir)->getColumn()][foundLoc->getAdjacent(dir)->getRow()].first >
-                    DistTable[foundLoc->getColumn()][foundLoc->getRow()].first + foundLoc->getWeight(dir)){
-                    DistTable[foundLoc->getAdjacent(dir)->getColumn()][foundLoc->getAdjacent(dir)->getRow()].first =
-                            DistTable[foundLoc->getColumn()][foundLoc->getRow()].first + foundLoc->getWeight(dir);
-                    DistTable[foundLoc->getAdjacent(dir)->getColumn()][foundLoc->getAdjacent(dir)->getRow()].second =
-                            foundLoc;
-                }
+    for (int dir = 0; dir < 4; dir++) {
+        // For the adjacent currentLoc from all found locations,
+        // if the adjacent currentLoc is not in the found currentLoc set,
+        // calculate minimum distance and update if it is needed.
+        // The edge vertices of maze are have nullptr for limits of maze size.
+        if ((currentLoc->getAdjacent(dir) != nullptr) &&
+            std::find(foundLocationSet.begin(), foundLocationSet.end(), currentLoc->getAdjacent(dir)) ==
+            foundLocationSet.end()) {
+            if (std::find(adjacentSet.begin(), adjacentSet.end(), currentLoc->getAdjacent(dir)) == adjacentSet.end()) {
+                adjacentSet.push_back(currentLoc->getAdjacent(dir));
+            }
+            if (DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first >
+                DistTable[currentLoc->getColumn()][currentLoc->getRow()].first + currentLoc->getWeight(dir)) {
+                DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].first =
+                        DistTable[currentLoc->getColumn()][currentLoc->getRow()].first + currentLoc->getWeight(dir);
+                DistTable[currentLoc->getAdjacent(dir)->getColumn()][currentLoc->getAdjacent(dir)->getRow()].second =
+                        currentLoc;
             }
         }
     }
+
 }
 
 

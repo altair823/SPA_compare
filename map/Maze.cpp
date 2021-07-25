@@ -120,39 +120,5 @@ void Maze::OpenWall(int row, int column, int direction, int weight) {
     }
 }
 
-void Maze::SaveMazeFile() {
-    std::ofstream mazeFile;
-    std::string filename = "maze" + std::to_string(mazeNumber);
-    filename += ".txt";
-    mazeFile.open(filename);
-    for (int column = 0; column < MAX_COLUMN; ++column) {
-        for (int row = 0; row < MAX_ROW; ++row) {
-            if (location[column][row].getWeight(UP) != INF){
-                mazeFile<<"U";
-            } else{
-                mazeFile<<"*";
-            }
-            if (location[column][row].getWeight(DOWN) != INF){
-                mazeFile<<"D";
-            } else{
-                mazeFile<<"*";
-            }
-            if (location[column][row].getWeight(LEFT) != INF){
-                mazeFile<<"L";
-            } else{
-                mazeFile<<"*";
-            }
-            if (location[column][row].getWeight(RIGHT) != INF){
-                mazeFile<<"R";
-            } else{
-                mazeFile<<"*";
-            }
-            mazeFile<<" ";
-        }
-        mazeFile<<"\n";
-    }
-    mazeFile.close();
-}
-
 
 

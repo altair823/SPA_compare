@@ -36,7 +36,6 @@ void Eller::MakeMaze() {
             MergeWithDifferentSet(column);
         }
     }
-    tempMaze->SaveMazeFile();
 }
 
 void Eller::MergeRandomly(int column) {
@@ -51,8 +50,8 @@ void Eller::MergeRandomly(int column) {
 bool Eller::ChoiceRandomly() {
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<> choice_int(0, 10);
-    if (choice_int(gen) <= 2){
+    std::uniform_int_distribution<> choice_int(0, 1);
+    if (choice_int(gen) == 0){
         return false;
     } else{
         return true;

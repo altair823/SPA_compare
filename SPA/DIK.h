@@ -25,7 +25,7 @@ private:
 
 
     // Update distance of all existing adjacent.
-    void UpdateDist();
+    void UpdateDist(Location *currentLoc);
 
 public:
     DIK();

@@ -13,11 +13,13 @@
 
 int main(){
 
+    CompareSP result;
+    result.InitializeResultFile();
+
     for (int loopCount = 0; loopCount < MAIN_LOOP_COUNT; ++loopCount) {
-
-
+        result.InitializeResultData();
+        result.setRoundNum(loopCount + 1);
         TimeMeasure timer;
-        CompareSP result;
 
         // Make a new maze.
         timer.SetStart();
@@ -25,7 +27,6 @@ int main(){
         Eller eller(maze);
         eller.MakeMaze();
         timer.SetEnd();
-        timer.PrintTimeMs(eller.getTypeString());
 
 #if _DIK
 
@@ -51,7 +52,6 @@ int main(){
         timer.SetStart();
         dikpq.FindSP();
         timer.SetEnd();
-        //dikpq.printLocationDistSet();
         result.InsertSP(&dikpq, timer.getTimeMs());
 
 
@@ -67,17 +67,11 @@ int main(){
         timer.SetStart();
         aStar.FindSP();
         timer.SetEnd();
-        //aStar.printLocationDistSet();
         result.InsertSP(&aStar, timer.getTimeMs());
 
 #endif
 
-        // Print all result.
-        result.PrintAllSPAResult();
-        //result.CompareAllSPList();
-
-        std::cout << std::endl;
-        std::cout << std::endl;
+        result.SaveDataFiles();
     }
     return 0;
 }

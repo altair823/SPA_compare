@@ -8,11 +8,12 @@ void CompareSP::InsertSP(SPAInterface *algorithm, std::chrono::duration<double> 
     SPAList.emplace_back(algorithm, timeSpandMs);
 }
 
-void CompareSP::PrintAllSPAResult() {
+std::string CompareSP::getAllSPAResult() {
+    std::string allResult;
     for (auto &result : SPAList) {
-        std::cout<<result.first->getTypeName()<<"'s SP length : "<<result.first->getShortestPathLength()<<
-        " - Execution time is : "<<result.second.count()<<std::endl;
+        allResult.append(result.first->getTypeName()).append("'s SP length : ").append(std::to_string(result.first->getShortestPathLength())).append(" - Execution time is : ").append(std::to_string(result.second.count())).append("\n");
     }
+    return allResult;
 }
 
 void CompareSP::CompareAllSPList() {
@@ -45,4 +46,32 @@ void CompareSP::CompareAllSPList() {
         }
         std::cout<<std::endl;
     }
+}
+
+void CompareSP::SaveDataFiles() {
+    std::ofstream timeResultFile;
+    timeResultFile.open("time_result.txt", std::ios::app);
+    timeResultFile << "[Round: " << round << "]" << std::endl;
+
+    timeResultFile << getAllSPAResult() << std::endl;
+    timeResultFile.close();
+}
+
+void CompareSP::InitializeResultFile() {
+    std::__fs::filesystem::path resultFile(RESULT_FILE_NAME);
+    if (std::__fs::filesystem::exists(resultFile)){
+        if (std::__fs::filesystem::is_regular_file(resultFile)){
+            std::__fs::filesystem::remove(resultFile);
+        } else{
+            std::__fs::filesystem::remove_all(resultFile);
+        }
+    }
+}
+
+void CompareSP::InitializeResultData() {
+    SPAList.clear();
+}
+
+void CompareSP::setRoundNum(int newRound) {
+    round = newRound;
 }

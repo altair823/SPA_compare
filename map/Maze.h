@@ -49,11 +49,6 @@ public:
      * Open the wall.
      */
     void OpenWall(int row, int column, int direction, int weight);
-
-    /*
-     * Save all maze data in file for logging.
-     */
-    void SaveMazeFile();
 };
 
 #endif //SPA_COMPARE_MAZE_H
