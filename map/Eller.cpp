@@ -15,6 +15,8 @@ void Eller::printCurrentLocationSet() {
 Eller::Eller(Maze &maze) {
     previouslyAssignedSetNumber = 0;
     tempMaze = &maze;
+    locationSet.resize(tempMaze->getRowSize());
+    nextLocationSet.resize(tempMaze->getRowSize());
 }
 
 void Eller::MakeMaze() {
@@ -23,23 +25,23 @@ void Eller::MakeMaze() {
     tempMaze->InitializeMaze();
 
     // Initial inserting. All cells in first row are inserted in different sets.
-    for (int i = 0; i < MAX_ROW; ++i) {
+    for (int i = 0; i < tempMaze->getRowSize(); ++i) {
         locationSet[i] = i + 1;
     }
 
-    for (int column = 0; column < MAX_COLUMN; ++column) {
+    for (int column = 0; column < tempMaze->getColumnSize(); ++column) {
         MergeRandomly(column);
         ExpandSetsVertical(column);
         AssignCellsInRow();
         // Last row, merge all cells that has different set value.
-        if (column == MAX_COLUMN - 1){
+        if (column == tempMaze->getColumnSize() - 1){
             MergeWithDifferentSet(column);
         }
     }
 }
 
 void Eller::MergeRandomly(int column) {
-    for (int row = 0; row < MAX_ROW; ++row) {
+    for (int row = 0; row < tempMaze->getRowSize(); ++row) {
         if (ChoiceRandomly()){
             MergeWithRight(row, column);
         }
@@ -75,7 +77,7 @@ void Eller::ExpandSetsVertical(int column) {
     int setEnd = 0;
     int currentSet = 0;
     while (true) {
-        for (int row = setStart; row < MAX_ROW; ++row) {
+        for (int row = setStart; row < tempMaze->getRowSize(); ++row) {
             // If new set is detected,
             if (locationSet[row] != 0 && currentSet == 0){
                 // set start point
@@ -95,7 +97,7 @@ void Eller::ExpandSetsVertical(int column) {
                 // But don't delete the set value.
                 break;
             }
-            if (row == MAX_ROW - 1){
+            if (row == tempMaze->getRowSize() - 1){
                 setEnd = row;
                 break;
             }
@@ -129,8 +131,8 @@ void Eller::ExpandSetsVertical(int column) {
         }
         // End point is reached to the maximum, end the loop.
         // And update locationSet to nextLocationSet.
-        if (setEnd == MAX_ROW - 1) {
-            for (int i = 0; i < MAX_ROW; i++){
+        if (setEnd == tempMaze->getRowSize() - 1) {
+            for (int i = 0; i < tempMaze->getRowSize(); i++){
                 locationSet[i] = nextLocationSet[i];
                 nextLocationSet[i] = 0;
             }
@@ -154,7 +156,7 @@ void Eller::AssignCellsInRow() {
 
 void Eller::MergeWithRight(int row, int column) {
     // If the right side cell doesn't exist, do nothing.
-    if (row + 1 >= MAX_ROW){
+    if (row + 1 >= tempMaze->getRowSize()){
         return;
     }
     // Groups two cells into the same set.
@@ -166,14 +168,14 @@ void Eller::MergeWithRight(int row, int column) {
 }
 
 void Eller::MergeWithDown(int row, int column) {
-    if (column + 1 >= MAX_COLUMN){
+    if (column + 1 >= tempMaze->getColumnSize()){
         return;
     }
     tempMaze->OpenWall(row, column, DOWN, GenerateWeightND());
 }
 
 void Eller::MergeWithDifferentSet(int column) {
-    for (int row = 0; row < MAX_ROW - 1; ++row) {
+    for (int row = 0; row < tempMaze->getRowSize() - 1; ++row) {
         if (locationSet[row] != locationSet[row + 1]){
             MergeWithRight(row, column);
         }
@@ -183,7 +185,7 @@ void Eller::MergeWithDifferentSet(int column) {
 void Eller::UpdateSet(int targetSetRow, int destSetRow) {
     int targetSetValue = locationSet[targetSetRow];
     int destSetValue = locationSet[destSetRow];
-    for (int row = targetSetRow-1; row < MAX_ROW; row++){
+    for (int row = targetSetRow-1; row < tempMaze->getRowSize(); row++){
         if (locationSet[row] == targetSetValue){
             locationSet[row] = destSetValue;
         }
@@ -192,7 +194,7 @@ void Eller::UpdateSet(int targetSetRow, int destSetRow) {
 
 int Eller::getUnusedSetNumber() {
     // The number of sets is cannot over the maximum number of horizontal cells.
-    for (int i = previouslyAssignedSetNumber + 1; i < MAX_ROW + 1; i++){
+    for (int i = previouslyAssignedSetNumber + 1; i < tempMaze->getRowSize() + 1; i++){
         // Find unused set number and assign it.
         if (existingSet.find(i) == existingSet.end()){
             previouslyAssignedSetNumber = i;

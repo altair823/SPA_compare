@@ -7,8 +7,11 @@
 
 #define MAIN_LOOP_COUNT 20
 
-#define MAX_ROW 50
-#define MAX_COLUMN 50
+#define MAX_ROW 200
+#define MAX_COLUMN 200
+#define DEFAULT_ROW 50
+#define DEFAULT_COLUMN 50
+
 
 #define INF 10000000  // Maximum weight of edges.
 #define WEIGHT_STD_DIV 0  // Standard deviation of weight.

@@ -16,6 +16,8 @@
  */
 class Maze{
 private:
+
+    int maxRow, maxColumn;
     Location location[MAX_COLUMN][MAX_ROW];
 
     /*
@@ -25,8 +27,11 @@ private:
 
 
 public:
-    Maze();
+    Maze(int maxRow, int maxColumn);
     Maze(const Maze&) = delete;
+    int getRowSize();
+    int getColumnSize();
+    Location* getLocation(int row, int column);
 
     void InitializeMaze();
 

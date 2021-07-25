@@ -11,7 +11,7 @@
 class SPAInterface{
 protected:
 
-    Maze maze;
+
 
     //The starting point and destination of route.
     Location* end;
@@ -22,7 +22,7 @@ protected:
 
 public:
     // Copy the given maze.
-    virtual void setMaze(const Maze &maze) = 0;
+    virtual void setMaze(Maze &maze) = 0;
 
     // Set starting point.
     virtual void setStart(int row, int column) = 0;

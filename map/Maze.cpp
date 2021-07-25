@@ -5,10 +5,12 @@
 #include "Maze.h"
 
 
-Maze::Maze() {
+Maze::Maze(int rowSize, int columnSize) {
+    maxRow = rowSize;
+    maxColumn = columnSize;
     mazeNumber = 0;
-    for (int column = 0; column < MAX_COLUMN; column++){
-        for (int row = 0; row < MAX_ROW; ++row) {
+    for (int column = 0; column < maxColumn; column++){
+        for (int row = 0; row < maxRow; ++row) {
             location[column][row].setRow(row);
             location[column][row].setColumn(column);
             ConnectAdjacentLoc(row, column);
@@ -17,8 +19,8 @@ Maze::Maze() {
 }
 
 void Maze::InitializeMaze(){
-    for (int column = 0; column < MAX_COLUMN; column++){
-        for (int row = 0; row < MAX_ROW; ++row) {
+    for (int column = 0; column < maxColumn; column++){
+        for (int row = 0; row < maxRow; ++row) {
             location[column][row].setRow(row);
             location[column][row].setColumn(column);
         }
@@ -31,7 +33,7 @@ void Maze::ConnectAdjacentLoc(int row, int column) {
     } else{
         location[column][row].setAdjacent(UP, &location[column - 1][row]);
     }
-    if (column == MAX_COLUMN - 1){
+    if (column == maxColumn - 1){
         location[column][row].setAdjacent(DOWN, nullptr);
     } else{
         location[column][row].setAdjacent(DOWN, &location[column + 1][row]);
@@ -41,7 +43,7 @@ void Maze::ConnectAdjacentLoc(int row, int column) {
     } else{
         location[column][row].setAdjacent(LEFT, &location[column][row - 1]);
     }
-    if (row == MAX_ROW - 1){
+    if (row == maxRow - 1){
         location[column][row].setAdjacent(RIGHT, nullptr);
     } else{
         location[column][row].setAdjacent(RIGHT, &location[column][row + 1]);
@@ -92,9 +94,9 @@ const Location * Maze::operator[] (int index) const{
 
 void Maze::OpenWall(int row, int column, int direction, int weight) {
     if ((row == 0 && direction == LEFT) ||
-        (row == MAX_ROW - 1 && direction == RIGHT) ||
+        (row == maxRow - 1 && direction == RIGHT) ||
         (column == 0 && direction == UP) ||
-        (column == MAX_COLUMN-1 && direction == DOWN)){
+        (column == maxColumn-1 && direction == DOWN)){
         return;
     }
     // Open the wall in current cell location.
@@ -118,6 +120,18 @@ void Maze::OpenWall(int row, int column, int direction, int weight) {
             std::cout<<"There is no adjacent cell in "<< direction <<" direction!"<<std::endl;
             exit(1);
     }
+}
+
+int Maze::getRowSize() {
+    return maxRow;
+}
+
+int Maze::getColumnSize() {
+    return maxColumn;
+}
+
+Location *Maze::getLocation(int row, int column) {
+    return &(location[column][row]);
 }
 
 

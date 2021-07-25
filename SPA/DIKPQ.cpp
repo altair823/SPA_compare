@@ -13,8 +13,8 @@ DIKPQ::DIKPQ() {
     }
 }
 
-void DIKPQ::setMaze(const Maze &mazeInput) {
-    maze = mazeInput;
+void DIKPQ::setMaze(Maze &mazeInput) {
+    maze = &mazeInput;
 }
 
 void DIKPQ::setStart(int row, int column) {
@@ -22,7 +22,7 @@ void DIKPQ::setStart(int row, int column) {
         std::cout << "Wrong Starting Point input in "<< getTypeName() << std::endl;
         exit(2);
     }
-    start = &maze[column][row];
+    start = maze->getLocation(row, column);
 }
 
 void DIKPQ::setEnd(int row, int column) {
@@ -30,7 +30,7 @@ void DIKPQ::setEnd(int row, int column) {
         std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);
     }
-    end = &maze[column][row];
+    end = maze->getLocation(row, column);
 }
 
 void DIKPQ::FindSP() {

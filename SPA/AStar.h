@@ -14,6 +14,7 @@
 
 class AStar : public SPAInterface{
 private:
+    Maze *maze;
 
     // Distance table that stores shortest distance of all locations and their previous location.
     std::pair<int, Location*> DistTable[MAX_COLUMN][MAX_ROW];
@@ -33,7 +34,7 @@ private:
     int distanceTable[MAX_COLUMN][MAX_ROW];
 public:
     AStar();
-    void setMaze(const Maze &maze) override;
+    void setMaze(Maze &maze) override;
     void setStart(int row, int column) override;
     void setEnd(int row, int column) override;
     void FindSP() override;

@@ -13,8 +13,8 @@ AStar::AStar() {
     }
 }
 
-void AStar::setMaze(const Maze &mazeInput) {
-    maze = mazeInput;
+void AStar::setMaze(Maze &mazeInput) {
+    maze = &mazeInput;
 }
 
 void AStar::setStart(int row, int column) {
@@ -22,7 +22,7 @@ void AStar::setStart(int row, int column) {
         std::cout << "Wrong Starting Point input in "<< getTypeName() << std::endl;
         exit(2);
     }
-    start = &maze[column][row];
+    start = maze->getLocation(row, column);
 }
 
 void AStar::setEnd(int row, int column) {
@@ -30,7 +30,7 @@ void AStar::setEnd(int row, int column) {
         std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);
     }
-    end = &maze[column][row];
+    end = maze->getLocation(row, column);
 
 }
 

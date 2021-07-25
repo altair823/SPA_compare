@@ -10,6 +10,7 @@
 #define SPA_COMPARE_ELLER_H
 
 #include <set>
+#include <vector>
 #include "Maze.h"
 #include <random>
 
@@ -24,14 +25,14 @@ private:
      * This is because, in the maximal situation, every cell is in a different set.
      * 0 means that cell is not in the set.
      */
-    int locationSet[MAX_ROW] = {0, };
+    std::vector<int> locationSet;
 
     /*
      * The set act like temp buffer for next raw.
      * When setting of certain raw is over and vertical merging ended,
      * values in this set are copied to locationSet and going to initialize with 0.
      */
-    int nextLocationSet[MAX_ROW] = {0, };
+    std::vector<int> nextLocationSet;
 
     /*
      * Indicate previous set number that assigned to a cell in a single cycle.
