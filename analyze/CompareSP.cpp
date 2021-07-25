@@ -49,8 +49,7 @@ void CompareSP::CompareAllSPList() {
 }
 
 void CompareSP::SaveDataFiles() {
-    std::ofstream timeResultFile;
-    timeResultFile.open(RESULT_FILE_NAME, std::ios::app);
+    std::ofstream timeResultFile(RESULT_FILE_NAME, std::ios::app);
     timeResultFile << "[Round: " << round << "]" << std::endl;
 
     timeResultFile << getAllSPAResult() << std::endl;
@@ -58,8 +57,7 @@ void CompareSP::SaveDataFiles() {
 }
 
 void CompareSP::InitializeResultFile() {
-    std::ofstream timeResultFile;
-    timeResultFile.open(RESULT_FILE_NAME, std::ios::out);
+    std::ofstream timeResultFile(RESULT_FILE_NAME, std::ios::trunc | std::ios::out);
     timeResultFile << "Initiating Shortest Path Searching Algorithms." << std::endl << std::endl;
     timeResultFile.close();
 }
