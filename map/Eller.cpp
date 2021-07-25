@@ -73,15 +73,15 @@ int Eller::GenerateWeightND(){
 
 void Eller::ExpandSetsVertical(int column) {
     existingSet.clear();
-    int setStart = 0;
-    int setEnd = 0;
+    int SetStart = 0;
+    int SetEnd = 0;
     int currentSet = 0;
     while (true) {
-        for (int row = setStart; row < tempMaze->getRowSize(); ++row) {
+        for (int row = SetStart; row < tempMaze->getRowSize(); ++row) {
             // If new set is detected,
             if (locationSet[row] != 0 && currentSet == 0){
                 // set start point
-                setStart = row;
+                SetStart = row;
                 currentSet = locationSet[row];
                 existingSet.insert(currentSet);
                 // delete set value because we don't need it anymore.
@@ -93,12 +93,12 @@ void Eller::ExpandSetsVertical(int column) {
                 // If different set is detected,
             } else if (currentSet != locationSet[row]){
                 // set end point before current row.
-                setEnd = row - 1;
+                SetEnd = row - 1;
                 // But don't delete the set value.
                 break;
             }
             if (row == tempMaze->getRowSize() - 1){
-                setEnd = row;
+                SetEnd = row;
                 break;
             }
         }
@@ -107,10 +107,10 @@ void Eller::ExpandSetsVertical(int column) {
         std::mt19937 gen(rd());
 
         // Randomly generate the count of vertical expanding between 1 and the size of set.
-        std::uniform_int_distribution<> expandCountGen(1, setEnd - setStart + 1);
+        std::uniform_int_distribution<> expandCountGen(1, SetEnd - SetStart + 1);
 
         // Randomly generate the row value to expand vertically.
-        std::uniform_int_distribution<> expandRowGen(setStart, setEnd);
+        std::uniform_int_distribution<> expandRowGen(SetStart, SetEnd);
 
         // For every count of vertical expanding,
         int expandCount = expandCountGen(gen);
@@ -131,14 +131,14 @@ void Eller::ExpandSetsVertical(int column) {
         }
         // End point is reached to the maximum, end the loop.
         // And update locationSet to nextLocationSet.
-        if (setEnd == tempMaze->getRowSize() - 1) {
+        if (SetEnd == tempMaze->getRowSize() - 1) {
             for (int i = 0; i < tempMaze->getRowSize(); i++){
                 locationSet[i] = nextLocationSet[i];
                 nextLocationSet[i] = 0;
             }
             break;
         } else {
-            setStart = setEnd+1;
+            SetStart = SetEnd + 1;
             currentSet = 0;
         }
     }

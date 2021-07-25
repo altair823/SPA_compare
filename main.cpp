@@ -13,22 +13,16 @@
 
 int main(int argc, char * argv []){
 
-    int mainLoopCount = 0;
-    int mazeRowSize = 0;
-    int mazeColumnSize = 0;
-    if (std::strtol(argv[1], nullptr, 10) == 0){
-        mainLoopCount = 1;
-        mazeRowSize = DEFAULT_ROW;
-        mazeColumnSize= DEFAULT_COLUMN;
-    } else if (argc == 4){
+    int mainLoopCount = 1;
+    int mazeRowSize = DEFAULT_ROW;
+    int mazeColumnSize = DEFAULT_COLUMN;
+    if (argc == 4){
         mainLoopCount = int(std::strtol(argv[1], nullptr, 10));
         mazeRowSize = int(std::strtol(argv[2], nullptr, 10));
         mazeColumnSize = int(std::strtol(argv[3], nullptr, 10));
     } else if (argc == 2){
         mainLoopCount = int(std::strtol(argv[1], nullptr, 10));
-        mazeRowSize = DEFAULT_ROW;
-        mazeColumnSize = DEFAULT_COLUMN;
-    } else{
+    } else if (argc != 1){
         std::cout<<"Wrong arguments! The number of arguments must be 1(loop count) or 3(maze row size, maze column size, loop count)."<<std::endl;
     }
 
