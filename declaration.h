@@ -30,4 +30,6 @@
 
 #define RESULT_FILE_NAME "time_result.txt"
 
+#define PROGRESSBAR_LEN 80
+
 #endif //SPA_COMPARE_DECLARATION_H

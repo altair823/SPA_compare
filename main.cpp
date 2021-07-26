@@ -30,7 +30,12 @@ int main(int argc, char * argv []){
     CompareSP result;
     result.InitializeResultFile();
 
+    float tick = (float)100/PROGRESSBAR_LEN;
+    float percent = 0;
+    int barCount = 0;
+
     for (int loopCount = 0; loopCount < mainLoopCount; ++loopCount) {
+
         result.InitializeResultData();
         result.setRoundNum(loopCount + 1);
         TimeMeasure timer;
@@ -86,6 +91,22 @@ int main(int argc, char * argv []){
 #endif
 
         result.SaveDataFiles();
+
+        std::cout<<loopCount+1<<"/"<<mainLoopCount<<" [";
+        percent = (float)(loopCount+1)/(float)mainLoopCount*100;
+        barCount = (int)(percent/tick);
+        for(int i = 0; i < PROGRESSBAR_LEN; i++) {
+			if (barCount > i) {
+				std::cout<<"=";
+			} else {
+				std::cout<<" ";
+			}
+		}
+        std::cout << std::fixed;
+        std::cout.precision(2);
+        std::cout << "] " << percent << "%%\r";
+        std::cout.flush();
     }
+    std::cout << "\nDone!" <<std::endl;
     return 0;
 }
