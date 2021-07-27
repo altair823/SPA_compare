@@ -74,8 +74,11 @@ void ASBQ::UpdateDist(Location *currentLoc) {
 
             // Enqueue the new adjacent location which is updated just before.
             adjacentLocQueue.Insert(
-                    (DistTable[adjacent->getColumn()][adjacent->getRow()].first + distanceTable[adjacent->getColumn()][adjacent->getRow()]),
+                    DistTable[adjacent->getColumn()][adjacent->getRow()].first + distanceTable[adjacent->getColumn()][adjacent->getRow()],
                      *adjacent);
+            if (maxWeight < DistTable[adjacent->getColumn()][adjacent->getRow()].first + distanceTable[adjacent->getColumn()][adjacent->getRow()]){
+                maxWeight = DistTable[adjacent->getColumn()][adjacent->getRow()].first + distanceTable[adjacent->getColumn()][adjacent->getRow()];
+            }
         }
     }
 }

@@ -83,7 +83,3 @@ CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../map/Location.h
 CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../map/Maze.cpp
 CMakeFiles/SPA_compare.dir/map/Maze.cpp.o: ../map/Maze.h
 
-CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o: ../declaration.h
-CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o: ../structure/BucketQueue.cpp
-CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o: ../structure/BucketQueue.h
-

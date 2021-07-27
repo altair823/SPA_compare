@@ -193,22 +193,9 @@ CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/SPA/ASPQ.cpp -o CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.s
 
-CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
-CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o: ../structure/BucketQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o -c /Users/altair823/Desktop/SPA_compare/structure/BucketQueue.cpp
-
-CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/altair823/Desktop/SPA_compare/structure/BucketQueue.cpp > CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.i
-
-CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/altair823/Desktop/SPA_compare/structure/BucketQueue.cpp -o CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.s
-
 CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
 CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o: ../SPA/DIKBQ.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o -c /Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.cpp
 
 CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.i: cmake_force
@@ -221,7 +208,7 @@ CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.s: cmake_force
 
 CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o: CMakeFiles/SPA_compare.dir/flags.make
 CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o: ../SPA/ASBQ.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o -c /Users/altair823/Desktop/SPA_compare/SPA/ASBQ.cpp
 
 CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.i: cmake_force
@@ -243,7 +230,6 @@ SPA_compare_OBJECTS = \
 "CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o" \
 "CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.o" \
 "CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.o" \
-"CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o" \
 "CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o" \
 "CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o"
 
@@ -259,12 +245,11 @@ SPA_compare: CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.o
-SPA_compare: CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o
 SPA_compare: CMakeFiles/SPA_compare.dir/build.make
 SPA_compare: CMakeFiles/SPA_compare.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable SPA_compare"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SPA_compare"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SPA_compare.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

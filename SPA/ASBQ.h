@@ -13,6 +13,7 @@
 
 class ASBQ : public SPAInterface{
 private:
+    int maxWeight = 0;
     Maze *maze;
 
     // Distance table that stores shortest distance of all locations and their previous location.

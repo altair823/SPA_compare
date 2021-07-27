@@ -439,33 +439,6 @@ map/Maze.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Maze.cpp.s
 .PHONY : map/Maze.cpp.s
 
-structure/BucketQueue.o: structure/BucketQueue.cpp.o
-
-.PHONY : structure/BucketQueue.o
-
-# target to build an object file
-structure/BucketQueue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o
-.PHONY : structure/BucketQueue.cpp.o
-
-structure/BucketQueue.i: structure/BucketQueue.cpp.i
-
-.PHONY : structure/BucketQueue.i
-
-# target to preprocess a source file
-structure/BucketQueue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.i
-.PHONY : structure/BucketQueue.cpp.i
-
-structure/BucketQueue.s: structure/BucketQueue.cpp.s
-
-.PHONY : structure/BucketQueue.s
-
-# target to generate assembly for a file
-structure/BucketQueue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.s
-.PHONY : structure/BucketQueue.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -508,9 +481,6 @@ help:
 	@echo "... map/Maze.o"
 	@echo "... map/Maze.i"
 	@echo "... map/Maze.s"
-	@echo "... structure/BucketQueue.o"
-	@echo "... structure/BucketQueue.i"
-	@echo "... structure/BucketQueue.s"
 .PHONY : help
 
 

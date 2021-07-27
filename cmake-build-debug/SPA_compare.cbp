@@ -151,9 +151,6 @@
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/map/Maze.h">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.cpp">
-			<Option target="SPA_compare"/>
-		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h">
 			<Option target="SPA_compare"/>
 		</Unit>
