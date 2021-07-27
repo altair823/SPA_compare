@@ -14,7 +14,7 @@
 
 
 #define INF 10000000  // Maximum weight of edges.
-#define WEIGHT_STD_DIV 2  // Standard deviation of weight.
+#define WEIGHT_STD_DIV 0  // Standard deviation of weight.
 #define WEIGHT_MEAN 10  // Mean of weight.
 
 #define MAX_EDGE_COUNT 4
