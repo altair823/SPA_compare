@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <memory>
 #include "analyze/TimeMeasure.h"
 #include "analyze/CompareSP.h"
 #include "map/Maze.h"
