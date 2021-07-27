@@ -8,7 +8,6 @@
 Maze::Maze(int rowSize, int columnSize) {
     maxRow = rowSize;
     maxColumn = columnSize;
-    mazeNumber = 0;
     for (int column = 0; column < maxColumn; column++){
         for (int row = 0; row < maxRow; ++row) {
             location[column][row].setRow(row);
@@ -50,9 +49,6 @@ void Maze::ConnectAdjacentLoc(int row, int column) {
     }
 }
 
-void Maze::IncreaseMazeNumber(){
-    mazeNumber++;
-}
 
 
 void Maze::PrintMaze() const{

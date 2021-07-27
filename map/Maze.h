@@ -20,12 +20,6 @@ private:
     int maxRow, maxColumn;
     Location location[MAX_COLUMN][MAX_ROW];
 
-    /*
-     * The number of previously created maze.
-     */
-    int mazeNumber;
-
-
 public:
     Maze(int maxRow, int maxColumn);
     Maze(const Maze&) = delete;
@@ -37,7 +31,6 @@ public:
 
     void ConnectAdjacentLoc(int row, int column);
 
-    void IncreaseMazeNumber();
 
     /*
      * Operator overload for getting the location object.
@@ -51,7 +44,8 @@ public:
     void PrintMaze() const;
 
     /*
-     * Open the wall.
+     * Open the sidewall of given location.
+     * The direction and its weight are also given.
      */
     void OpenWall(int row, int column, int direction, int weight);
 };

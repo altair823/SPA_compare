@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/altair823/Desktop/SPA_compare/SPA/AStar.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.o"
   "/Users/altair823/Desktop/SPA_compare/SPA/DIK.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.o"
+  "/Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o"
   "/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o"
   "/Users/altair823/Desktop/SPA_compare/analyze/CompareSP.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.o"
   "/Users/altair823/Desktop/SPA_compare/analyze/TimeMeasure.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o"
@@ -13,8 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/altair823/Desktop/SPA_compare/map/Eller.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/map/Eller.cpp.o"
   "/Users/altair823/Desktop/SPA_compare/map/Location.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/map/Location.cpp.o"
   "/Users/altair823/Desktop/SPA_compare/map/Maze.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/map/Maze.cpp.o"
-  "/Users/altair823/Desktop/SPA_compare/structure/HeapTree.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.o"
-  "/Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.o"
+  "/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.cpp" "/Users/altair823/Desktop/SPA_compare/cmake-build-debug/CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

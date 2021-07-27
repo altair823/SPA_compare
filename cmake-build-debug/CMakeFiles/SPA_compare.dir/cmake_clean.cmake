@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.o"
   "CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.o"
+  "CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o"
   "CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o"
   "CMakeFiles/SPA_compare.dir/analyze/CompareSP.cpp.o"
   "CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o"
@@ -8,8 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SPA_compare.dir/map/Eller.cpp.o"
   "CMakeFiles/SPA_compare.dir/map/Location.cpp.o"
   "CMakeFiles/SPA_compare.dir/map/Maze.cpp.o"
-  "CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.o"
-  "CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.o"
+  "CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o"
   "SPA_compare"
   "SPA_compare.pdb"
 )

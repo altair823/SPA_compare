@@ -52,7 +52,7 @@ void DIKPQ::FindSP() {
         int currentDist = adjacentLocQueue.top().first;
         currentLoc = adjacentLocQueue.top().second;
         adjacentLocQueue.pop();
-    if (DistTable[currentLoc->getColumn()][currentLoc->getRow()].first < currentDist){
+        if (DistTable[currentLoc->getColumn()][currentLoc->getRow()].first < currentDist){
             continue;
         }
         // Update distance table for adjacent locations.

@@ -9,6 +9,7 @@
 #include "map/Eller.h"
 #include "SPA/DIK.h"
 #include "SPA/DIKPQ.h"
+#include "SPA/DIKBQ.h"
 #include "SPA/AStar.h"
 
 int main(int argc, char * argv []){
@@ -72,6 +73,20 @@ int main(int argc, char * argv []){
         dikpq.FindSP();
         timer.SetEnd();
         result.InsertSP(&dikpq, timer.getTimeMs());
+
+
+#endif
+
+#if _DIKBQ
+
+        DIKBQ dikbq;
+        dikbq.setMaze(maze);
+        dikbq.setStart(0, mazeColumnSize - 1);
+        dikbq.setEnd(mazeRowSize - 1, 0);
+        timer.SetStart();
+        dikbq.FindSP();
+        timer.SetEnd();
+        result.InsertSP(&dikbq, timer.getTimeMs());
 
 
 #endif

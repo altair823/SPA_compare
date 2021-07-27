@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../declaration.h
-
-../map/Location.h
-iostream
--
-bitset
--
-../declaration.h
-../declaration.h
-
 ../map/Maze.h
 ../declaration.h
 ../declaration.h
@@ -25,10 +15,6 @@ iostream
 -
 fstream
 -
-
-/Users/altair823/Desktop/SPA_compare/SPA/AStar.cpp
-AStar.h
-/Users/altair823/Desktop/SPA_compare/SPA/AStar.h
 
 /Users/altair823/Desktop/SPA_compare/SPA/AStar.h
 queue
@@ -44,10 +30,6 @@ SPAInterface.h
 ../map/Maze.h
 /Users/altair823/Desktop/SPA_compare/map/Maze.h
 
-/Users/altair823/Desktop/SPA_compare/SPA/DIK.cpp
-DIK.h
-/Users/altair823/Desktop/SPA_compare/SPA/DIK.h
-
 /Users/altair823/Desktop/SPA_compare/SPA/DIK.h
 algorithm
 -
@@ -58,9 +40,17 @@ vector
 SPAInterface.h
 /Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h
 
-/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.cpp
-DIKPQ.h
-/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.cpp
+DIKBQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.h
+
+/Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.h
+../structure/BucketQueue.h
+/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h
+../map/Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
+SPAInterface.h
+/Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h
 
 /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
 queue
@@ -75,10 +65,6 @@ map/Maze.h
 -
 vector
 -
-
-/Users/altair823/Desktop/SPA_compare/analyze/CompareSP.cpp
-CompareSP.h
-/Users/altair823/Desktop/SPA_compare/analyze/CompareSP.h
 
 /Users/altair823/Desktop/SPA_compare/analyze/CompareSP.h
 vector
@@ -121,12 +107,10 @@ SPA/DIK.h
 /Users/altair823/Desktop/SPA_compare/SPA/DIK.h
 SPA/DIKPQ.h
 /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
+SPA/DIKBQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.h
 SPA/AStar.h
 /Users/altair823/Desktop/SPA_compare/SPA/AStar.h
-
-/Users/altair823/Desktop/SPA_compare/map/Eller.cpp
-Eller.h
-/Users/altair823/Desktop/SPA_compare/map/Eller.h
 
 /Users/altair823/Desktop/SPA_compare/map/Eller.h
 set
@@ -138,10 +122,6 @@ Maze.h
 random
 -
 
-/Users/altair823/Desktop/SPA_compare/map/Location.cpp
-Location.h
-/Users/altair823/Desktop/SPA_compare/map/Location.h
-
 /Users/altair823/Desktop/SPA_compare/map/Location.h
 iostream
 -
@@ -149,10 +129,6 @@ bitset
 -
 ../declaration.h
 /Users/altair823/Desktop/SPA_compare/declaration.h
-
-/Users/altair823/Desktop/SPA_compare/map/Maze.cpp
-Maze.h
-/Users/altair823/Desktop/SPA_compare/map/Maze.h
 
 /Users/altair823/Desktop/SPA_compare/map/Maze.h
 ../declaration.h
@@ -164,23 +140,13 @@ iostream
 fstream
 -
 
-/Users/altair823/Desktop/SPA_compare/structure/HeapTree.cpp
-HeapTree.h
-/Users/altair823/Desktop/SPA_compare/structure/HeapTree.h
+/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.cpp
+BucketQueue.h
+/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h
 
-/Users/altair823/Desktop/SPA_compare/structure/HeapTree.h
+/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h
 vector
 -
-../map/Location.h
-/Users/altair823/Desktop/SPA_compare/map/Location.h
-
-/Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.cpp
-PriorityQueue.h
-/Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.h
-
-/Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.h
 ../declaration.h
 /Users/altair823/Desktop/SPA_compare/declaration.h
-queue
--
 

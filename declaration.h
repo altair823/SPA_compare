@@ -14,7 +14,7 @@
 
 
 #define INF 10000000  // Maximum weight of edges.
-#define WEIGHT_STD_DIV 2  // Standard deviation of weight.
+#define WEIGHT_STD_DIV 0  // Standard deviation of weight.
 #define WEIGHT_MEAN 10  // Mean of weight.
 
 #define MAX_EDGE_COUNT 4
@@ -26,6 +26,7 @@
 // The flags that activate each SPA searching.
 #define _DIK 1
 #define _DIKPQ 1
+#define _DIKBQ 1
 #define _ASTAR 1
 
 #define RESULT_FILE_NAME "time_result.txt"

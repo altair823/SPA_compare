@@ -17,6 +17,15 @@ CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.o
  /Users/altair823/Desktop/SPA_compare/declaration.h
  /Users/altair823/Desktop/SPA_compare/map/Location.h
  /Users/altair823/Desktop/SPA_compare/map/Maze.h
+CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o
+ ../map/Maze.h
+ /Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.cpp
+ /Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.h
+ /Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h
+ /Users/altair823/Desktop/SPA_compare/declaration.h
+ /Users/altair823/Desktop/SPA_compare/map/Location.h
+ /Users/altair823/Desktop/SPA_compare/map/Maze.h
+ /Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h
 CMakeFiles/SPA_compare.dir/SPA/DIKPQ.cpp.o
  ../map/Maze.h
  /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.cpp
@@ -38,6 +47,7 @@ CMakeFiles/SPA_compare.dir/analyze/TimeMeasure.cpp.o
 CMakeFiles/SPA_compare.dir/main.cpp.o
  /Users/altair823/Desktop/SPA_compare/SPA/AStar.h
  /Users/altair823/Desktop/SPA_compare/SPA/DIK.h
+ /Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.h
  /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
  /Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h
  /Users/altair823/Desktop/SPA_compare/analyze/CompareSP.h
@@ -47,6 +57,7 @@ CMakeFiles/SPA_compare.dir/main.cpp.o
  /Users/altair823/Desktop/SPA_compare/map/Eller.h
  /Users/altair823/Desktop/SPA_compare/map/Location.h
  /Users/altair823/Desktop/SPA_compare/map/Maze.h
+ /Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h
 CMakeFiles/SPA_compare.dir/map/Eller.cpp.o
  /Users/altair823/Desktop/SPA_compare/declaration.h
  /Users/altair823/Desktop/SPA_compare/map/Eller.cpp
@@ -62,12 +73,7 @@ CMakeFiles/SPA_compare.dir/map/Maze.cpp.o
  /Users/altair823/Desktop/SPA_compare/map/Location.h
  /Users/altair823/Desktop/SPA_compare/map/Maze.cpp
  /Users/altair823/Desktop/SPA_compare/map/Maze.h
-CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.o
+CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o
  /Users/altair823/Desktop/SPA_compare/declaration.h
- /Users/altair823/Desktop/SPA_compare/map/Location.h
- /Users/altair823/Desktop/SPA_compare/structure/HeapTree.cpp
- /Users/altair823/Desktop/SPA_compare/structure/HeapTree.h
-CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.o
- /Users/altair823/Desktop/SPA_compare/declaration.h
- /Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.cpp
- /Users/altair823/Desktop/SPA_compare/structure/PriorityQueue.h
+ /Users/altair823/Desktop/SPA_compare/structure/BucketQueue.cpp
+ /Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h

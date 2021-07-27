@@ -196,6 +196,33 @@ SPA/DIK.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIK.cpp.s
 .PHONY : SPA/DIK.cpp.s
 
+SPA/DIKBQ.o: SPA/DIKBQ.cpp.o
+
+.PHONY : SPA/DIKBQ.o
+
+# target to build an object file
+SPA/DIKBQ.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.o
+.PHONY : SPA/DIKBQ.cpp.o
+
+SPA/DIKBQ.i: SPA/DIKBQ.cpp.i
+
+.PHONY : SPA/DIKBQ.i
+
+# target to preprocess a source file
+SPA/DIKBQ.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.i
+.PHONY : SPA/DIKBQ.cpp.i
+
+SPA/DIKBQ.s: SPA/DIKBQ.cpp.s
+
+.PHONY : SPA/DIKBQ.s
+
+# target to generate assembly for a file
+SPA/DIKBQ.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/DIKBQ.cpp.s
+.PHONY : SPA/DIKBQ.cpp.s
+
 SPA/DIKPQ.o: SPA/DIKPQ.cpp.o
 
 .PHONY : SPA/DIKPQ.o
@@ -385,59 +412,32 @@ map/Maze.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/map/Maze.cpp.s
 .PHONY : map/Maze.cpp.s
 
-structure/HeapTree.o: structure/HeapTree.cpp.o
+structure/BucketQueue.o: structure/BucketQueue.cpp.o
 
-.PHONY : structure/HeapTree.o
-
-# target to build an object file
-structure/HeapTree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.o
-.PHONY : structure/HeapTree.cpp.o
-
-structure/HeapTree.i: structure/HeapTree.cpp.i
-
-.PHONY : structure/HeapTree.i
-
-# target to preprocess a source file
-structure/HeapTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.i
-.PHONY : structure/HeapTree.cpp.i
-
-structure/HeapTree.s: structure/HeapTree.cpp.s
-
-.PHONY : structure/HeapTree.s
-
-# target to generate assembly for a file
-structure/HeapTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/HeapTree.cpp.s
-.PHONY : structure/HeapTree.cpp.s
-
-structure/PriorityQueue.o: structure/PriorityQueue.cpp.o
-
-.PHONY : structure/PriorityQueue.o
+.PHONY : structure/BucketQueue.o
 
 # target to build an object file
-structure/PriorityQueue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.o
-.PHONY : structure/PriorityQueue.cpp.o
+structure/BucketQueue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.o
+.PHONY : structure/BucketQueue.cpp.o
 
-structure/PriorityQueue.i: structure/PriorityQueue.cpp.i
+structure/BucketQueue.i: structure/BucketQueue.cpp.i
 
-.PHONY : structure/PriorityQueue.i
+.PHONY : structure/BucketQueue.i
 
 # target to preprocess a source file
-structure/PriorityQueue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.i
-.PHONY : structure/PriorityQueue.cpp.i
+structure/BucketQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.i
+.PHONY : structure/BucketQueue.cpp.i
 
-structure/PriorityQueue.s: structure/PriorityQueue.cpp.s
+structure/BucketQueue.s: structure/BucketQueue.cpp.s
 
-.PHONY : structure/PriorityQueue.s
+.PHONY : structure/BucketQueue.s
 
 # target to generate assembly for a file
-structure/PriorityQueue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/PriorityQueue.cpp.s
-.PHONY : structure/PriorityQueue.cpp.s
+structure/BucketQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/structure/BucketQueue.cpp.s
+.PHONY : structure/BucketQueue.cpp.s
 
 # Help Target
 help:
@@ -454,6 +454,9 @@ help:
 	@echo "... SPA/DIK.o"
 	@echo "... SPA/DIK.i"
 	@echo "... SPA/DIK.s"
+	@echo "... SPA/DIKBQ.o"
+	@echo "... SPA/DIKBQ.i"
+	@echo "... SPA/DIKBQ.s"
 	@echo "... SPA/DIKPQ.o"
 	@echo "... SPA/DIKPQ.i"
 	@echo "... SPA/DIKPQ.s"
@@ -475,12 +478,9 @@ help:
 	@echo "... map/Maze.o"
 	@echo "... map/Maze.i"
 	@echo "... map/Maze.s"
-	@echo "... structure/HeapTree.o"
-	@echo "... structure/HeapTree.i"
-	@echo "... structure/HeapTree.s"
-	@echo "... structure/PriorityQueue.o"
-	@echo "... structure/PriorityQueue.i"
-	@echo "... structure/PriorityQueue.s"
+	@echo "... structure/BucketQueue.o"
+	@echo "... structure/BucketQueue.i"
+	@echo "... structure/BucketQueue.s"
 .PHONY : help
 
 

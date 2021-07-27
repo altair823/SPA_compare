@@ -21,7 +21,6 @@ Eller::Eller(Maze &maze) {
 
 void Eller::MakeMaze() {
     // Set maze number for logging.
-    tempMaze->IncreaseMazeNumber();
     tempMaze->InitializeMaze();
 
     // Initial inserting. All cells in first row are inserted in different sets.
