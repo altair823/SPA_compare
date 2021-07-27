@@ -27,8 +27,6 @@ private:
     void UpdateDist( Location *currentLoc);
     void makeSPList();
 
-    // Function that makes key to array index.
-    static int makeIndex(int &distance);
 
 public:
     DIKBQ();

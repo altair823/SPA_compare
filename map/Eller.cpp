@@ -64,8 +64,9 @@ int Eller::GenerateWeightND(){
     std::mt19937 gen(rd());
     std::normal_distribution<double> weight_int(WEIGHT_MEAN, WEIGHT_STD_DIV);
     int weight = -1;
-    while (weight < 0) {
-        weight = std::round(weight_int(gen));
+    // The Maximum weight is below (mean*2)
+    while (weight < 0 || weight >= WEIGHT_MEAN * 2) {
+        weight = (int)std::round(weight_int(gen));
     }
     return weight;
 }

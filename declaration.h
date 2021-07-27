@@ -24,7 +24,7 @@
 #define ASTAR_DIST_WEIGHT 10
 
 // The flags that activate each SPA searching.
-#define _DIK 1
+#define _DIK 0
 #define _DIKPQ 1
 #define _DIKBQ 1
 #define _ASTAR 1

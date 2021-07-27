@@ -11,7 +11,6 @@ DIKBQ::DIKBQ() {
             row.second = nullptr;
         }
     }
-    adjacentLocQueue.setKeyMaker(makeIndex);
 }
 
 void DIKBQ::setMaze(Maze &mazeInput) {
@@ -105,8 +104,4 @@ std::vector<Location *> DIKBQ::getSPList() const {
 
 std::string DIKBQ::getTypeName() const {
     return std::string("DIKBQ ");
-}
-
-int DIKBQ::makeIndex(int &distance) {
-    return distance;
 }
