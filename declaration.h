@@ -5,8 +5,6 @@
 #ifndef SPA_COMPARE_DECLARATION_H
 #define SPA_COMPARE_DECLARATION_H
 
-#define MAIN_LOOP_COUNT 20
-
 #define MAX_ROW 200
 #define MAX_COLUMN 200
 #define DEFAULT_ROW 50
@@ -14,7 +12,7 @@
 
 
 #define INF 10000000  // Maximum weight of edges.
-#define WEIGHT_STD_DIV 2  // Standard deviation of weight.
+#define WEIGHT_STD_DIV 0  // Standard deviation of weight.
 #define WEIGHT_MEAN 10  // Mean of weight.
 
 #define MAX_EDGE_COUNT 4
@@ -27,7 +25,8 @@
 #define _DIK 1
 #define _DIKPQ 1
 #define _DIKBQ 1
-#define _ASTAR 1
+#define _ASPQ 1
+#define _ASBQ 1
 
 #define RESULT_FILE_NAME "time_result.txt"
 

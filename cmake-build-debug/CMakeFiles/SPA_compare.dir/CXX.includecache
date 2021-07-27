@@ -26,14 +26,28 @@ iostream
 fstream
 -
 
-/Users/altair823/Desktop/SPA_compare/SPA/AStar.cpp
-AStar.h
-/Users/altair823/Desktop/SPA_compare/SPA/AStar.h
+/Users/altair823/Desktop/SPA_compare/SPA/ASBQ.cpp
+ASBQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/ASBQ.h
 
-/Users/altair823/Desktop/SPA_compare/SPA/AStar.h
-queue
+/Users/altair823/Desktop/SPA_compare/SPA/ASBQ.h
+../structure/BucketQueue.h
+/Users/altair823/Desktop/SPA_compare/structure/BucketQueue.h
+cmath
 -
-tuple
+cstdlib
+-
+SPAInterface.h
+/Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h
+../map/Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
+
+/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.cpp
+ASPQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.h
+
+/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.h
+queue
 -
 cmath
 -
@@ -135,8 +149,10 @@ SPA/DIKPQ.h
 /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
 SPA/DIKBQ.h
 /Users/altair823/Desktop/SPA_compare/SPA/DIKBQ.h
-SPA/AStar.h
-/Users/altair823/Desktop/SPA_compare/SPA/AStar.h
+SPA/ASPQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.h
+SPA/ASBQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/ASBQ.h
 
 /Users/altair823/Desktop/SPA_compare/map/Eller.cpp
 Eller.h

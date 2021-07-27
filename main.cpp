@@ -10,7 +10,8 @@
 #include "SPA/DIK.h"
 #include "SPA/DIKPQ.h"
 #include "SPA/DIKBQ.h"
-#include "SPA/AStar.h"
+#include "SPA/ASPQ.h"
+#include "SPA/ASBQ.h"
 
 int main(int argc, char * argv []){
 
@@ -32,8 +33,8 @@ int main(int argc, char * argv []){
     result.InitializeResultFile();
 
     float tick = (float)100/PROGRESSBAR_LEN;
-    float percent = 0;
-    int barCount = 0;
+    float percent;
+    int barCount;
 
     for (int loopCount = 0; loopCount < mainLoopCount; ++loopCount) {
 
@@ -48,64 +49,46 @@ int main(int argc, char * argv []){
         eller.MakeMaze();
         timer.SetEnd();
 
-#if _DIK
 
-        // Run naive Dijkstra algorithm.
         DIK dik;
-        dik.setMaze(maze);
-        dik.setStart(0, mazeColumnSize - 1);
-        dik.setEnd(mazeRowSize - 1, 0);
-        timer.SetStart();
-        dik.FindSP();
-        timer.SetEnd();
-        result.InsertSP(&dik, timer.getTimeMs());
-
-#endif
-
-#if _DIKPQ
-
-        // Run Dijkstra algorithm with priority queue.
         DIKPQ dikpq;
-        dikpq.setMaze(maze);
-        dikpq.setStart(0, mazeColumnSize - 1);
-        dikpq.setEnd(mazeRowSize - 1, 0);
-        timer.SetStart();
-        dikpq.FindSP();
-        timer.SetEnd();
-        result.InsertSP(&dikpq, timer.getTimeMs());
-
-
-#endif
-
-#if _DIKBQ
-
         DIKBQ dikbq;
-        dikbq.setMaze(maze);
-        dikbq.setStart(0, mazeColumnSize - 1);
-        dikbq.setEnd(mazeRowSize - 1, 0);
-        timer.SetStart();
-        dikbq.FindSP();
-        timer.SetEnd();
-        result.InsertSP(&dikbq, timer.getTimeMs());
+        ASPQ aspq;
+        ASBQ asbq;
 
+        std::vector<std::unique_ptr<SPAInterface>> SPAList;
 
+#if _DIK
+        SPAList.push_back(std::make_unique<DIK>());
+#endif
+#if _DIKPQ
+        SPAList.push_back(std::make_unique<DIKPQ>());
+#endif
+#if _DIKBQ
+        SPAList.push_back(std::make_unique<DIKBQ>());
+#endif
+#if _ASPQ
+        SPAList.push_back(std::make_unique<ASPQ>());
+#endif
+#if _ASBQ
+        SPAList.push_back(std::make_unique<ASBQ>());
 #endif
 
-#if _ASTAR
-
-        AStar aStar;
-        aStar.setMaze(maze);
-        aStar.setStart(0, mazeColumnSize - 1);
-        aStar.setEnd(mazeRowSize - 1, 0);
-        aStar.makeDistTable();
-        timer.SetStart();
-        aStar.FindSP();
-        timer.SetEnd();
-        result.InsertSP(&aStar, timer.getTimeMs());
-
-#endif
+        for (auto & i : SPAList) {
+            i->setMaze(maze);
+            i->setStart(0, mazeColumnSize - 1);
+            i->setEnd(mazeRowSize - 1, 0);
+            if (i->getTypeName() == "ASPQ  " || i->getTypeName() == "ASBQ  "){
+                i->makeDistTable();
+            }
+            timer.SetStart();
+            i->FindSP();
+            timer.SetEnd();
+            result.InsertSP(i.release(), timer.getTimeMs());
+        }
 
         result.SaveDataFiles();
+        SPAList.clear();
 
         std::cout<<loopCount+1<<"/"<<mainLoopCount<<" [";
         percent = (float)(loopCount+1)/(float)mainLoopCount*100;

@@ -1,10 +1,11 @@
 //
-// Created by 김태현 on 2021/07/23.
+// Created by 김태현 on 2021/07/27.
 //
 
-#include "AStar.h"
+#include "ASBQ.h"
 
-AStar::AStar() {
+ASBQ::ASBQ() {
+    maze = nullptr;
     for (auto & column : DistTable) {
         for (auto & row : column) {
             row.first = INF;
@@ -13,11 +14,11 @@ AStar::AStar() {
     }
 }
 
-void AStar::setMaze(Maze &mazeInput) {
+void ASBQ::setMaze(Maze &mazeInput) {
     maze = &mazeInput;
 }
 
-void AStar::setStart(int row, int column) {
+void ASBQ::setStart(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN) {
         std::cout << "Wrong Starting Point input in "<< getTypeName() << std::endl;
         exit(2);
@@ -25,22 +26,21 @@ void AStar::setStart(int row, int column) {
     start = maze->getLocation(row, column);
 }
 
-void AStar::setEnd(int row, int column) {
+void ASBQ::setEnd(int row, int column) {
     if (row < 0 || row >= MAX_ROW || column < 0 || column >= MAX_COLUMN){
         std::cout<<"Wrong Ending Point input in "<<getTypeName()<<std::endl;
         exit(2);
     }
     end = maze->getLocation(row, column);
-
 }
 
-void AStar::FindSP() {
+void ASBQ::FindSP() {
 
     DistTable[start->getColumn()][start->getRow()].first = 0;
     DistTable[start->getColumn()][start->getRow()].second = nullptr;
 
     // Initially push the starting point to PQ.
-    adjacentLocQueue.push({-(DistTable[start->getColumn()][start->getRow()].first + distanceTable[start->getColumn()][start->getRow()]), start});
+    adjacentLocQueue.Insert((DistTable[start->getColumn()][start->getRow()].first + distanceTable[start->getColumn()][start->getRow()]), *start);
 
     Location* currentLoc = start;
 
@@ -48,8 +48,8 @@ void AStar::FindSP() {
 
         // Dequeue the closest location.
         // The distance of location from the starting point is used for only sorting.
-        currentLoc = adjacentLocQueue.top().second;
-        adjacentLocQueue.pop();
+        int currentDist = adjacentLocQueue.getMinimumKey();
+        currentLoc = adjacentLocQueue.PopMinimum();
 
         // Update distance table for adjacent locations.
         UpdateDist(currentLoc);
@@ -57,7 +57,7 @@ void AStar::FindSP() {
     makeSPList();
 }
 
-void AStar::UpdateDist(Location *currentLoc) {
+void ASBQ::UpdateDist(Location *currentLoc) {
     for (int dir = 0; dir < 4; ++dir) {
         Location* adjacent = currentLoc->getAdjacent(dir);
         // If there is adjacent location exists,
@@ -73,14 +73,14 @@ void AStar::UpdateDist(Location *currentLoc) {
                     currentLoc;
 
             // Enqueue the new adjacent location which is updated just before.
-            adjacentLocQueue.push(
-                    {-(DistTable[adjacent->getColumn()][adjacent->getRow()].first + distanceTable[adjacent->getColumn()][adjacent->getRow()]),
-                     adjacent});
+            adjacentLocQueue.Insert(
+                    (DistTable[adjacent->getColumn()][adjacent->getRow()].first + distanceTable[adjacent->getColumn()][adjacent->getRow()]),
+                     *adjacent);
         }
     }
 }
 
-void AStar::makeSPList() {
+void ASBQ::makeSPList() {
     // Store the shortest path locations to the list.
     Location *current = end;
     while (current->getRow() != start->getRow() || current->getColumn() != start->getColumn()){
@@ -90,30 +90,30 @@ void AStar::makeSPList() {
     SPList.insert(SPList.begin(), current);
 }
 
-int AStar::EstimateDistToEnd(Location *loc) {
+int ASBQ::EstimateDistToEnd(Location *loc) {
     int estimateDist = int (sqrt(pow(double (end->getRow()*10 - loc->getRow()*10), 2) + pow(double (end->getColumn()*10 - loc->getColumn()*10), 2)));
     return estimateDist;
 }
 
-int AStar::getShortestPathLength() const {
+int ASBQ::getShortestPathLength() const {
     return DistTable[end->getColumn()][end->getRow()].first;
 }
 
-std::string AStar::getTypeName() const {
-    return std::string("ASTAR ");
+std::string ASBQ::getTypeName() const {
+    return std::string("ASBQ  ");
 }
 
-std::vector<Location *> AStar::getSPList() const {
+std::vector<Location *> ASBQ::getSPList() const {
     return SPList;
 }
-void AStar::printShortestPath() const {
+void ASBQ::printShortestPath() const {
 
     for (auto &loc : SPList) {
         std::cout<<*loc<<" | ";
     }
     std::cout<<std::endl;
 }
-void AStar::printLocationDistSet() const {
+void ASBQ::printLocationDistSet() const {
     for (auto & column : DistTable) {
         for (auto & row : column) {
             if (row.first != INF) {
@@ -126,7 +126,7 @@ void AStar::printLocationDistSet() const {
     }
 }
 
-void AStar::makeDistTable() {
+void ASBQ::makeDistTable() {
 
     for (int i = 0; i < MAX_COLUMN; i++) {
         for (int j = 0; j < MAX_ROW; j++) {
@@ -136,3 +136,5 @@ void AStar::makeDistTable() {
         }
     }
 }
+
+

@@ -82,10 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/AStar.cpp">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/ASBQ.cpp">
 			<Option target="SPA_compare"/>
 		</Unit>
-		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/AStar.h">
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/ASBQ.h">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.cpp">
+			<Option target="SPA_compare"/>
+		</Unit>
+		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.h">
 			<Option target="SPA_compare"/>
 		</Unit>
 		<Unit filename="/Users/altair823/Desktop/SPA_compare/SPA/DIK.cpp">

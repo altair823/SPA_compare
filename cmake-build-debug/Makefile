@@ -142,32 +142,59 @@ SPA_compare/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/build
 .PHONY : SPA_compare/fast
 
-SPA/AStar.o: SPA/AStar.cpp.o
+SPA/ASBQ.o: SPA/ASBQ.cpp.o
 
-.PHONY : SPA/AStar.o
+.PHONY : SPA/ASBQ.o
 
 # target to build an object file
-SPA/AStar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.o
-.PHONY : SPA/AStar.cpp.o
+SPA/ASBQ.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.o
+.PHONY : SPA/ASBQ.cpp.o
 
-SPA/AStar.i: SPA/AStar.cpp.i
+SPA/ASBQ.i: SPA/ASBQ.cpp.i
 
-.PHONY : SPA/AStar.i
+.PHONY : SPA/ASBQ.i
 
 # target to preprocess a source file
-SPA/AStar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.i
-.PHONY : SPA/AStar.cpp.i
+SPA/ASBQ.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.i
+.PHONY : SPA/ASBQ.cpp.i
 
-SPA/AStar.s: SPA/AStar.cpp.s
+SPA/ASBQ.s: SPA/ASBQ.cpp.s
 
-.PHONY : SPA/AStar.s
+.PHONY : SPA/ASBQ.s
 
 # target to generate assembly for a file
-SPA/AStar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/AStar.cpp.s
-.PHONY : SPA/AStar.cpp.s
+SPA/ASBQ.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/ASBQ.cpp.s
+.PHONY : SPA/ASBQ.cpp.s
+
+SPA/ASPQ.o: SPA/ASPQ.cpp.o
+
+.PHONY : SPA/ASPQ.o
+
+# target to build an object file
+SPA/ASPQ.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.o
+.PHONY : SPA/ASPQ.cpp.o
+
+SPA/ASPQ.i: SPA/ASPQ.cpp.i
+
+.PHONY : SPA/ASPQ.i
+
+# target to preprocess a source file
+SPA/ASPQ.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.i
+.PHONY : SPA/ASPQ.cpp.i
+
+SPA/ASPQ.s: SPA/ASPQ.cpp.s
+
+.PHONY : SPA/ASPQ.s
+
+# target to generate assembly for a file
+SPA/ASPQ.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SPA_compare.dir/build.make CMakeFiles/SPA_compare.dir/SPA/ASPQ.cpp.s
+.PHONY : SPA/ASPQ.cpp.s
 
 SPA/DIK.o: SPA/DIK.cpp.o
 
@@ -448,9 +475,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SPA_compare"
-	@echo "... SPA/AStar.o"
-	@echo "... SPA/AStar.i"
-	@echo "... SPA/AStar.s"
+	@echo "... SPA/ASBQ.o"
+	@echo "... SPA/ASBQ.i"
+	@echo "... SPA/ASBQ.s"
+	@echo "... SPA/ASPQ.o"
+	@echo "... SPA/ASPQ.i"
+	@echo "... SPA/ASPQ.s"
 	@echo "... SPA/DIK.o"
 	@echo "... SPA/DIK.i"
 	@echo "... SPA/DIK.s"

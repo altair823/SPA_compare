@@ -17,7 +17,7 @@ private:
      */
     std::vector<Value*> bucketList[(MAX_ROW+MAX_COLUMN)*(WEIGHT_MEAN*2)];
     int bucketListSize = (MAX_ROW+MAX_COLUMN)*(WEIGHT_MEAN*2);
-    int beforeSearchIndex = 0;
+    int beforeSearchIndex{};
 public:
     void Insert(Key key, Value &value);
     Value* PopMinimum();
@@ -27,12 +27,6 @@ public:
 template<class Key, class Value>
 void BucketQueue<Key, Value>::Insert(Key key, Value &value) {
     int newIndex = key;
-/*
-    if (newIndex >= bucketList.size()){
-        bucketList.resize(newIndex * 2 + 1);
-    }
-    */
-
     (bucketList[newIndex]).push_back(&value);
 }
 
@@ -49,7 +43,10 @@ Key BucketQueue<Key, Value>::getMinimumKey() {
 
     // The key of reducing time is saving the index which access before
     // and when access the list again, start linear search from the saved index.
-    for (int i = beforeSearchIndex; i < bucketListSize; ++i) {
+    for (int i = beforeSearchIndex-(WEIGHT_MEAN*2); i < bucketListSize; ++i) {
+        if (i<0){
+            i = 0;
+        }
         if (bucketList[i].size() > 0){
             beforeSearchIndex = i;
             return i;

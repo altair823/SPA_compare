@@ -16,9 +16,9 @@ Location::Location() {
     adjacentLocations[3] = nullptr;
 }
 
-Location::Location(int row, int column) {
-    row = row;
-    column = column;
+Location::Location(int newRow, int newColumn) {
+    row = newRow;
+    column = newColumn;
     weight[0] = INF;
     weight[1] = INF;
     weight[2] = INF;
@@ -78,10 +78,10 @@ bool Location::operator!=(const Location &otherLocation) const {
 }
 
 Location &Location::operator=(const Location &location) {
-    row = location.row;
-    column = location.column;
+    this->row = location.row;
+    this->column = location.column;
     for (int i = 0; i < MAX_EDGE_COUNT; i++) {
-        weight[i] = location.weight[i];
+        this->weight[i] = location.weight[i];
         if (location.adjacentLocations[i] != nullptr) {
             this->adjacentLocations[i] = location.adjacentLocations[i];
         }

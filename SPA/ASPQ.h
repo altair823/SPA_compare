@@ -2,17 +2,16 @@
 // Created by 김태현 on 2021/07/23.
 //
 
-#ifndef SPA_COMPARE_ASTAR_H
-#define SPA_COMPARE_ASTAR_H
+#ifndef SPA_COMPARE_ASPQ_H
+#define SPA_COMPARE_ASPQ_H
 
 #include <queue>
-#include <tuple>
 #include <cmath>
 #include <cstdlib>
 #include "SPAInterface.h"
 #include "../map/Maze.h"
 
-class AStar : public SPAInterface{
+class ASPQ : public SPAInterface{
 private:
     Maze *maze;
 
@@ -33,7 +32,7 @@ private:
 
     int distanceTable[MAX_COLUMN][MAX_ROW];
 public:
-    AStar();
+    ASPQ();
     void setMaze(Maze &maze) override;
     void setStart(int row, int column) override;
     void setEnd(int row, int column) override;
@@ -43,7 +42,7 @@ public:
     std::string getTypeName() const override;
     void printShortestPath() const;
     void printLocationDistSet() const;
-    void makeDistTable();
+    void makeDistTable() override;
 };
 
-#endif //SPA_COMPARE_ASTAR_H
+#endif //SPA_COMPARE_ASPQ_H
