@@ -1,10 +1,12 @@
 from openpyxl import Workbook
 
+filename = "time_result"
+
 write_wb = Workbook()
 
 write_ws = write_wb.active
 write_ws.append(['DIK', 'DIKPQ', 'DIKBQ', 'ASPQ', 'ASBQ', 'DIK', 'DIKPQ', 'DIKBQ', 'ASPQ', 'ASBQ'])
-with open('rawtext/100 200x200_dik^dikpq^dikbq^aspq^asbq_sd0.txt') as resultFile:
+with open(filename + '.txt') as resultFile:
     lines = resultFile.readlines()
     resultDataList = {}
     resultRound = 0
@@ -35,4 +37,4 @@ with open('rawtext/100 200x200_dik^dikpq^dikbq^aspq^asbq_sd0.txt') as resultFile
             write_ws.append(allData)
             resultDataList.clear()
 
-write_wb.save('100 200x200_dik^dikpq^dikbq^aspq^asbq_sd0.xlsx')
+write_wb.save(filename + '.xlsx')

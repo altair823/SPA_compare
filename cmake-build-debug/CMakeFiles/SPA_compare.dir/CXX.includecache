@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../declaration.h
+
+../map/Location.h
+iostream
+-
+bitset
+-
+../declaration.h
+../declaration.h
+
 ../map/Maze.h
 ../declaration.h
 ../declaration.h
@@ -32,6 +42,10 @@ SPAInterface.h
 ../map/Maze.h
 /Users/altair823/Desktop/SPA_compare/map/Maze.h
 
+/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.cpp
+ASPQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/ASPQ.h
+
 /Users/altair823/Desktop/SPA_compare/SPA/ASPQ.h
 queue
 -
@@ -43,6 +57,10 @@ SPAInterface.h
 /Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h
 ../map/Maze.h
 /Users/altair823/Desktop/SPA_compare/map/Maze.h
+
+/Users/altair823/Desktop/SPA_compare/SPA/DIK.cpp
+DIK.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIK.h
 
 /Users/altair823/Desktop/SPA_compare/SPA/DIK.h
 algorithm
@@ -66,6 +84,10 @@ DIKBQ.h
 SPAInterface.h
 /Users/altair823/Desktop/SPA_compare/SPA/SPAInterface.h
 
+/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.cpp
+DIKPQ.h
+/Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
+
 /Users/altair823/Desktop/SPA_compare/SPA/DIKPQ.h
 queue
 -
@@ -79,6 +101,10 @@ map/Maze.h
 -
 vector
 -
+
+/Users/altair823/Desktop/SPA_compare/analyze/CompareSP.cpp
+CompareSP.h
+/Users/altair823/Desktop/SPA_compare/analyze/CompareSP.h
 
 /Users/altair823/Desktop/SPA_compare/analyze/CompareSP.h
 vector
@@ -130,6 +156,10 @@ SPA/ASPQ.h
 SPA/ASBQ.h
 /Users/altair823/Desktop/SPA_compare/SPA/ASBQ.h
 
+/Users/altair823/Desktop/SPA_compare/map/Eller.cpp
+Eller.h
+/Users/altair823/Desktop/SPA_compare/map/Eller.h
+
 /Users/altair823/Desktop/SPA_compare/map/Eller.h
 set
 -
@@ -140,6 +170,10 @@ Maze.h
 random
 -
 
+/Users/altair823/Desktop/SPA_compare/map/Location.cpp
+Location.h
+/Users/altair823/Desktop/SPA_compare/map/Location.h
+
 /Users/altair823/Desktop/SPA_compare/map/Location.h
 iostream
 -
@@ -147,6 +181,10 @@ bitset
 -
 ../declaration.h
 /Users/altair823/Desktop/SPA_compare/declaration.h
+
+/Users/altair823/Desktop/SPA_compare/map/Maze.cpp
+Maze.h
+/Users/altair823/Desktop/SPA_compare/map/Maze.h
 
 /Users/altair823/Desktop/SPA_compare/map/Maze.h
 ../declaration.h
