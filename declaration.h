@@ -19,10 +19,6 @@
 
 #define MAX_EDGE_COUNT 4
 
-// An estimate of the distance between one vertex and adjacent vertex used in the heuristic of the A* algorithm.
-// It must be below the actual distance.
-#define ASTAR_DIST_WEIGHT 5
-
 // The flags that activate each SPA searching.
 #define _DIK 1
 #define _DIKPQ 1
