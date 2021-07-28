@@ -12,16 +12,16 @@
 
 
 #define INF 10000000  // Maximum weight of edges.
-#define WEIGHT_STD_DIV 0  // Standard deviation of weight.
+#define WEIGHT_STD_DIV 2  // Standard deviation of weight.
 #define WEIGHT_MEAN 10  // Mean of weight.
 #define WEIGHT_MAX 20
-#define WEIGHT_MIN 10
+#define WEIGHT_MIN 5
 
 #define MAX_EDGE_COUNT 4
 
 // An estimate of the distance between one vertex and adjacent vertex used in the heuristic of the A* algorithm.
 // It must be below the actual distance.
-#define ASTAR_DIST_WEIGHT 10
+#define ASTAR_DIST_WEIGHT 5
 
 // The flags that activate each SPA searching.
 #define _DIK 1
