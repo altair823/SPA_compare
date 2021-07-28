@@ -19,13 +19,15 @@ private:
 
     int maxRow, maxColumn;
     Location location[MAX_COLUMN][MAX_ROW];
+    int standardDeviation;
 
 public:
-    Maze(int maxRow, int maxColumn);
+    Maze(int maxRow, int maxColumn, int stdInput);
     Maze(const Maze&) = delete;
     int getRowSize();
     int getColumnSize();
     Location* getLocation(int row, int column);
+    int getStandardDeviation() const;
 
     void InitializeMaze();
 

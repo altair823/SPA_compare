@@ -62,12 +62,12 @@ bool Eller::ChoiceRandomly() {
 int Eller::GenerateWeightND(){
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::normal_distribution<double> weight_int(WEIGHT_MEAN, WEIGHT_STD_DIV);
-    int weight = -1;
+    std::normal_distribution<double> weight_int(WEIGHT_MEAN, tempMaze->getStandardDeviation());
+    int weight;
     // The Maximum weight is below (mean*2)
-    while (weight <= WEIGHT_MIN || weight >= WEIGHT_MAX) {
+    do {
         weight = (int)std::round(weight_int(gen));
-    }
+    } while (weight <= WEIGHT_MIN || weight >= WEIGHT_MAX);
     return weight;
 }
 

@@ -5,9 +5,10 @@
 #include "Maze.h"
 
 
-Maze::Maze(int rowSize, int columnSize) {
+Maze::Maze(int rowSize, int columnSize, int stdInput) {
     maxRow = rowSize;
     maxColumn = columnSize;
+    standardDeviation = stdInput;
     for (int column = 0; column < maxColumn; column++){
         for (int row = 0; row < maxRow; ++row) {
             location[column][row].setRow(row);
@@ -128,6 +129,10 @@ int Maze::getColumnSize() {
 
 Location *Maze::getLocation(int row, int column) {
     return &(location[column][row]);
+}
+
+int Maze::getStandardDeviation() const {
+    return standardDeviation;
 }
 
 

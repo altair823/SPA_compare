@@ -18,6 +18,8 @@ class Eller{
 private:
     Maze *tempMaze;
 
+    int STD;
+
     std::set<int> existingSet;
 
     /*

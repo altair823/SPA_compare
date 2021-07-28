@@ -19,14 +19,17 @@ int main(int argc, char * argv []){
     int mainLoopCount = 1;
     int mazeRowSize = DEFAULT_ROW;
     int mazeColumnSize = DEFAULT_COLUMN;
-    if (argc == 4){
+    int standardDeviation = 0;
+    if (argc == 5){
         mainLoopCount = int(std::strtol(argv[1], nullptr, 10));
         mazeRowSize = int(std::strtol(argv[2], nullptr, 10));
         mazeColumnSize = int(std::strtol(argv[3], nullptr, 10));
+        standardDeviation = int(std::strtol(argv[4], nullptr, 10));
     } else if (argc == 2){
         mainLoopCount = int(std::strtol(argv[1], nullptr, 10));
     } else if (argc != 1){
-        std::cout<<"Wrong arguments! The number of arguments must be 1(loop count) or 3(maze row size, maze column size, loop count)."<<std::endl;
+        std::cout<<"Wrong arguments! The number of arguments must be 1(loop count) or 4(maze row size, maze column size, loop count, standard deviation)."<<std::endl;
+        return 1;
     }
 
 
@@ -45,7 +48,7 @@ int main(int argc, char * argv []){
 
         // Make a new maze.
         timer.SetStart();
-        Maze maze(mazeRowSize, mazeColumnSize);
+        Maze maze(mazeRowSize, mazeColumnSize, standardDeviation);
         Eller eller(maze);
         eller.MakeMaze();
         timer.SetEnd();

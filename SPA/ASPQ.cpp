@@ -130,13 +130,15 @@ void ASPQ::makeDistTable() {
 
     for (int i = 0; i < MAX_COLUMN; i++) {
         for (int j = 0; j < MAX_ROW; j++) {
-#if WEIGHT_STD_DIV
+            if (maze->getStandardDeviation() != 0) {
                 distanceTable[i][j] =
-                        ((std::abs(end->getRow() - j)) * WEIGHT_MIN) + ((std::abs(end->getColumn() - i)) * WEIGHT_MIN);
-#else
+                        ((std::abs(end->getRow() - j)) * WEIGHT_MIN) +
+                        ((std::abs(end->getColumn() - i)) * WEIGHT_MIN);
+            } else {
                 distanceTable[i][j] =
-                        ((std::abs(end->getRow() - j)) * WEIGHT_MEAN) + ((std::abs(end->getColumn() - i)) * WEIGHT_MEAN);
-#endif
+                        ((std::abs(end->getRow() - j)) * WEIGHT_MEAN) +
+                        ((std::abs(end->getColumn() - i)) * WEIGHT_MEAN);
+            }
         }
     }
 }
