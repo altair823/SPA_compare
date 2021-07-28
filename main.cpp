@@ -75,17 +75,17 @@ int main(int argc, char * argv []){
         SPAList.push_back(std::make_unique<ASBQ>());
 #endif
 
-        for (auto & i : SPAList) {
-            i->setMaze(maze);
-            i->setStart(0, mazeColumnSize - 1);
-            i->setEnd(mazeRowSize - 1, 0);
-            if (i->getTypeName() == "ASPQ  " || i->getTypeName() == "ASBQ  "){
-                i->makeDistTable();
+        for (auto & spa : SPAList) {
+            spa->setMaze(maze);
+            spa->setStart(0, mazeColumnSize - 1);
+            spa->setEnd(mazeRowSize - 1, 0);
+            if (spa->getTypeName() == "ASPQ  " || spa->getTypeName() == "ASBQ  "){
+                spa->makeDistTable();
             }
             timer.SetStart();
-            i->FindSP();
+            spa->FindSP();
             timer.SetEnd();
-            result.InsertSP(i.release(), timer.getTimeMs());
+            result.InsertSP(spa.release(), timer.getTimeMs());
         }
 
         result.SaveDataFiles();
