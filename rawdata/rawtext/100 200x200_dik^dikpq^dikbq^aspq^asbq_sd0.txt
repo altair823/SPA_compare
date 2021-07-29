@@ -1,702 +1,702 @@
 Initiating Shortest Path Searching Algorithms.
 
 [Round: 1]
-DIK   's SP length : 4400 - Execution time is : 60.467231
-DIKPQ 's SP length : 4400 - Execution time is : 0.099511
-DIKBQ 's SP length : 4400 - Execution time is : 0.027777
-ASPQ  's SP length : 4400 - Execution time is : 0.076112
-ASBQ  's SP length : 4400 - Execution time is : 0.014598
+DIK   's SP length : 4380 - Execution time is : 60.394680
+DIKPQ 's SP length : 4380 - Execution time is : 0.097693
+DIKBQ 's SP length : 4380 - Execution time is : 0.028774
+ASPQ  's SP length : 4380 - Execution time is : 0.082884
+ASBQ  's SP length : 4380 - Execution time is : 0.017515
 
 [Round: 2]
-DIK   's SP length : 4300 - Execution time is : 60.527751
-DIKPQ 's SP length : 4300 - Execution time is : 0.099657
-DIKBQ 's SP length : 4300 - Execution time is : 0.027663
-ASPQ  's SP length : 4300 - Execution time is : 0.071548
-ASBQ  's SP length : 4300 - Execution time is : 0.014423
+DIK   's SP length : 4440 - Execution time is : 60.374512
+DIKPQ 's SP length : 4440 - Execution time is : 0.099421
+DIKBQ 's SP length : 4440 - Execution time is : 0.028855
+ASPQ  's SP length : 4440 - Execution time is : 0.111693
+ASBQ  's SP length : 4440 - Execution time is : 0.023644
 
 [Round: 3]
-DIK   's SP length : 4400 - Execution time is : 60.563459
-DIKPQ 's SP length : 4400 - Execution time is : 0.099591
-DIKBQ 's SP length : 4400 - Execution time is : 0.027704
-ASPQ  's SP length : 4400 - Execution time is : 0.089261
-ASBQ  's SP length : 4400 - Execution time is : 0.018193
+DIK   's SP length : 4520 - Execution time is : 60.367636
+DIKPQ 's SP length : 4520 - Execution time is : 0.097779
+DIKBQ 's SP length : 4520 - Execution time is : 0.028698
+ASPQ  's SP length : 4520 - Execution time is : 0.124881
+ASBQ  's SP length : 4520 - Execution time is : 0.027184
 
 [Round: 4]
-DIK   's SP length : 4440 - Execution time is : 60.512767
-DIKPQ 's SP length : 4440 - Execution time is : 0.099399
-DIKBQ 's SP length : 4440 - Execution time is : 0.027635
-ASPQ  's SP length : 4440 - Execution time is : 0.116373
-ASBQ  's SP length : 4440 - Execution time is : 0.024273
+DIK   's SP length : 4360 - Execution time is : 60.399681
+DIKPQ 's SP length : 4360 - Execution time is : 0.097722
+DIKBQ 's SP length : 4360 - Execution time is : 0.028786
+ASPQ  's SP length : 4360 - Execution time is : 0.071087
+ASBQ  's SP length : 4360 - Execution time is : 0.015585
 
 [Round: 5]
-DIK   's SP length : 4400 - Execution time is : 60.468440
-DIKPQ 's SP length : 4400 - Execution time is : 0.099461
-DIKBQ 's SP length : 4400 - Execution time is : 0.027597
-ASPQ  's SP length : 4400 - Execution time is : 0.104829
-ASBQ  's SP length : 4400 - Execution time is : 0.021810
+DIK   's SP length : 4560 - Execution time is : 60.397419
+DIKPQ 's SP length : 4560 - Execution time is : 0.097690
+DIKBQ 's SP length : 4560 - Execution time is : 0.028907
+ASPQ  's SP length : 4560 - Execution time is : 0.113584
+ASBQ  's SP length : 4560 - Execution time is : 0.024380
 
 [Round: 6]
-DIK   's SP length : 4380 - Execution time is : 60.503965
-DIKPQ 's SP length : 4380 - Execution time is : 0.099443
-DIKBQ 's SP length : 4380 - Execution time is : 0.027700
-ASPQ  's SP length : 4380 - Execution time is : 0.106960
-ASBQ  's SP length : 4380 - Execution time is : 0.021838
+DIK   's SP length : 4300 - Execution time is : 60.366527
+DIKPQ 's SP length : 4300 - Execution time is : 0.097914
+DIKBQ 's SP length : 4300 - Execution time is : 0.028726
+ASPQ  's SP length : 4300 - Execution time is : 0.082602
+ASBQ  's SP length : 4300 - Execution time is : 0.017608
 
 [Round: 7]
-DIK   's SP length : 4380 - Execution time is : 60.461795
-DIKPQ 's SP length : 4380 - Execution time is : 0.099240
-DIKBQ 's SP length : 4380 - Execution time is : 0.027684
-ASPQ  's SP length : 4380 - Execution time is : 0.115042
-ASBQ  's SP length : 4380 - Execution time is : 0.024030
+DIK   's SP length : 4400 - Execution time is : 60.368907
+DIKPQ 's SP length : 4400 - Execution time is : 0.097579
+DIKBQ 's SP length : 4400 - Execution time is : 0.028830
+ASPQ  's SP length : 4400 - Execution time is : 0.105645
+ASBQ  's SP length : 4400 - Execution time is : 0.022680
 
 [Round: 8]
-DIK   's SP length : 4540 - Execution time is : 60.426369
-DIKPQ 's SP length : 4540 - Execution time is : 0.099456
-DIKBQ 's SP length : 4540 - Execution time is : 0.027684
-ASPQ  's SP length : 4540 - Execution time is : 0.114472
-ASBQ  's SP length : 4540 - Execution time is : 0.024068
+DIK   's SP length : 4360 - Execution time is : 60.330923
+DIKPQ 's SP length : 4360 - Execution time is : 0.097653
+DIKBQ 's SP length : 4360 - Execution time is : 0.028764
+ASPQ  's SP length : 4360 - Execution time is : 0.075352
+ASBQ  's SP length : 4360 - Execution time is : 0.016009
 
 [Round: 9]
-DIK   's SP length : 4300 - Execution time is : 60.511405
-DIKPQ 's SP length : 4300 - Execution time is : 0.099791
-DIKBQ 's SP length : 4300 - Execution time is : 0.027606
-ASPQ  's SP length : 4300 - Execution time is : 0.066727
-ASBQ  's SP length : 4300 - Execution time is : 0.013701
+DIK   's SP length : 4340 - Execution time is : 60.276467
+DIKPQ 's SP length : 4340 - Execution time is : 0.097789
+DIKBQ 's SP length : 4340 - Execution time is : 0.028780
+ASPQ  's SP length : 4340 - Execution time is : 0.081657
+ASBQ  's SP length : 4340 - Execution time is : 0.017360
 
 [Round: 10]
-DIK   's SP length : 4380 - Execution time is : 60.438659
-DIKPQ 's SP length : 4380 - Execution time is : 0.099329
-DIKBQ 's SP length : 4380 - Execution time is : 0.027793
-ASPQ  's SP length : 4380 - Execution time is : 0.083186
-ASBQ  's SP length : 4380 - Execution time is : 0.016567
+DIK   's SP length : 4280 - Execution time is : 60.342325
+DIKPQ 's SP length : 4280 - Execution time is : 0.097673
+DIKBQ 's SP length : 4280 - Execution time is : 0.028717
+ASPQ  's SP length : 4280 - Execution time is : 0.072789
+ASBQ  's SP length : 4280 - Execution time is : 0.014701
 
 [Round: 11]
-DIK   's SP length : 4320 - Execution time is : 60.497469
-DIKPQ 's SP length : 4320 - Execution time is : 0.099629
-DIKBQ 's SP length : 4320 - Execution time is : 0.027667
-ASPQ  's SP length : 4320 - Execution time is : 0.089777
-ASBQ  's SP length : 4320 - Execution time is : 0.017513
+DIK   's SP length : 4440 - Execution time is : 60.389101
+DIKPQ 's SP length : 4440 - Execution time is : 0.098395
+DIKBQ 's SP length : 4440 - Execution time is : 0.028952
+ASPQ  's SP length : 4440 - Execution time is : 0.116813
+ASBQ  's SP length : 4440 - Execution time is : 0.024972
 
 [Round: 12]
-DIK   's SP length : 4300 - Execution time is : 60.521964
-DIKPQ 's SP length : 4300 - Execution time is : 0.099614
-DIKBQ 's SP length : 4300 - Execution time is : 0.027661
-ASPQ  's SP length : 4300 - Execution time is : 0.072912
-ASBQ  's SP length : 4300 - Execution time is : 0.014944
+DIK   's SP length : 4400 - Execution time is : 60.450182
+DIKPQ 's SP length : 4400 - Execution time is : 0.097484
+DIKBQ 's SP length : 4400 - Execution time is : 0.028794
+ASPQ  's SP length : 4400 - Execution time is : 0.112006
+ASBQ  's SP length : 4400 - Execution time is : 0.024042
 
 [Round: 13]
-DIK   's SP length : 4480 - Execution time is : 60.547524
-DIKPQ 's SP length : 4480 - Execution time is : 0.099541
-DIKBQ 's SP length : 4480 - Execution time is : 0.027863
-ASPQ  's SP length : 4480 - Execution time is : 0.117388
-ASBQ  's SP length : 4480 - Execution time is : 0.024770
+DIK   's SP length : 4620 - Execution time is : 60.429343
+DIKPQ 's SP length : 4620 - Execution time is : 0.097278
+DIKBQ 's SP length : 4620 - Execution time is : 0.029220
+ASPQ  's SP length : 4620 - Execution time is : 0.120146
+ASBQ  's SP length : 4620 - Execution time is : 0.026356
 
 [Round: 14]
-DIK   's SP length : 4340 - Execution time is : 60.535136
-DIKPQ 's SP length : 4340 - Execution time is : 0.099553
-DIKBQ 's SP length : 4340 - Execution time is : 0.027734
-ASPQ  's SP length : 4340 - Execution time is : 0.089345
-ASBQ  's SP length : 4340 - Execution time is : 0.018607
+DIK   's SP length : 4380 - Execution time is : 60.395240
+DIKPQ 's SP length : 4380 - Execution time is : 0.097499
+DIKBQ 's SP length : 4380 - Execution time is : 0.028790
+ASPQ  's SP length : 4380 - Execution time is : 0.090315
+ASBQ  's SP length : 4380 - Execution time is : 0.019232
 
 [Round: 15]
-DIK   's SP length : 4420 - Execution time is : 60.713149
-DIKPQ 's SP length : 4420 - Execution time is : 0.099445
-DIKBQ 's SP length : 4420 - Execution time is : 0.027670
-ASPQ  's SP length : 4420 - Execution time is : 0.091169
-ASBQ  's SP length : 4420 - Execution time is : 0.018744
+DIK   's SP length : 4400 - Execution time is : 60.424230
+DIKPQ 's SP length : 4400 - Execution time is : 0.097604
+DIKBQ 's SP length : 4400 - Execution time is : 0.028218
+ASPQ  's SP length : 4400 - Execution time is : 0.100229
+ASBQ  's SP length : 4400 - Execution time is : 0.021581
 
 [Round: 16]
-DIK   's SP length : 4460 - Execution time is : 60.545172
-DIKPQ 's SP length : 4460 - Execution time is : 0.099431
-DIKBQ 's SP length : 4460 - Execution time is : 0.027732
-ASPQ  's SP length : 4460 - Execution time is : 0.124770
-ASBQ  's SP length : 4460 - Execution time is : 0.026124
+DIK   's SP length : 4260 - Execution time is : 60.391919
+DIKPQ 's SP length : 4260 - Execution time is : 0.098160
+DIKBQ 's SP length : 4260 - Execution time is : 0.028327
+ASPQ  's SP length : 4260 - Execution time is : 0.069015
+ASBQ  's SP length : 4260 - Execution time is : 0.013753
 
 [Round: 17]
-DIK   's SP length : 4460 - Execution time is : 60.511904
-DIKPQ 's SP length : 4460 - Execution time is : 0.099661
-DIKBQ 's SP length : 4460 - Execution time is : 0.027750
-ASPQ  's SP length : 4460 - Execution time is : 0.114710
-ASBQ  's SP length : 4460 - Execution time is : 0.024041
+DIK   's SP length : 4540 - Execution time is : 60.389256
+DIKPQ 's SP length : 4540 - Execution time is : 0.097754
+DIKBQ 's SP length : 4540 - Execution time is : 0.028512
+ASPQ  's SP length : 4540 - Execution time is : 0.126408
+ASBQ  's SP length : 4540 - Execution time is : 0.027487
 
 [Round: 18]
-DIK   's SP length : 4340 - Execution time is : 60.531710
-DIKPQ 's SP length : 4340 - Execution time is : 0.099702
-DIKBQ 's SP length : 4340 - Execution time is : 0.027313
-ASPQ  's SP length : 4340 - Execution time is : 0.107256
-ASBQ  's SP length : 4340 - Execution time is : 0.021866
+DIK   's SP length : 4260 - Execution time is : 60.433078
+DIKPQ 's SP length : 4260 - Execution time is : 0.097985
+DIKBQ 's SP length : 4260 - Execution time is : 0.028668
+ASPQ  's SP length : 4260 - Execution time is : 0.068016
+ASBQ  's SP length : 4260 - Execution time is : 0.014792
 
 [Round: 19]
-DIK   's SP length : 4400 - Execution time is : 60.526165
-DIKPQ 's SP length : 4400 - Execution time is : 0.099480
-DIKBQ 's SP length : 4400 - Execution time is : 0.027463
-ASPQ  's SP length : 4400 - Execution time is : 0.105767
-ASBQ  's SP length : 4400 - Execution time is : 0.021545
+DIK   's SP length : 4640 - Execution time is : 60.384701
+DIKPQ 's SP length : 4640 - Execution time is : 0.097577
+DIKBQ 's SP length : 4640 - Execution time is : 0.028649
+ASPQ  's SP length : 4640 - Execution time is : 0.122774
+ASBQ  's SP length : 4640 - Execution time is : 0.026870
 
 [Round: 20]
-DIK   's SP length : 4560 - Execution time is : 60.537689
-DIKPQ 's SP length : 4560 - Execution time is : 0.099623
-DIKBQ 's SP length : 4560 - Execution time is : 0.027500
-ASPQ  's SP length : 4560 - Execution time is : 0.126779
-ASBQ  's SP length : 4560 - Execution time is : 0.026664
+DIK   's SP length : 4340 - Execution time is : 60.421121
+DIKPQ 's SP length : 4340 - Execution time is : 0.097805
+DIKBQ 's SP length : 4340 - Execution time is : 0.028850
+ASPQ  's SP length : 4340 - Execution time is : 0.088825
+ASBQ  's SP length : 4340 - Execution time is : 0.018778
 
 [Round: 21]
-DIK   's SP length : 4440 - Execution time is : 60.669705
-DIKPQ 's SP length : 4440 - Execution time is : 0.100212
-DIKBQ 's SP length : 4440 - Execution time is : 0.027640
-ASPQ  's SP length : 4440 - Execution time is : 0.101934
-ASBQ  's SP length : 4440 - Execution time is : 0.021365
+DIK   's SP length : 4360 - Execution time is : 60.396048
+DIKPQ 's SP length : 4360 - Execution time is : 0.097794
+DIKBQ 's SP length : 4360 - Execution time is : 0.028499
+ASPQ  's SP length : 4360 - Execution time is : 0.084178
+ASBQ  's SP length : 4360 - Execution time is : 0.018055
 
 [Round: 22]
-DIK   's SP length : 4140 - Execution time is : 60.641126
-DIKPQ 's SP length : 4140 - Execution time is : 0.099748
-DIKBQ 's SP length : 4140 - Execution time is : 0.027168
-ASPQ  's SP length : 4140 - Execution time is : 0.049118
-ASBQ  's SP length : 4140 - Execution time is : 0.010360
+DIK   's SP length : 4300 - Execution time is : 60.319503
+DIKPQ 's SP length : 4300 - Execution time is : 0.097614
+DIKBQ 's SP length : 4300 - Execution time is : 0.028446
+ASPQ  's SP length : 4300 - Execution time is : 0.101966
+ASBQ  's SP length : 4300 - Execution time is : 0.021846
 
 [Round: 23]
-DIK   's SP length : 4460 - Execution time is : 60.524921
-DIKPQ 's SP length : 4460 - Execution time is : 0.099409
-DIKBQ 's SP length : 4460 - Execution time is : 0.027567
-ASPQ  's SP length : 4460 - Execution time is : 0.089568
-ASBQ  's SP length : 4460 - Execution time is : 0.017784
+DIK   's SP length : 4520 - Execution time is : 60.433646
+DIKPQ 's SP length : 4520 - Execution time is : 0.098465
+DIKBQ 's SP length : 4520 - Execution time is : 0.028547
+ASPQ  's SP length : 4520 - Execution time is : 0.120621
+ASBQ  's SP length : 4520 - Execution time is : 0.025853
 
 [Round: 24]
-DIK   's SP length : 4460 - Execution time is : 60.528965
-DIKPQ 's SP length : 4460 - Execution time is : 0.099498
-DIKBQ 's SP length : 4460 - Execution time is : 0.027563
-ASPQ  's SP length : 4460 - Execution time is : 0.113141
-ASBQ  's SP length : 4460 - Execution time is : 0.023782
+DIK   's SP length : 4360 - Execution time is : 60.403350
+DIKPQ 's SP length : 4360 - Execution time is : 0.097613
+DIKBQ 's SP length : 4360 - Execution time is : 0.028452
+ASPQ  's SP length : 4360 - Execution time is : 0.117854
+ASBQ  's SP length : 4360 - Execution time is : 0.025190
 
 [Round: 25]
-DIK   's SP length : 4240 - Execution time is : 60.342971
-DIKPQ 's SP length : 4240 - Execution time is : 0.099614
-DIKBQ 's SP length : 4240 - Execution time is : 0.027297
-ASPQ  's SP length : 4240 - Execution time is : 0.054268
-ASBQ  's SP length : 4240 - Execution time is : 0.010433
+DIK   's SP length : 4400 - Execution time is : 60.319121
+DIKPQ 's SP length : 4400 - Execution time is : 0.097734
+DIKBQ 's SP length : 4400 - Execution time is : 0.028462
+ASPQ  's SP length : 4400 - Execution time is : 0.100363
+ASBQ  's SP length : 4400 - Execution time is : 0.020806
 
 [Round: 26]
-DIK   's SP length : 4220 - Execution time is : 60.533282
-DIKPQ 's SP length : 4220 - Execution time is : 0.099791
-DIKBQ 's SP length : 4220 - Execution time is : 0.027253
-ASPQ  's SP length : 4220 - Execution time is : 0.068158
-ASBQ  's SP length : 4220 - Execution time is : 0.014183
+DIK   's SP length : 4400 - Execution time is : 60.391830
+DIKPQ 's SP length : 4400 - Execution time is : 0.097615
+DIKBQ 's SP length : 4400 - Execution time is : 0.028509
+ASPQ  's SP length : 4400 - Execution time is : 0.103774
+ASBQ  's SP length : 4400 - Execution time is : 0.022286
 
 [Round: 27]
-DIK   's SP length : 4440 - Execution time is : 60.464345
-DIKPQ 's SP length : 4440 - Execution time is : 0.099245
-DIKBQ 's SP length : 4440 - Execution time is : 0.027446
-ASPQ  's SP length : 4440 - Execution time is : 0.118865
-ASBQ  's SP length : 4440 - Execution time is : 0.024806
+DIK   's SP length : 4480 - Execution time is : 60.333574
+DIKPQ 's SP length : 4480 - Execution time is : 0.097557
+DIKBQ 's SP length : 4480 - Execution time is : 0.028540
+ASPQ  's SP length : 4480 - Execution time is : 0.101729
+ASBQ  's SP length : 4480 - Execution time is : 0.021515
 
 [Round: 28]
-DIK   's SP length : 4560 - Execution time is : 60.472838
-DIKPQ 's SP length : 4560 - Execution time is : 0.099345
-DIKBQ 's SP length : 4560 - Execution time is : 0.027483
-ASPQ  's SP length : 4560 - Execution time is : 0.120373
-ASBQ  's SP length : 4560 - Execution time is : 0.025173
+DIK   's SP length : 4440 - Execution time is : 60.300396
+DIKPQ 's SP length : 4440 - Execution time is : 0.098591
+DIKBQ 's SP length : 4440 - Execution time is : 0.028459
+ASPQ  's SP length : 4440 - Execution time is : 0.111650
+ASBQ  's SP length : 4440 - Execution time is : 0.023787
 
 [Round: 29]
-DIK   's SP length : 4360 - Execution time is : 60.464343
-DIKPQ 's SP length : 4360 - Execution time is : 0.099447
-DIKBQ 's SP length : 4360 - Execution time is : 0.027386
-ASPQ  's SP length : 4360 - Execution time is : 0.090067
-ASBQ  's SP length : 4360 - Execution time is : 0.018024
+DIK   's SP length : 4500 - Execution time is : 60.373718
+DIKPQ 's SP length : 4500 - Execution time is : 0.098317
+DIKBQ 's SP length : 4500 - Execution time is : 0.028613
+ASPQ  's SP length : 4500 - Execution time is : 0.115328
+ASBQ  's SP length : 4500 - Execution time is : 0.024188
 
 [Round: 30]
-DIK   's SP length : 4400 - Execution time is : 60.275486
-DIKPQ 's SP length : 4400 - Execution time is : 0.099131
-DIKBQ 's SP length : 4400 - Execution time is : 0.027382
-ASPQ  's SP length : 4400 - Execution time is : 0.063387
-ASBQ  's SP length : 4400 - Execution time is : 0.013096
+DIK   's SP length : 4420 - Execution time is : 60.342865
+DIKPQ 's SP length : 4420 - Execution time is : 0.097703
+DIKBQ 's SP length : 4420 - Execution time is : 0.028672
+ASPQ  's SP length : 4420 - Execution time is : 0.110334
+ASBQ  's SP length : 4420 - Execution time is : 0.023931
 
 [Round: 31]
-DIK   's SP length : 4420 - Execution time is : 60.506137
-DIKPQ 's SP length : 4420 - Execution time is : 0.099302
-DIKBQ 's SP length : 4420 - Execution time is : 0.027398
-ASPQ  's SP length : 4420 - Execution time is : 0.113147
-ASBQ  's SP length : 4420 - Execution time is : 0.023616
+DIK   's SP length : 4240 - Execution time is : 60.360565
+DIKPQ 's SP length : 4240 - Execution time is : 0.099011
+DIKBQ 's SP length : 4240 - Execution time is : 0.028410
+ASPQ  's SP length : 4240 - Execution time is : 0.056863
+ASBQ  's SP length : 4240 - Execution time is : 0.011253
 
 [Round: 32]
-DIK   's SP length : 4340 - Execution time is : 60.450964
-DIKPQ 's SP length : 4340 - Execution time is : 0.099416
-DIKBQ 's SP length : 4340 - Execution time is : 0.027319
-ASPQ  's SP length : 4340 - Execution time is : 0.071696
-ASBQ  's SP length : 4340 - Execution time is : 0.014829
+DIK   's SP length : 4440 - Execution time is : 60.370548
+DIKPQ 's SP length : 4440 - Execution time is : 0.098443
+DIKBQ 's SP length : 4440 - Execution time is : 0.028506
+ASPQ  's SP length : 4440 - Execution time is : 0.094071
+ASBQ  's SP length : 4440 - Execution time is : 0.020083
 
 [Round: 33]
-DIK   's SP length : 4360 - Execution time is : 60.541771
-DIKPQ 's SP length : 4360 - Execution time is : 0.099602
-DIKBQ 's SP length : 4360 - Execution time is : 0.027302
-ASPQ  's SP length : 4360 - Execution time is : 0.094866
-ASBQ  's SP length : 4360 - Execution time is : 0.019108
+DIK   's SP length : 4320 - Execution time is : 60.345174
+DIKPQ 's SP length : 4320 - Execution time is : 0.097639
+DIKBQ 's SP length : 4320 - Execution time is : 0.028431
+ASPQ  's SP length : 4320 - Execution time is : 0.082424
+ASBQ  's SP length : 4320 - Execution time is : 0.017011
 
 [Round: 34]
-DIK   's SP length : 4340 - Execution time is : 60.477255
-DIKPQ 's SP length : 4340 - Execution time is : 0.099467
-DIKBQ 's SP length : 4340 - Execution time is : 0.027361
-ASPQ  's SP length : 4340 - Execution time is : 0.091280
-ASBQ  's SP length : 4340 - Execution time is : 0.018201
+DIK   's SP length : 4320 - Execution time is : 60.366589
+DIKPQ 's SP length : 4320 - Execution time is : 0.098361
+DIKBQ 's SP length : 4320 - Execution time is : 0.028462
+ASPQ  's SP length : 4320 - Execution time is : 0.076290
+ASBQ  's SP length : 4320 - Execution time is : 0.016715
 
 [Round: 35]
-DIK   's SP length : 4440 - Execution time is : 60.498008
-DIKPQ 's SP length : 4440 - Execution time is : 0.099826
-DIKBQ 's SP length : 4440 - Execution time is : 0.027443
-ASPQ  's SP length : 4440 - Execution time is : 0.091570
-ASBQ  's SP length : 4440 - Execution time is : 0.018074
+DIK   's SP length : 4420 - Execution time is : 60.369818
+DIKPQ 's SP length : 4420 - Execution time is : 0.098566
+DIKBQ 's SP length : 4420 - Execution time is : 0.028516
+ASPQ  's SP length : 4420 - Execution time is : 0.114268
+ASBQ  's SP length : 4420 - Execution time is : 0.024783
 
 [Round: 36]
-DIK   's SP length : 4440 - Execution time is : 60.422206
-DIKPQ 's SP length : 4440 - Execution time is : 0.099465
-DIKBQ 's SP length : 4440 - Execution time is : 0.027402
-ASPQ  's SP length : 4440 - Execution time is : 0.101793
-ASBQ  's SP length : 4440 - Execution time is : 0.020522
+DIK   's SP length : 4520 - Execution time is : 60.605812
+DIKPQ 's SP length : 4520 - Execution time is : 0.098044
+DIKBQ 's SP length : 4520 - Execution time is : 0.028605
+ASPQ  's SP length : 4520 - Execution time is : 0.127217
+ASBQ  's SP length : 4520 - Execution time is : 0.027564
 
 [Round: 37]
-DIK   's SP length : 4440 - Execution time is : 60.516556
-DIKPQ 's SP length : 4440 - Execution time is : 0.099422
-DIKBQ 's SP length : 4440 - Execution time is : 0.027384
-ASPQ  's SP length : 4440 - Execution time is : 0.097127
-ASBQ  's SP length : 4440 - Execution time is : 0.019959
+DIK   's SP length : 4420 - Execution time is : 60.399727
+DIKPQ 's SP length : 4420 - Execution time is : 0.097829
+DIKBQ 's SP length : 4420 - Execution time is : 0.028840
+ASPQ  's SP length : 4420 - Execution time is : 0.110674
+ASBQ  's SP length : 4420 - Execution time is : 0.024223
 
 [Round: 38]
-DIK   's SP length : 4440 - Execution time is : 60.485686
-DIKPQ 's SP length : 4440 - Execution time is : 0.099372
-DIKBQ 's SP length : 4440 - Execution time is : 0.027395
-ASPQ  's SP length : 4440 - Execution time is : 0.114783
-ASBQ  's SP length : 4440 - Execution time is : 0.023600
+DIK   's SP length : 4360 - Execution time is : 60.366480
+DIKPQ 's SP length : 4360 - Execution time is : 0.097782
+DIKBQ 's SP length : 4360 - Execution time is : 0.028398
+ASPQ  's SP length : 4360 - Execution time is : 0.091240
+ASBQ  's SP length : 4360 - Execution time is : 0.018518
 
 [Round: 39]
-DIK   's SP length : 4220 - Execution time is : 60.492945
-DIKPQ 's SP length : 4220 - Execution time is : 0.099741
-DIKBQ 's SP length : 4220 - Execution time is : 0.027229
-ASPQ  's SP length : 4220 - Execution time is : 0.093641
-ASBQ  's SP length : 4220 - Execution time is : 0.019640
+DIK   's SP length : 4380 - Execution time is : 60.408616
+DIKPQ 's SP length : 4380 - Execution time is : 0.097589
+DIKBQ 's SP length : 4380 - Execution time is : 0.028432
+ASPQ  's SP length : 4380 - Execution time is : 0.114232
+ASBQ  's SP length : 4380 - Execution time is : 0.024750
 
 [Round: 40]
-DIK   's SP length : 4380 - Execution time is : 60.481958
-DIKPQ 's SP length : 4380 - Execution time is : 0.099690
-DIKBQ 's SP length : 4380 - Execution time is : 0.027729
-ASPQ  's SP length : 4380 - Execution time is : 0.104613
-ASBQ  's SP length : 4380 - Execution time is : 0.020506
+DIK   's SP length : 4280 - Execution time is : 60.467734
+DIKPQ 's SP length : 4280 - Execution time is : 0.097823
+DIKBQ 's SP length : 4280 - Execution time is : 0.028351
+ASPQ  's SP length : 4280 - Execution time is : 0.072775
+ASBQ  's SP length : 4280 - Execution time is : 0.015137
 
 [Round: 41]
-DIK   's SP length : 4380 - Execution time is : 60.504231
-DIKPQ 's SP length : 4380 - Execution time is : 0.099864
-DIKBQ 's SP length : 4380 - Execution time is : 0.027396
-ASPQ  's SP length : 4380 - Execution time is : 0.096617
-ASBQ  's SP length : 4380 - Execution time is : 0.019920
+DIK   's SP length : 4420 - Execution time is : 60.373063
+DIKPQ 's SP length : 4420 - Execution time is : 0.097538
+DIKBQ 's SP length : 4420 - Execution time is : 0.028538
+ASPQ  's SP length : 4420 - Execution time is : 0.113139
+ASBQ  's SP length : 4420 - Execution time is : 0.024958
 
 [Round: 42]
-DIK   's SP length : 4400 - Execution time is : 60.559965
-DIKPQ 's SP length : 4400 - Execution time is : 0.099636
-DIKBQ 's SP length : 4400 - Execution time is : 0.027401
-ASPQ  's SP length : 4400 - Execution time is : 0.108261
-ASBQ  's SP length : 4400 - Execution time is : 0.021467
+DIK   's SP length : 4540 - Execution time is : 60.367301
+DIKPQ 's SP length : 4540 - Execution time is : 0.097798
+DIKBQ 's SP length : 4540 - Execution time is : 0.028950
+ASPQ  's SP length : 4540 - Execution time is : 0.124666
+ASBQ  's SP length : 4540 - Execution time is : 0.027181
 
 [Round: 43]
-DIK   's SP length : 4460 - Execution time is : 60.417027
-DIKPQ 's SP length : 4460 - Execution time is : 0.099886
-DIKBQ 's SP length : 4460 - Execution time is : 0.027464
-ASPQ  's SP length : 4460 - Execution time is : 0.116371
-ASBQ  's SP length : 4460 - Execution time is : 0.024513
+DIK   's SP length : 4320 - Execution time is : 60.460768
+DIKPQ 's SP length : 4320 - Execution time is : 0.097823
+DIKBQ 's SP length : 4320 - Execution time is : 0.028714
+ASPQ  's SP length : 4320 - Execution time is : 0.085819
+ASBQ  's SP length : 4320 - Execution time is : 0.018133
 
 [Round: 44]
-DIK   's SP length : 4560 - Execution time is : 60.506376
-DIKPQ 's SP length : 4560 - Execution time is : 0.099312
-DIKBQ 's SP length : 4560 - Execution time is : 0.027785
-ASPQ  's SP length : 4560 - Execution time is : 0.125741
-ASBQ  's SP length : 4560 - Execution time is : 0.026284
+DIK   's SP length : 4360 - Execution time is : 60.178833
+DIKPQ 's SP length : 4360 - Execution time is : 0.097666
+DIKBQ 's SP length : 4360 - Execution time is : 0.028445
+ASPQ  's SP length : 4360 - Execution time is : 0.092273
+ASBQ  's SP length : 4360 - Execution time is : 0.019304
 
 [Round: 45]
-DIK   's SP length : 4400 - Execution time is : 60.520189
-DIKPQ 's SP length : 4400 - Execution time is : 0.099451
-DIKBQ 's SP length : 4400 - Execution time is : 0.027417
-ASPQ  's SP length : 4400 - Execution time is : 0.102255
-ASBQ  's SP length : 4400 - Execution time is : 0.021113
+DIK   's SP length : 4220 - Execution time is : 60.289433
+DIKPQ 's SP length : 4220 - Execution time is : 0.097895
+DIKBQ 's SP length : 4220 - Execution time is : 0.028323
+ASPQ  's SP length : 4220 - Execution time is : 0.070126
+ASBQ  's SP length : 4220 - Execution time is : 0.014794
 
 [Round: 46]
-DIK   's SP length : 4380 - Execution time is : 60.527774
-DIKPQ 's SP length : 4380 - Execution time is : 0.099409
-DIKBQ 's SP length : 4380 - Execution time is : 0.027386
-ASPQ  's SP length : 4380 - Execution time is : 0.100550
-ASBQ  's SP length : 4380 - Execution time is : 0.021152
+DIK   's SP length : 4440 - Execution time is : 60.316679
+DIKPQ 's SP length : 4440 - Execution time is : 0.097694
+DIKBQ 's SP length : 4440 - Execution time is : 0.028326
+ASPQ  's SP length : 4440 - Execution time is : 0.115589
+ASBQ  's SP length : 4440 - Execution time is : 0.024396
 
 [Round: 47]
-DIK   's SP length : 4380 - Execution time is : 60.489460
-DIKPQ 's SP length : 4380 - Execution time is : 0.099513
-DIKBQ 's SP length : 4380 - Execution time is : 0.027377
-ASPQ  's SP length : 4380 - Execution time is : 0.084574
-ASBQ  's SP length : 4380 - Execution time is : 0.017653
+DIK   's SP length : 4500 - Execution time is : 60.378327
+DIKPQ 's SP length : 4500 - Execution time is : 0.097806
+DIKBQ 's SP length : 4500 - Execution time is : 0.028600
+ASPQ  's SP length : 4500 - Execution time is : 0.119628
+ASBQ  's SP length : 4500 - Execution time is : 0.026454
 
 [Round: 48]
-DIK   's SP length : 4340 - Execution time is : 60.479197
-DIKPQ 's SP length : 4340 - Execution time is : 0.099170
-DIKBQ 's SP length : 4340 - Execution time is : 0.027426
-ASPQ  's SP length : 4340 - Execution time is : 0.080289
-ASBQ  's SP length : 4340 - Execution time is : 0.016378
+DIK   's SP length : 4320 - Execution time is : 60.349376
+DIKPQ 's SP length : 4320 - Execution time is : 0.097679
+DIKBQ 's SP length : 4320 - Execution time is : 0.028756
+ASPQ  's SP length : 4320 - Execution time is : 0.086220
+ASBQ  's SP length : 4320 - Execution time is : 0.018443
 
 [Round: 49]
-DIK   's SP length : 4340 - Execution time is : 60.492909
-DIKPQ 's SP length : 4340 - Execution time is : 0.099335
-DIKBQ 's SP length : 4340 - Execution time is : 0.027505
-ASPQ  's SP length : 4340 - Execution time is : 0.075165
-ASBQ  's SP length : 4340 - Execution time is : 0.015334
+DIK   's SP length : 4320 - Execution time is : 60.318954
+DIKPQ 's SP length : 4320 - Execution time is : 0.097680
+DIKBQ 's SP length : 4320 - Execution time is : 0.028456
+ASPQ  's SP length : 4320 - Execution time is : 0.077329
+ASBQ  's SP length : 4320 - Execution time is : 0.016451
 
 [Round: 50]
-DIK   's SP length : 4340 - Execution time is : 60.506538
-DIKPQ 's SP length : 4340 - Execution time is : 0.099499
-DIKBQ 's SP length : 4340 - Execution time is : 0.027369
-ASPQ  's SP length : 4340 - Execution time is : 0.091600
-ASBQ  's SP length : 4340 - Execution time is : 0.018646
+DIK   's SP length : 4280 - Execution time is : 60.357500
+DIKPQ 's SP length : 4280 - Execution time is : 0.097801
+DIKBQ 's SP length : 4280 - Execution time is : 0.028458
+ASPQ  's SP length : 4280 - Execution time is : 0.081282
+ASBQ  's SP length : 4280 - Execution time is : 0.016772
 
 [Round: 51]
-DIK   's SP length : 4520 - Execution time is : 60.512992
-DIKPQ 's SP length : 4520 - Execution time is : 0.098932
-DIKBQ 's SP length : 4520 - Execution time is : 0.027516
-ASPQ  's SP length : 4520 - Execution time is : 0.112182
-ASBQ  's SP length : 4520 - Execution time is : 0.023252
+DIK   's SP length : 4360 - Execution time is : 60.387615
+DIKPQ 's SP length : 4360 - Execution time is : 0.097855
+DIKBQ 's SP length : 4360 - Execution time is : 0.028532
+ASPQ  's SP length : 4360 - Execution time is : 0.100149
+ASBQ  's SP length : 4360 - Execution time is : 0.021140
 
 [Round: 52]
-DIK   's SP length : 4180 - Execution time is : 60.443666
-DIKPQ 's SP length : 4180 - Execution time is : 0.099547
-DIKBQ 's SP length : 4180 - Execution time is : 0.027536
-ASPQ  's SP length : 4180 - Execution time is : 0.043821
-ASBQ  's SP length : 4180 - Execution time is : 0.008155
+DIK   's SP length : 4440 - Execution time is : 60.348677
+DIKPQ 's SP length : 4440 - Execution time is : 0.097400
+DIKBQ 's SP length : 4440 - Execution time is : 0.028565
+ASPQ  's SP length : 4440 - Execution time is : 0.116518
+ASBQ  's SP length : 4440 - Execution time is : 0.025527
 
 [Round: 53]
-DIK   's SP length : 4440 - Execution time is : 60.508218
-DIKPQ 's SP length : 4440 - Execution time is : 0.099367
-DIKBQ 's SP length : 4440 - Execution time is : 0.027416
-ASPQ  's SP length : 4440 - Execution time is : 0.103751
-ASBQ  's SP length : 4440 - Execution time is : 0.021758
+DIK   's SP length : 4560 - Execution time is : 60.394235
+DIKPQ 's SP length : 4560 - Execution time is : 0.097391
+DIKBQ 's SP length : 4560 - Execution time is : 0.028866
+ASPQ  's SP length : 4560 - Execution time is : 0.122138
+ASBQ  's SP length : 4560 - Execution time is : 0.026483
 
 [Round: 54]
-DIK   's SP length : 4300 - Execution time is : 60.497108
-DIKPQ 's SP length : 4300 - Execution time is : 0.099490
-DIKBQ 's SP length : 4300 - Execution time is : 0.027349
-ASPQ  's SP length : 4300 - Execution time is : 0.083135
-ASBQ  's SP length : 4300 - Execution time is : 0.016402
+DIK   's SP length : 4380 - Execution time is : 60.449489
+DIKPQ 's SP length : 4380 - Execution time is : 0.097951
+DIKBQ 's SP length : 4380 - Execution time is : 0.028928
+ASPQ  's SP length : 4380 - Execution time is : 0.105798
+ASBQ  's SP length : 4380 - Execution time is : 0.022613
 
 [Round: 55]
-DIK   's SP length : 4420 - Execution time is : 60.476132
-DIKPQ 's SP length : 4420 - Execution time is : 0.099297
-DIKBQ 's SP length : 4420 - Execution time is : 0.027430
-ASPQ  's SP length : 4420 - Execution time is : 0.085286
-ASBQ  's SP length : 4420 - Execution time is : 0.017502
+DIK   's SP length : 4340 - Execution time is : 60.432014
+DIKPQ 's SP length : 4340 - Execution time is : 0.097772
+DIKBQ 's SP length : 4340 - Execution time is : 0.028377
+ASPQ  's SP length : 4340 - Execution time is : 0.074916
+ASBQ  's SP length : 4340 - Execution time is : 0.016264
 
 [Round: 56]
-DIK   's SP length : 4560 - Execution time is : 60.522812
-DIKPQ 's SP length : 4560 - Execution time is : 0.099372
-DIKBQ 's SP length : 4560 - Execution time is : 0.027608
-ASPQ  's SP length : 4560 - Execution time is : 0.116837
-ASBQ  's SP length : 4560 - Execution time is : 0.024351
+DIK   's SP length : 4340 - Execution time is : 60.376984
+DIKPQ 's SP length : 4340 - Execution time is : 0.097554
+DIKBQ 's SP length : 4340 - Execution time is : 0.028487
+ASPQ  's SP length : 4340 - Execution time is : 0.098565
+ASBQ  's SP length : 4340 - Execution time is : 0.020819
 
 [Round: 57]
-DIK   's SP length : 4360 - Execution time is : 60.438777
-DIKPQ 's SP length : 4360 - Execution time is : 0.099448
-DIKBQ 's SP length : 4360 - Execution time is : 0.027358
-ASPQ  's SP length : 4360 - Execution time is : 0.080957
-ASBQ  's SP length : 4360 - Execution time is : 0.016087
+DIK   's SP length : 4280 - Execution time is : 60.499427
+DIKPQ 's SP length : 4280 - Execution time is : 0.098256
+DIKBQ 's SP length : 4280 - Execution time is : 0.028380
+ASPQ  's SP length : 4280 - Execution time is : 0.072377
+ASBQ  's SP length : 4280 - Execution time is : 0.015604
 
 [Round: 58]
-DIK   's SP length : 4480 - Execution time is : 60.490716
-DIKPQ 's SP length : 4480 - Execution time is : 0.099146
-DIKBQ 's SP length : 4480 - Execution time is : 0.027473
-ASPQ  's SP length : 4480 - Execution time is : 0.093343
-ASBQ  's SP length : 4480 - Execution time is : 0.018844
+DIK   's SP length : 4640 - Execution time is : 60.432962
+DIKPQ 's SP length : 4640 - Execution time is : 0.097887
+DIKBQ 's SP length : 4640 - Execution time is : 0.028792
+ASPQ  's SP length : 4640 - Execution time is : 0.128289
+ASBQ  's SP length : 4640 - Execution time is : 0.028146
 
 [Round: 59]
-DIK   's SP length : 4280 - Execution time is : 60.499676
-DIKPQ 's SP length : 4280 - Execution time is : 0.099268
-DIKBQ 's SP length : 4280 - Execution time is : 0.027274
-ASPQ  's SP length : 4280 - Execution time is : 0.070338
-ASBQ  's SP length : 4280 - Execution time is : 0.014279
+DIK   's SP length : 4260 - Execution time is : 60.417323
+DIKPQ 's SP length : 4260 - Execution time is : 0.098658
+DIKBQ 's SP length : 4260 - Execution time is : 0.028791
+ASPQ  's SP length : 4260 - Execution time is : 0.068581
+ASBQ  's SP length : 4260 - Execution time is : 0.014451
 
 [Round: 60]
-DIK   's SP length : 4480 - Execution time is : 60.569607
-DIKPQ 's SP length : 4480 - Execution time is : 0.099341
-DIKBQ 's SP length : 4480 - Execution time is : 0.027519
-ASPQ  's SP length : 4480 - Execution time is : 0.105871
-ASBQ  's SP length : 4480 - Execution time is : 0.021807
+DIK   's SP length : 4360 - Execution time is : 60.420562
+DIKPQ 's SP length : 4360 - Execution time is : 0.098139
+DIKBQ 's SP length : 4360 - Execution time is : 0.028413
+ASPQ  's SP length : 4360 - Execution time is : 0.101961
+ASBQ  's SP length : 4360 - Execution time is : 0.021652
 
 [Round: 61]
-DIK   's SP length : 4380 - Execution time is : 60.507989
-DIKPQ 's SP length : 4380 - Execution time is : 0.099175
-DIKBQ 's SP length : 4380 - Execution time is : 0.027422
-ASPQ  's SP length : 4380 - Execution time is : 0.073540
-ASBQ  's SP length : 4380 - Execution time is : 0.015596
+DIK   's SP length : 4420 - Execution time is : 60.331240
+DIKPQ 's SP length : 4420 - Execution time is : 0.098276
+DIKBQ 's SP length : 4420 - Execution time is : 0.028567
+ASPQ  's SP length : 4420 - Execution time is : 0.103529
+ASBQ  's SP length : 4420 - Execution time is : 0.022869
 
 [Round: 62]
-DIK   's SP length : 4440 - Execution time is : 60.482062
-DIKPQ 's SP length : 4440 - Execution time is : 0.099278
-DIKBQ 's SP length : 4440 - Execution time is : 0.027436
-ASPQ  's SP length : 4440 - Execution time is : 0.110629
-ASBQ  's SP length : 4440 - Execution time is : 0.023046
+DIK   's SP length : 4460 - Execution time is : 60.426597
+DIKPQ 's SP length : 4460 - Execution time is : 0.097599
+DIKBQ 's SP length : 4460 - Execution time is : 0.028870
+ASPQ  's SP length : 4460 - Execution time is : 0.110766
+ASBQ  's SP length : 4460 - Execution time is : 0.024463
 
 [Round: 63]
-DIK   's SP length : 4540 - Execution time is : 60.480860
-DIKPQ 's SP length : 4540 - Execution time is : 0.099201
-DIKBQ 's SP length : 4540 - Execution time is : 0.027454
-ASPQ  's SP length : 4540 - Execution time is : 0.118042
-ASBQ  's SP length : 4540 - Execution time is : 0.024600
+DIK   's SP length : 4380 - Execution time is : 60.401089
+DIKPQ 's SP length : 4380 - Execution time is : 0.098730
+DIKBQ 's SP length : 4380 - Execution time is : 0.028702
+ASPQ  's SP length : 4380 - Execution time is : 0.107093
+ASBQ  's SP length : 4380 - Execution time is : 0.023025
 
 [Round: 64]
-DIK   's SP length : 4300 - Execution time is : 60.489168
-DIKPQ 's SP length : 4300 - Execution time is : 0.099823
-DIKBQ 's SP length : 4300 - Execution time is : 0.027640
-ASPQ  's SP length : 4300 - Execution time is : 0.090332
-ASBQ  's SP length : 4300 - Execution time is : 0.018320
+DIK   's SP length : 4340 - Execution time is : 60.341283
+DIKPQ 's SP length : 4340 - Execution time is : 0.097726
+DIKBQ 's SP length : 4340 - Execution time is : 0.028380
+ASPQ  's SP length : 4340 - Execution time is : 0.067818
+ASBQ  's SP length : 4340 - Execution time is : 0.014074
 
 [Round: 65]
-DIK   's SP length : 4380 - Execution time is : 60.485052
-DIKPQ 's SP length : 4380 - Execution time is : 0.099239
-DIKBQ 's SP length : 4380 - Execution time is : 0.027309
-ASPQ  's SP length : 4380 - Execution time is : 0.100166
-ASBQ  's SP length : 4380 - Execution time is : 0.020525
+DIK   's SP length : 4300 - Execution time is : 60.345304
+DIKPQ 's SP length : 4300 - Execution time is : 0.097724
+DIKBQ 's SP length : 4300 - Execution time is : 0.028463
+ASPQ  's SP length : 4300 - Execution time is : 0.055328
+ASBQ  's SP length : 4300 - Execution time is : 0.012228
 
 [Round: 66]
-DIK   's SP length : 4380 - Execution time is : 60.458421
-DIKPQ 's SP length : 4380 - Execution time is : 0.098938
-DIKBQ 's SP length : 4380 - Execution time is : 0.027439
-ASPQ  's SP length : 4380 - Execution time is : 0.107255
-ASBQ  's SP length : 4380 - Execution time is : 0.022089
+DIK   's SP length : 4320 - Execution time is : 60.336513
+DIKPQ 's SP length : 4320 - Execution time is : 0.097521
+DIKBQ 's SP length : 4320 - Execution time is : 0.028392
+ASPQ  's SP length : 4320 - Execution time is : 0.064798
+ASBQ  's SP length : 4320 - Execution time is : 0.013759
 
 [Round: 67]
-DIK   's SP length : 4300 - Execution time is : 60.435705
-DIKPQ 's SP length : 4300 - Execution time is : 0.099081
-DIKBQ 's SP length : 4300 - Execution time is : 0.027353
-ASPQ  's SP length : 4300 - Execution time is : 0.090630
-ASBQ  's SP length : 4300 - Execution time is : 0.019080
+DIK   's SP length : 4500 - Execution time is : 60.296581
+DIKPQ 's SP length : 4500 - Execution time is : 0.097268
+DIKBQ 's SP length : 4500 - Execution time is : 0.028462
+ASPQ  's SP length : 4500 - Execution time is : 0.120760
+ASBQ  's SP length : 4500 - Execution time is : 0.026190
 
 [Round: 68]
-DIK   's SP length : 4720 - Execution time is : 60.460363
-DIKPQ 's SP length : 4720 - Execution time is : 0.098990
-DIKBQ 's SP length : 4720 - Execution time is : 0.027581
-ASPQ  's SP length : 4720 - Execution time is : 0.129729
-ASBQ  's SP length : 4720 - Execution time is : 0.027423
+DIK   's SP length : 4540 - Execution time is : 60.364828
+DIKPQ 's SP length : 4540 - Execution time is : 0.097275
+DIKBQ 's SP length : 4540 - Execution time is : 0.028919
+ASPQ  's SP length : 4540 - Execution time is : 0.117031
+ASBQ  's SP length : 4540 - Execution time is : 0.025689
 
 [Round: 69]
-DIK   's SP length : 4500 - Execution time is : 60.496774
-DIKPQ 's SP length : 4500 - Execution time is : 0.099012
-DIKBQ 's SP length : 4500 - Execution time is : 0.027789
-ASPQ  's SP length : 4500 - Execution time is : 0.108008
-ASBQ  's SP length : 4500 - Execution time is : 0.021815
+DIK   's SP length : 4300 - Execution time is : 60.406176
+DIKPQ 's SP length : 4300 - Execution time is : 0.097602
+DIKBQ 's SP length : 4300 - Execution time is : 0.028153
+ASPQ  's SP length : 4300 - Execution time is : 0.089046
+ASBQ  's SP length : 4300 - Execution time is : 0.019369
 
 [Round: 70]
-DIK   's SP length : 4380 - Execution time is : 60.449349
-DIKPQ 's SP length : 4380 - Execution time is : 0.099145
-DIKBQ 's SP length : 4380 - Execution time is : 0.027369
-ASPQ  's SP length : 4380 - Execution time is : 0.090449
-ASBQ  's SP length : 4380 - Execution time is : 0.018205
+DIK   's SP length : 4500 - Execution time is : 60.370311
+DIKPQ 's SP length : 4500 - Execution time is : 0.097360
+DIKBQ 's SP length : 4500 - Execution time is : 0.028516
+ASPQ  's SP length : 4500 - Execution time is : 0.118112
+ASBQ  's SP length : 4500 - Execution time is : 0.025217
 
 [Round: 71]
-DIK   's SP length : 4380 - Execution time is : 60.513687
-DIKPQ 's SP length : 4380 - Execution time is : 0.098932
-DIKBQ 's SP length : 4380 - Execution time is : 0.027424
-ASPQ  's SP length : 4380 - Execution time is : 0.111409
-ASBQ  's SP length : 4380 - Execution time is : 0.022977
+DIK   's SP length : 4380 - Execution time is : 60.440495
+DIKPQ 's SP length : 4380 - Execution time is : 0.097852
+DIKBQ 's SP length : 4380 - Execution time is : 0.028432
+ASPQ  's SP length : 4380 - Execution time is : 0.095305
+ASBQ  's SP length : 4380 - Execution time is : 0.020207
 
 [Round: 72]
-DIK   's SP length : 4560 - Execution time is : 60.457373
-DIKPQ 's SP length : 4560 - Execution time is : 0.099083
-DIKBQ 's SP length : 4560 - Execution time is : 0.027468
-ASPQ  's SP length : 4560 - Execution time is : 0.115882
-ASBQ  's SP length : 4560 - Execution time is : 0.023703
+DIK   's SP length : 4420 - Execution time is : 60.399073
+DIKPQ 's SP length : 4420 - Execution time is : 0.097848
+DIKBQ 's SP length : 4420 - Execution time is : 0.028459
+ASPQ  's SP length : 4420 - Execution time is : 0.090224
+ASBQ  's SP length : 4420 - Execution time is : 0.019280
 
 [Round: 73]
-DIK   's SP length : 4640 - Execution time is : 60.499524
-DIKPQ 's SP length : 4640 - Execution time is : 0.098952
-DIKBQ 's SP length : 4640 - Execution time is : 0.027538
-ASPQ  's SP length : 4640 - Execution time is : 0.126313
-ASBQ  's SP length : 4640 - Execution time is : 0.026774
+DIK   's SP length : 4500 - Execution time is : 60.413028
+DIKPQ 's SP length : 4500 - Execution time is : 0.097391
+DIKBQ 's SP length : 4500 - Execution time is : 0.028572
+ASPQ  's SP length : 4500 - Execution time is : 0.116880
+ASBQ  's SP length : 4500 - Execution time is : 0.025512
 
 [Round: 74]
-DIK   's SP length : 4420 - Execution time is : 60.513105
-DIKPQ 's SP length : 4420 - Execution time is : 0.098683
-DIKBQ 's SP length : 4420 - Execution time is : 0.027724
-ASPQ  's SP length : 4420 - Execution time is : 0.108867
-ASBQ  's SP length : 4420 - Execution time is : 0.022820
+DIK   's SP length : 4360 - Execution time is : 60.416794
+DIKPQ 's SP length : 4360 - Execution time is : 0.097547
+DIKBQ 's SP length : 4360 - Execution time is : 0.028878
+ASPQ  's SP length : 4360 - Execution time is : 0.096465
+ASBQ  's SP length : 4360 - Execution time is : 0.020587
 
 [Round: 75]
-DIK   's SP length : 4440 - Execution time is : 60.421041
-DIKPQ 's SP length : 4440 - Execution time is : 0.098835
-DIKBQ 's SP length : 4440 - Execution time is : 0.027431
-ASPQ  's SP length : 4440 - Execution time is : 0.113093
-ASBQ  's SP length : 4440 - Execution time is : 0.023552
+DIK   's SP length : 4380 - Execution time is : 60.419899
+DIKPQ 's SP length : 4380 - Execution time is : 0.097550
+DIKBQ 's SP length : 4380 - Execution time is : 0.028487
+ASPQ  's SP length : 4380 - Execution time is : 0.099621
+ASBQ  's SP length : 4380 - Execution time is : 0.021846
 
 [Round: 76]
-DIK   's SP length : 4460 - Execution time is : 60.514571
-DIKPQ 's SP length : 4460 - Execution time is : 0.099067
-DIKBQ 's SP length : 4460 - Execution time is : 0.027469
-ASPQ  's SP length : 4460 - Execution time is : 0.091172
-ASBQ  's SP length : 4460 - Execution time is : 0.018957
+DIK   's SP length : 4540 - Execution time is : 60.411432
+DIKPQ 's SP length : 4540 - Execution time is : 0.097382
+DIKBQ 's SP length : 4540 - Execution time is : 0.028526
+ASPQ  's SP length : 4540 - Execution time is : 0.121457
+ASBQ  's SP length : 4540 - Execution time is : 0.026247
 
 [Round: 77]
-DIK   's SP length : 4460 - Execution time is : 60.505601
-DIKPQ 's SP length : 4460 - Execution time is : 0.098896
-DIKBQ 's SP length : 4460 - Execution time is : 0.027446
-ASPQ  's SP length : 4460 - Execution time is : 0.121895
-ASBQ  's SP length : 4460 - Execution time is : 0.024657
+DIK   's SP length : 4480 - Execution time is : 60.418720
+DIKPQ 's SP length : 4480 - Execution time is : 0.097364
+DIKBQ 's SP length : 4480 - Execution time is : 0.028868
+ASPQ  's SP length : 4480 - Execution time is : 0.092680
+ASBQ  's SP length : 4480 - Execution time is : 0.020401
 
 [Round: 78]
-DIK   's SP length : 4320 - Execution time is : 60.395062
-DIKPQ 's SP length : 4320 - Execution time is : 0.098712
-DIKBQ 's SP length : 4320 - Execution time is : 0.027682
-ASPQ  's SP length : 4320 - Execution time is : 0.102197
-ASBQ  's SP length : 4320 - Execution time is : 0.021086
+DIK   's SP length : 4380 - Execution time is : 60.410559
+DIKPQ 's SP length : 4380 - Execution time is : 0.097938
+DIKBQ 's SP length : 4380 - Execution time is : 0.028542
+ASPQ  's SP length : 4380 - Execution time is : 0.067825
+ASBQ  's SP length : 4380 - Execution time is : 0.014959
 
 [Round: 79]
-DIK   's SP length : 4460 - Execution time is : 60.400397
-DIKPQ 's SP length : 4460 - Execution time is : 0.099046
-DIKBQ 's SP length : 4460 - Execution time is : 0.027434
-ASPQ  's SP length : 4460 - Execution time is : 0.095234
-ASBQ  's SP length : 4460 - Execution time is : 0.019926
+DIK   's SP length : 4240 - Execution time is : 60.193068
+DIKPQ 's SP length : 4240 - Execution time is : 0.097555
+DIKBQ 's SP length : 4240 - Execution time is : 0.028333
+ASPQ  's SP length : 4240 - Execution time is : 0.043564
+ASBQ  's SP length : 4240 - Execution time is : 0.009362
 
 [Round: 80]
-DIK   's SP length : 4400 - Execution time is : 60.484325
-DIKPQ 's SP length : 4400 - Execution time is : 0.099129
-DIKBQ 's SP length : 4400 - Execution time is : 0.027349
-ASPQ  's SP length : 4400 - Execution time is : 0.104034
-ASBQ  's SP length : 4400 - Execution time is : 0.020992
+DIK   's SP length : 4360 - Execution time is : 60.380510
+DIKPQ 's SP length : 4360 - Execution time is : 0.097627
+DIKBQ 's SP length : 4360 - Execution time is : 0.028374
+ASPQ  's SP length : 4360 - Execution time is : 0.113582
+ASBQ  's SP length : 4360 - Execution time is : 0.024397
 
 [Round: 81]
-DIK   's SP length : 4280 - Execution time is : 60.490051
-DIKPQ 's SP length : 4280 - Execution time is : 0.099292
-DIKBQ 's SP length : 4280 - Execution time is : 0.027315
-ASPQ  's SP length : 4280 - Execution time is : 0.079366
-ASBQ  's SP length : 4280 - Execution time is : 0.015914
+DIK   's SP length : 4360 - Execution time is : 60.416761
+DIKPQ 's SP length : 4360 - Execution time is : 0.097715
+DIKBQ 's SP length : 4360 - Execution time is : 0.028443
+ASPQ  's SP length : 4360 - Execution time is : 0.054471
+ASBQ  's SP length : 4360 - Execution time is : 0.011771
 
 [Round: 82]
-DIK   's SP length : 4420 - Execution time is : 60.469437
-DIKPQ 's SP length : 4420 - Execution time is : 0.099147
-DIKBQ 's SP length : 4420 - Execution time is : 0.027407
-ASPQ  's SP length : 4420 - Execution time is : 0.104687
-ASBQ  's SP length : 4420 - Execution time is : 0.021713
+DIK   's SP length : 4400 - Execution time is : 60.378599
+DIKPQ 's SP length : 4400 - Execution time is : 0.097620
+DIKBQ 's SP length : 4400 - Execution time is : 0.028432
+ASPQ  's SP length : 4400 - Execution time is : 0.089089
+ASBQ  's SP length : 4400 - Execution time is : 0.018728
 
 [Round: 83]
-DIK   's SP length : 4460 - Execution time is : 60.449074
-DIKPQ 's SP length : 4460 - Execution time is : 0.098998
-DIKBQ 's SP length : 4460 - Execution time is : 0.027307
-ASPQ  's SP length : 4460 - Execution time is : 0.102922
-ASBQ  's SP length : 4460 - Execution time is : 0.021286
+DIK   's SP length : 4360 - Execution time is : 60.409692
+DIKPQ 's SP length : 4360 - Execution time is : 0.097775
+DIKBQ 's SP length : 4360 - Execution time is : 0.028503
+ASPQ  's SP length : 4360 - Execution time is : 0.111396
+ASBQ  's SP length : 4360 - Execution time is : 0.023762
 
 [Round: 84]
-DIK   's SP length : 4540 - Execution time is : 60.503755
-DIKPQ 's SP length : 4540 - Execution time is : 0.098991
-DIKBQ 's SP length : 4540 - Execution time is : 0.027832
-ASPQ  's SP length : 4540 - Execution time is : 0.121108
-ASBQ  's SP length : 4540 - Execution time is : 0.025582
+DIK   's SP length : 4480 - Execution time is : 60.399902
+DIKPQ 's SP length : 4480 - Execution time is : 0.097351
+DIKBQ 's SP length : 4480 - Execution time is : 0.028591
+ASPQ  's SP length : 4480 - Execution time is : 0.112606
+ASBQ  's SP length : 4480 - Execution time is : 0.024299
 
 [Round: 85]
-DIK   's SP length : 4280 - Execution time is : 60.411226
-DIKPQ 's SP length : 4280 - Execution time is : 0.098690
-DIKBQ 's SP length : 4280 - Execution time is : 0.027299
-ASPQ  's SP length : 4280 - Execution time is : 0.086377
-ASBQ  's SP length : 4280 - Execution time is : 0.016889
+DIK   's SP length : 4320 - Execution time is : 60.321621
+DIKPQ 's SP length : 4320 - Execution time is : 0.097600
+DIKBQ 's SP length : 4320 - Execution time is : 0.028701
+ASPQ  's SP length : 4320 - Execution time is : 0.083517
+ASBQ  's SP length : 4320 - Execution time is : 0.017957
 
 [Round: 86]
-DIK   's SP length : 4380 - Execution time is : 60.504234
-DIKPQ 's SP length : 4380 - Execution time is : 0.099575
-DIKBQ 's SP length : 4380 - Execution time is : 0.027400
-ASPQ  's SP length : 4380 - Execution time is : 0.107598
-ASBQ  's SP length : 4380 - Execution time is : 0.021706
+DIK   's SP length : 4260 - Execution time is : 60.342999
+DIKPQ 's SP length : 4260 - Execution time is : 0.097851
+DIKBQ 's SP length : 4260 - Execution time is : 0.028349
+ASPQ  's SP length : 4260 - Execution time is : 0.088639
+ASBQ  's SP length : 4260 - Execution time is : 0.019022
 
 [Round: 87]
-DIK   's SP length : 4200 - Execution time is : 60.459604
-DIKPQ 's SP length : 4200 - Execution time is : 0.099508
-DIKBQ 's SP length : 4200 - Execution time is : 0.027238
-ASPQ  's SP length : 4200 - Execution time is : 0.055041
-ASBQ  's SP length : 4200 - Execution time is : 0.010797
+DIK   's SP length : 4380 - Execution time is : 60.384826
+DIKPQ 's SP length : 4380 - Execution time is : 0.097718
+DIKBQ 's SP length : 4380 - Execution time is : 0.028521
+ASPQ  's SP length : 4380 - Execution time is : 0.108869
+ASBQ  's SP length : 4380 - Execution time is : 0.022691
 
 [Round: 88]
-DIK   's SP length : 4380 - Execution time is : 60.508199
-DIKPQ 's SP length : 4380 - Execution time is : 0.099565
-DIKBQ 's SP length : 4380 - Execution time is : 0.027329
-ASPQ  's SP length : 4380 - Execution time is : 0.084927
-ASBQ  's SP length : 4380 - Execution time is : 0.016991
+DIK   's SP length : 4420 - Execution time is : 60.370040
+DIKPQ 's SP length : 4420 - Execution time is : 0.097585
+DIKBQ 's SP length : 4420 - Execution time is : 0.028420
+ASPQ  's SP length : 4420 - Execution time is : 0.101313
+ASBQ  's SP length : 4420 - Execution time is : 0.022355
 
 [Round: 89]
-DIK   's SP length : 4280 - Execution time is : 60.472094
-DIKPQ 's SP length : 4280 - Execution time is : 0.099732
-DIKBQ 's SP length : 4280 - Execution time is : 0.027278
-ASPQ  's SP length : 4280 - Execution time is : 0.068031
-ASBQ  's SP length : 4280 - Execution time is : 0.013638
+DIK   's SP length : 4460 - Execution time is : 60.180528
+DIKPQ 's SP length : 4460 - Execution time is : 0.097677
+DIKBQ 's SP length : 4460 - Execution time is : 0.028500
+ASPQ  's SP length : 4460 - Execution time is : 0.124528
+ASBQ  's SP length : 4460 - Execution time is : 0.027255
 
 [Round: 90]
-DIK   's SP length : 4520 - Execution time is : 60.503798
-DIKPQ 's SP length : 4520 - Execution time is : 0.099207
-DIKBQ 's SP length : 4520 - Execution time is : 0.027545
-ASPQ  's SP length : 4520 - Execution time is : 0.124041
-ASBQ  's SP length : 4520 - Execution time is : 0.025938
+DIK   's SP length : 4320 - Execution time is : 60.382437
+DIKPQ 's SP length : 4320 - Execution time is : 0.097688
+DIKBQ 's SP length : 4320 - Execution time is : 0.028715
+ASPQ  's SP length : 4320 - Execution time is : 0.093413
+ASBQ  's SP length : 4320 - Execution time is : 0.019413
 
 [Round: 91]
-DIK   's SP length : 4400 - Execution time is : 60.453160
-DIKPQ 's SP length : 4400 - Execution time is : 0.099390
-DIKBQ 's SP length : 4400 - Execution time is : 0.027410
-ASPQ  's SP length : 4400 - Execution time is : 0.096325
-ASBQ  's SP length : 4400 - Execution time is : 0.019715
+DIK   's SP length : 4300 - Execution time is : 60.455012
+DIKPQ 's SP length : 4300 - Execution time is : 0.097774
+DIKBQ 's SP length : 4300 - Execution time is : 0.028471
+ASPQ  's SP length : 4300 - Execution time is : 0.077993
+ASBQ  's SP length : 4300 - Execution time is : 0.016758
 
 [Round: 92]
-DIK   's SP length : 4420 - Execution time is : 60.501638
-DIKPQ 's SP length : 4420 - Execution time is : 0.099357
-DIKBQ 's SP length : 4420 - Execution time is : 0.027413
-ASPQ  's SP length : 4420 - Execution time is : 0.100099
-ASBQ  's SP length : 4420 - Execution time is : 0.021092
+DIK   's SP length : 4440 - Execution time is : 60.436867
+DIKPQ 's SP length : 4440 - Execution time is : 0.097644
+DIKBQ 's SP length : 4440 - Execution time is : 0.028453
+ASPQ  's SP length : 4440 - Execution time is : 0.121873
+ASBQ  's SP length : 4440 - Execution time is : 0.025711
 
 [Round: 93]
-DIK   's SP length : 4460 - Execution time is : 60.441702
-DIKPQ 's SP length : 4460 - Execution time is : 0.099207
-DIKBQ 's SP length : 4460 - Execution time is : 0.027408
-ASPQ  's SP length : 4460 - Execution time is : 0.107236
-ASBQ  's SP length : 4460 - Execution time is : 0.022316
+DIK   's SP length : 4400 - Execution time is : 60.469042
+DIKPQ 's SP length : 4400 - Execution time is : 0.097820
+DIKBQ 's SP length : 4400 - Execution time is : 0.028794
+ASPQ  's SP length : 4400 - Execution time is : 0.083913
+ASBQ  's SP length : 4400 - Execution time is : 0.018429
 
 [Round: 94]
-DIK   's SP length : 4320 - Execution time is : 60.469806
-DIKPQ 's SP length : 4320 - Execution time is : 0.099505
-DIKBQ 's SP length : 4320 - Execution time is : 0.027351
-ASPQ  's SP length : 4320 - Execution time is : 0.102806
-ASBQ  's SP length : 4320 - Execution time is : 0.020947
+DIK   's SP length : 4540 - Execution time is : 60.314353
+DIKPQ 's SP length : 4540 - Execution time is : 0.097599
+DIKBQ 's SP length : 4540 - Execution time is : 0.028678
+ASPQ  's SP length : 4540 - Execution time is : 0.121253
+ASBQ  's SP length : 4540 - Execution time is : 0.026542
 
 [Round: 95]
-DIK   's SP length : 4380 - Execution time is : 60.517190
-DIKPQ 's SP length : 4380 - Execution time is : 0.099377
-DIKBQ 's SP length : 4380 - Execution time is : 0.027393
-ASPQ  's SP length : 4380 - Execution time is : 0.086799
-ASBQ  's SP length : 4380 - Execution time is : 0.017977
+DIK   's SP length : 4300 - Execution time is : 60.356615
+DIKPQ 's SP length : 4300 - Execution time is : 0.097933
+DIKBQ 's SP length : 4300 - Execution time is : 0.028409
+ASPQ  's SP length : 4300 - Execution time is : 0.076323
+ASBQ  's SP length : 4300 - Execution time is : 0.016594
 
 [Round: 96]
-DIK   's SP length : 4320 - Execution time is : 60.482789
-DIKPQ 's SP length : 4320 - Execution time is : 0.099573
-DIKBQ 's SP length : 4320 - Execution time is : 0.027364
-ASPQ  's SP length : 4320 - Execution time is : 0.071070
-ASBQ  's SP length : 4320 - Execution time is : 0.014670
+DIK   's SP length : 4340 - Execution time is : 60.377597
+DIKPQ 's SP length : 4340 - Execution time is : 0.097750
+DIKBQ 's SP length : 4340 - Execution time is : 0.028568
+ASPQ  's SP length : 4340 - Execution time is : 0.081006
+ASBQ  's SP length : 4340 - Execution time is : 0.017322
 
 [Round: 97]
-DIK   's SP length : 4400 - Execution time is : 60.499795
-DIKPQ 's SP length : 4400 - Execution time is : 0.099373
-DIKBQ 's SP length : 4400 - Execution time is : 0.027422
-ASPQ  's SP length : 4400 - Execution time is : 0.106354
-ASBQ  's SP length : 4400 - Execution time is : 0.021164
+DIK   's SP length : 4380 - Execution time is : 60.354573
+DIKPQ 's SP length : 4380 - Execution time is : 0.097628
+DIKBQ 's SP length : 4380 - Execution time is : 0.028514
+ASPQ  's SP length : 4380 - Execution time is : 0.097362
+ASBQ  's SP length : 4380 - Execution time is : 0.021431
 
 [Round: 98]
-DIK   's SP length : 4320 - Execution time is : 60.509013
-DIKPQ 's SP length : 4320 - Execution time is : 0.099364
-DIKBQ 's SP length : 4320 - Execution time is : 0.027353
-ASPQ  's SP length : 4320 - Execution time is : 0.102361
-ASBQ  's SP length : 4320 - Execution time is : 0.020728
+DIK   's SP length : 4440 - Execution time is : 60.374670
+DIKPQ 's SP length : 4440 - Execution time is : 0.097683
+DIKBQ 's SP length : 4440 - Execution time is : 0.028559
+ASPQ  's SP length : 4440 - Execution time is : 0.101527
+ASBQ  's SP length : 4440 - Execution time is : 0.021988
 
 [Round: 99]
-DIK   's SP length : 4440 - Execution time is : 60.481046
-DIKPQ 's SP length : 4440 - Execution time is : 0.099442
-DIKBQ 's SP length : 4440 - Execution time is : 0.027545
-ASPQ  's SP length : 4440 - Execution time is : 0.112154
-ASBQ  's SP length : 4440 - Execution time is : 0.022752
+DIK   's SP length : 4380 - Execution time is : 60.412232
+DIKPQ 's SP length : 4380 - Execution time is : 0.097674
+DIKBQ 's SP length : 4380 - Execution time is : 0.028504
+ASPQ  's SP length : 4380 - Execution time is : 0.090875
+ASBQ  's SP length : 4380 - Execution time is : 0.018955
 
 [Round: 100]
-DIK   's SP length : 4560 - Execution time is : 60.479408
-DIKPQ 's SP length : 4560 - Execution time is : 0.099125
-DIKBQ 's SP length : 4560 - Execution time is : 0.027895
-ASPQ  's SP length : 4560 - Execution time is : 0.125183
-ASBQ  's SP length : 4560 - Execution time is : 0.026126
+DIK   's SP length : 4460 - Execution time is : 60.344429
+DIKPQ 's SP length : 4460 - Execution time is : 0.097924
+DIKBQ 's SP length : 4460 - Execution time is : 0.028561
+ASPQ  's SP length : 4460 - Execution time is : 0.120191
+ASBQ  's SP length : 4460 - Execution time is : 0.026192
 
